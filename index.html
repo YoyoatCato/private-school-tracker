@@ -916,12 +916,34 @@ document.getElementById('cancelForm').onclick=closeForm;
 document.getElementById('saveForm').onclick=saveForm;
 scrim.addEventListener('click',e=>{ if(e.target===scrim) closeForm(); });
 document.addEventListener('keydown',e=>{ if(e.key==='Escape'&&scrim.classList.contains('on')) closeForm(); });
-function saveName(id){
+// Paste your deployed Cloudflare Worker URL between the quotes to turn on the
+// on-type mini-sweep (location + NCES address/type + FFIEC income). Left blank,
+// naming a card still works — it just moves to the queue without auto-enrichment.
+const BACKEND_URL = "";
+
+async function saveName(id){
   const c=state.candidates.find(x=>x.id===id); if(!c) return;
   const el=document.getElementById('nn_'+id); const v=((el&&el.value)||'').trim();
   if(!v){ if(el){ el.focus(); el.style.borderColor='var(--rose)'; } return; }
   c.data.name=v; c.needs_name=false;
   if(c.auto && c.auto.indexOf('name')<0) c.auto.push('name');
+  if(BACKEND_URL){                         // mini-sweep: enrich the moment a name is entered
+    c._enriching=true; render();
+    try{
+      const r=await fetch(BACKEND_URL,{method:'POST',headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({name:v, state:c.data.state||'', town:c.data.town||''})});
+      const e=await r.json();
+      ['town','state','region','full_address','type','tract_mfi','data_year'].forEach(k=>{
+        if(e[k] && !c.data[k]){ c.data[k]=e[k]; if(c.auto.indexOf(k)<0) c.auto.push(k); }
+      });
+      if(e.full_address || e.mfi_area){
+        c.data.notes=(c.data.notes||'')+' [mini-sweep]'
+          +(e.full_address?(' address '+e.full_address+' (unverified);'):'')
+          +(e.mfi_area?(' income = 2026 FFIEC MSA/MD MFI for '+e.mfi_area+';'):'');
+      }
+    }catch(err){ /* backend unreachable -> keep the manual entry, no crash */ }
+    c._enriching=false;
+  }
   render();
 }
 window.saveName=saveName;

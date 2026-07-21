@@ -49,6 +49,11 @@ import json, re, html, urllib.parse, urllib.request
 from datetime import datetime, timezone
 from xml.etree import ElementTree as ET
 from pathlib import Path
+try:
+    from zoneinfo import ZoneInfo
+    EASTERN = ZoneInfo("America/New_York")
+except Exception:
+    EASTERN = None   # fall back to naive local time if tzdata unavailable
 
 # ------------------------------------------------------------------ CONFIG
 # Your Google Alerts search terms, exactly as you use them:
@@ -528,6 +533,38 @@ STRONG_NEW_HINTS = ("new campus", "new academy", "new private school", "grand op
                      "new school building")
 
 
+NON_EVENT_HINTS = ("open house", "openhouse", "back to school", "back-to-school",
+    "new school year", "school year begins", "school year starts", "first day of school",
+    "registration open", "now enrolling", "enrollment open", "open enrollment",
+    "orientation", "job fair", "career fair", "spirit week", "summer camp",
+    "vacation bible", "graduation ceremony", "field day")
+TEMP_CLOSE_HINTS = ("snow day", "weather", "storm", "hurricane", "flooding", "fire alarm",
+    "boil water", "water main", "power outage", "gas leak", "heat advisory", "for the day",
+    "early dismissal", "delayed opening", "two-hour delay", "2-hour delay",
+    "temporarily clos", "closed today", "closed monday", "closed tuesday",
+    "closed wednesday", "closed thursday", "closed friday", "reopens", "bomb threat")
+RELOCATE_HINTS = ("relocat", "moving to a new", "moves to a new", "new location for",
+    "moving into", "new home for")
+EXPANSION_OK = ("expand", "additional campus", "second campus", "new campus",
+    "another campus", "third campus", "opening a campus")
+
+
+def is_non_event(title):
+    """Drop items that matched keywords but aren't a real opening/closure: open
+    houses & calendar/promo notices (e.g. 'Dade Middle School Announces Open House
+    Ahead of New School Year'), temporary weather/utility closings, and pure
+    relocations (a move is neither an opening nor a closure). Runs on EVERY item,
+    even ones where we did extract a school name."""
+    t = title.lower()
+    if any(h in t for h in NON_EVENT_HINTS):
+        return True
+    if any(h in t for h in TEMP_CLOSE_HINTS):
+        return True
+    if any(h in t for h in RELOCATE_HINTS) and not any(k in t for k in EXPANSION_OK):
+        return True
+    return False
+
+
 def looks_like_non_event(title, source):
     """Catches items that matched the keyword rules but aren't actually about
     a specific school opening/closing: social-media posts and school-year/
@@ -594,8 +631,161 @@ def blank(keys):
     return {k: "" for k in keys}
 
 
+
+# ------------------------------------------------------------------ school type
+TYPE_RULES = [
+    ("Roman Catholic", ("roman catholic", "catholic", "archdiocese", "diocese",
+        "diocesan", "parochial", "jesuit", "franciscan", "salesian", "our lady",
+        "sacred heart", "notre dame")),
+    ("Episcopal", ("episcopal", "episcopalian")),
+    ("Lutheran", ("lutheran", "missouri synod", "wisconsin synod")),
+    ("Jewish", ("jewish", "hebrew academy", "hebrew day", "yeshiva", "torah",
+        "judaic", "chabad", "solomon schechter", "jewish day school")),
+    ("Muslim", ("islamic", "muslim", "quran", "qur'an", "madrasa", "madrassa")),
+    ("Special Needs", ("special needs", "special education", "special-education",
+        "autism", "autistic", "dyslexia", "learning disabilities",
+        "learning differences", "developmental disabilities")),
+    ("Christian", ("christian", "baptist", "presbyterian", "methodist", "evangelical",
+        "pentecostal", "calvary", "gospel", "adventist", "nazarene",
+        "assembly of god", "church of christ", "bible academy", "faith academy",
+        "grace academy")),
+    ("Independent", ("montessori", "waldorf", "independent school", "college prep",
+        "college preparatory", "preparatory academy", "prep school", "day school",
+        "microschool", "micro-school", "micro school")),
+]
+MICRO_HINTS = ("microschool", "micro-school", "micro school")
+
+
+def infer_type(name, article_text=""):
+    """Best-effort school Type from name + article text (workbook vocabulary).
+    Returns '' when nothing is clear (blank beats a wrong guess)."""
+    hay = (name + " " + (article_text[:4000] if article_text else "")).lower()
+    for label, keys in TYPE_RULES:
+        if any(k in hay for k in keys):
+            return label
+    return ""
+
+
+# ------------------------------------------------------------------ FFIEC 2026 income
+FFIEC_MFI_2026 = {
+"10180":92100,"10380":33600,"10420":97100,"10500":71200,"10540":97300,"10580":123100,
+"10740":100400,"10780":83300,"10900":107500,"11020":92400,"11100":90800,"11180":119100,
+"11200":124400,"11244":138600,"11260":130400,"11460":142300,"11500":72300,"11540":111200,
+"11640":32700,"11694":173100,"11700":103200,"12020":100100,"12054":113500,"12100":103700,
+"12220":105500,"12260":90300,"12420":134400,"12540":81900,"12580":134000,"12620":98800,
+"12700":123600,"12940":93700,"12980":80700,"13020":89900,"13140":87700,"13220":69700,
+"13380":123300,"13460":115100,"13740":112800,"13780":88600,"13820":100300,"13900":113000,
+"13980":107100,"14010":117000,"14020":108700,"14260":109900,"14454":146500,"14500":150000,
+"14540":81100,"14580":130200,"14740":129600,"14860":156800,"15180":64600,"15260":92100,
+"15380":101500,"15500":88600,"15540":123400,"15764":163800,"15804":127000,"15940":90400,
+"15980":105700,"16020":90200,"16180":90000,"16220":99500,"16300":103100,"16540":99800,
+"16580":113000,"16620":80200,"16700":117500,"16740":111400,"16820":139800,"16860":97400,
+"16940":104400,"16984":118900,"17020":89400,"17140":109000,"17300":93300,"17410":103900,
+"17420":91700,"17660":108300,"17780":104600,"17820":115700,"17860":113700,"17900":92800,
+"17980":85200,"18020":94200,"18140":111300,"18580":84800,"18700":125000,"18880":102000,
+"19124":121100,"19140":82100,"19300":102400,"19340":97500,"19430":103000,"19460":88600,
+"19500":95100,"19660":94400,"19740":144000,"19780":114800,"19804":82900,"20020":79500,
+"20100":112100,"20220":106300,"20260":101100,"20500":126700,"20580":58600,"20740":101300,
+"20940":75500,"20994":127500,"21060":92100,"21140":89900,"21300":89800,"21340":73400,
+"21420":86800,"21500":88600,"21660":96900,"21780":93000,"21794":140200,"21820":116300,
+"22020":115200,"22140":80300,"22180":81800,"22220":106900,"22380":106000,"22420":82100,
+"22500":74000,"22520":95900,"22540":105800,"22660":130400,"22744":102500,"22900":76800,
+"23060":95400,"23104":110500,"23224":177400,"23420":89300,"23460":78600,"23540":91600,
+"23580":102000,"23900":106800,"24020":94100,"24140":70300,"24220":106800,"24260":94400,
+"24300":100600,"24340":106100,"24420":76700,"24500":89000,"24540":128000,"24580":105900,
+"24660":89700,"24780":88800,"24860":101000,"25020":26300,"25060":85600,"25180":101600,
+"25220":65800,"25260":84900,"25420":109300,"25500":97700,"25540":129200,"25620":79800,
+"25740":124000,"25860":85200,"25940":110400,"25980":75000,"26140":81400,"26300":81600,
+"26380":86600,"26420":105100,"26580":85200,"26620":115100,"26820":100800,"26900":107700,
+"26980":117100,"27060":118000,"27100":101200,"27140":89400,"27180":79100,"27260":108400,
+"27340":85400,"27500":94500,"27620":98600,"27740":76800,"27780":84500,"27860":74000,
+"27900":79400,"27980":121400,"28020":108100,"28100":102200,"28140":113200,"28420":105400,
+"28450":117300,"28660":85600,"28700":81800,"28740":117300,"28880":125900,"28940":98800,
+"29020":96200,"29100":104100,"29180":87400,"29200":97300,"29340":88100,"29404":142100,
+"29414":100300,"29420":79900,"29460":83900,"29484":145000,"29540":109200,"29620":102600,
+"29700":74000,"29740":79900,"29820":98200,"29940":110400,"30020":79300,"30140":98200,
+"30300":102900,"30340":96600,"30460":102100,"30500":153200,"30620":85700,"30700":106100,
+"30780":92800,"30860":99100,"30980":80900,"31020":106700,"31084":108100,"31140":98900,
+"31180":89500,"31340":88300,"31420":78900,"31540":129000,"31700":137600,"31740":100700,
+"31860":106500,"31900":92500,"31924":129100,"32420":30600,"32580":64000,"32780":98100,
+"32820":91500,"32900":75800,"33124":89800,"33140":89300,"33220":107200,"33260":109700,
+"33340":108400,"33460":131100,"33500":95900,"33540":109200,"33660":83300,"33700":94600,
+"33740":77400,"33780":95200,"33860":88800,"33874":154300,"34060":103000,"34100":80100,
+"34580":120200,"34620":79600,"34740":77500,"34820":86000,"34900":165400,"34940":121000,
+"34980":114300,"35004":164300,"35084":141000,"35300":123200,"35380":88700,"35614":108300,
+"35660":92200,"35840":109700,"35980":111900,"36084":162800,"36100":84000,"36220":91100,
+"36260":117900,"36420":97100,"36500":122800,"36540":114200,"36740":97600,"36780":100500,
+"36980":92100,"37100":135600,"37140":98500,"37340":97000,"37460":98300,"37620":74100,
+"37860":92800,"37900":106100,"37964":91900,"38060":112400,"38240":106300,"38300":108900,
+"38340":117600,"38540":100900,"38660":30700,"38860":125000,"38900":128300,"38940":102000,
+"39150":92200,"39300":113400,"39340":119200,"39380":87700,"39460":97500,"39540":104300,
+"39580":132300,"39660":100800,"39740":102100,"39820":97100,"39900":110900,"40060":113100,
+"40140":106500,"40220":96300,"40340":127800,"40380":107000,"40420":89400,"40484":145000,
+"40580":80200,"40660":86500,"40900":124400,"40980":83200,"41060":107100,"41100":105900,
+"41140":91800,"41180":113200,"41304":107200,"41420":103400,"41500":110500,"41540":104600,
+"41620":126100,"41660":90900,"41700":101600,"41740":130900,"41780":102300,"41884":197300,
+"41940":200900,"41980":40600,"42020":129600,"42034":221900,"42100":137200,"42140":118600,
+"42200":118600,"42220":133400,"42340":107300,"42540":92400,"42644":175700,"42680":105200,
+"42700":75600,"43100":103200,"43300":95300,"43340":79200,"43420":78500,"43580":97900,
+"43620":118100,"43640":107700,"43780":85900,"43900":88600,"44060":107700,"44100":114900,
+"44140":96700,"44180":90700,"44220":83700,"44300":118300,"44420":98500,"44700":108100,
+"44940":74200,"45060":106800,"45104":127300,"45220":99300,"45294":103500,"45460":95400,
+"45500":76700,"45780":95400,"45820":98800,"45900":107800,"45940":139800,"46060":99800,
+"46140":93500,"46220":90300,"46300":94000,"46340":97300,"46520":133400,"46540":98500,
+"46660":82600,"46700":120300,"47020":81300,"47220":89100,"47260":107700,"47300":76400,
+"47380":89600,"47460":108700,"47580":98100,"47664":121300,"47764":136100,"47930":114000,
+"47940":92100,"48060":86600,"48140":103600,"48260":80600,"48300":99100,"48424":107600,
+"48540":78900,"48620":96500,"48660":91200,"48680":104100,"48700":85200,"48864":115300,
+"48900":106100,"49020":107000,"49180":93900,"49340":127200,"49420":88600,"49620":105900,
+"49660":81900,"49700":101900,"49740":79300,
+}
+NONMETRO_MFI_2026 = {
+"ALABAMA":74200,"ALASKA":110100,"ARIZONA":66300,"ARKANSAS":71100,"CALIFORNIA":97100,
+"COLORADO":97400,"CONNECTICUT":124500,"DELAWARE":103200,"FLORIDA":80800,"GEORGIA":77000,
+"HAWAII":104400,"IDAHO":88000,"ILLINOIS":89700,"INDIANA":84800,"IOWA":94100,"KANSAS":85700,
+"KENTUCKY":71900,"LOUISIANA":67700,"MAINE":91900,"MARYLAND":95000,"MASSACHUSETTS":131700,
+"MICHIGAN":83600,"MINNESOTA":98000,"MISSISSIPPI":72000,"MISSOURI":77500,"MONTANA":91000,
+"NEBRASKA":94100,"NEVADA":105500,"NEW HAMPSHIRE":117600,"NEW MEXICO":72900,"NEW YORK":89900,
+"NORTH CAROLINA":78300,"NORTH DAKOTA":107100,"OHIO":87700,"OKLAHOMA":75900,"OREGON":83600,
+"PENNSYLVANIA":86200,"SOUTH CAROLINA":74600,"SOUTH DAKOTA":94500,"TENNESSEE":78000,
+"TEXAS":83700,"UTAH":106300,"VERMONT":104700,"VIRGINIA":79900,"WASHINGTON":97000,
+"WEST VIRGINIA":75100,"WISCONSIN":96000,"WYOMING":99400,
+}
+
+
+def ffiec_income(address):
+    """address -> (2026 FFIEC Est. MSA/MD median family income:int, area name) or
+    (None, None). Uses the OPEN Census geocoder for the MSA/MD code (FFIEC blocks
+    automated downloads, so the table above is embedded); prefers Metropolitan
+    Division where a metro is split, else MSA, else the state's non-metro value."""
+    if not address:
+        return None, None
+    try:
+        url = ("https://geocoding.geo.census.gov/geocoder/geographies/onelineaddress?address="
+               + urllib.parse.quote(address)
+               + "&benchmark=Public_AR_Current&vintage=Current_Current&layers=all&format=json")
+        d = json.load(urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=25))
+        matches = d["result"]["addressMatches"]
+        if not matches:
+            return None, None
+        g = matches[0]["geographies"]
+    except Exception:
+        return None, None
+    for layer in ("Metropolitan Divisions", "Metropolitan Statistical Areas"):
+        for x in g.get(layer, []):
+            code = (x.get("GEOID") or "")[-5:]
+            if code in FFIEC_MFI_2026:
+                return FFIEC_MFI_2026[code], x.get("NAME")
+    st = g.get("States", [])
+    if st:
+        nm = (st[0].get("NAME") or "").upper()
+        if nm in NONMETRO_MFI_2026:
+            return NONMETRO_MFI_2026[nm], "nonmetro " + st[0].get("NAME", "")
+    return None, None
+
+
 def main():
-    started = datetime.now()
+    started = datetime.now(EASTERN) if EASTERN else datetime.now()
     print("Sweep started:", started.isoformat(timespec="seconds"))
 
     known = load_workbook_names(WORKBOOK)
@@ -618,6 +808,9 @@ def main():
         title = clean_title(it["title"])
         kind = classify(title)
         if not title or not kind:
+            continue
+        if is_non_event(title):
+            print(f"  skip (not an opening/closure event): {title}")
             continue
         if US_ONLY:
             hay = (title + " " + it["source"]).lower()
@@ -677,6 +870,16 @@ def main():
         # (town is filled only from a verified NCES match above — never guessed
         #  from body text, which produced false positives like photo credits.)
 
+        # School type (workbook vocabulary) from name + article; microschool flag.
+        school_type = infer_type(display_name, art_html or "")
+        micro = "Yes" if any(h in (display_name + " " + (art_html or "")).lower() for h in MICRO_HINTS) else ""
+        if micro and not school_type:
+            school_type = "Independent"
+
+        # FFIEC 2026 MSA/MD median family income (only when we have a street address).
+        mfi, mfi_area = ffiec_income(address) if address else (None, None)
+        mfi_str = str(mfi) if mfi else ""
+
         seq += 1
         if extracted_name:
             note = (f"From the {it['source'] or 'news'} sweep — verify the details "
@@ -686,20 +889,24 @@ def main():
                      f"add the school name. Headline: \"{title}\"")
         if address:
             note += " Address auto-matched from NCES (2023-24 PSS) — verify."
+        if mfi:
+            note += f" Income = 2026 FFIEC est. MSA/MD MFI for {mfi_area}."
 
         if kind == "opening":
             data = blank(OPEN_KEYS)
             data.update(name=display_name, link=real_link, date_reported=date_reported,
-                        source_links=it["source"], notes=note,
-                        town=town, state=state or "", region=region or "", full_address=address)
+                        source_links=it["source"], notes=note, type=school_type,
+                        town=town, state=state or "", region=region or "", full_address=address,
+                        tract_mfi=mfi_str, data_year=("2026" if mfi else ""), microschool=micro)
         else:
             data = blank(CLOSE_KEYS)
             data.update(name=display_name, link=real_link, date_reported=date_reported,
-                        enroll_source=it["source"], notes=note,
-                        town=town, state=state or "", region=region or "", full_address=address)
+                        enroll_source=it["source"], notes=note, type=school_type,
+                        town=town, state=state or "", region=region or "", full_address=address,
+                        tract_mfi=mfi_str, data_year=("2026" if mfi else ""))
 
         auto = ["name", "link", "date_reported"]
-        for k in ("town", "state", "region", "full_address"):
+        for k in ("type", "town", "state", "region", "full_address", "tract_mfi", "data_year", "microschool"):
             if data.get(k):
                 auto.append(k)
         candidates.append({"id": f"sw{started:%Y%m%d}{seq:03d}", "kind": kind,
