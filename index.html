@@ -206,6 +206,8 @@
   }
   @keyframes pstBounce {0%{transform:translateY(0)}20%{transform:translateY(-14px)}40%{transform:translateY(0)}55%{transform:translateY(-7px)}70%{transform:translateY(0)}85%{transform:translateY(-3px)}100%{transform:translateY(0)}}
   .card.bounce{animation:pstBounce .9s ease;box-shadow:0 0 0 3px var(--rose),0 10px 26px rgba(0,0,0,.12)!important;border-radius:16px}
+  .undofab{position:fixed;left:18px;bottom:18px;z-index:60;display:none;align-items:center;gap:6px;background:var(--rose);color:#fff;border:none;border-radius:999px;padding:10px 16px;font:inherit;font-weight:600;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+  .undofab:hover{filter:brightness(1.05)}
   .kindswitch{display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-bottom:14px;font-size:.92em}
 </style>
 </head>
@@ -260,6 +262,7 @@
 <audio id="bgm" loop preload="none" src="cute-bgm.mp3"></audio>
 <button id="bgmBtn" class="bgmbtn" title="Play cute background music">&#127925;</button>
 <div class="toast" id="toast"><span class="tick">&#10003;</span><span id="toastMsg"></span></div>
+<button id="undoBtn" class="undofab" onclick="undo()" style="display:none" title="Undo">&#8630; Undo</button>
 
 <script>
 
@@ -410,7 +413,7 @@ const state = {
   meta: SEED.meta, duplicates: SEED.duplicates.slice(), dupDismissed:false,
   candidates: SEED.candidates.map(clone),
   standby: SEED.standby.map(clone),
-  openings: [], closures: [], rejected: [],
+  openings: loadLS('pst-openings', []), closures: loadLS('pst-closures', []), rejected: [],
   bin: loadLS('pst-bin', []),
   muted: loadLS('pst-muted', {names:[], phrases:[]}),
   corr: loadLS('pst-corrections', {byLink:{}, byHeadline:{}, examples:[]}),
@@ -468,6 +471,25 @@ state.candidates.forEach(applyCorrections);
 let seq = 100;
 function clone(o){return JSON.parse(JSON.stringify(o))}
 function uid(){return "e"+(++seq)}
+function persist(){ saveLS('pst-openings',state.openings); saveLS('pst-closures',state.closures); }
+let undoStack=[];
+function snapshot(label){
+  try{ undoStack.push({label, s:JSON.stringify({candidates:state.candidates,openings:state.openings,closures:state.closures,bin:state.bin,standby:state.standby,muted:state.muted,dupDismissed:state.dupDismissed})}); }catch(e){ return; }
+  if(undoStack.length>30) undoStack.shift();
+  updateUndoBtn();
+}
+function undo(){
+  if(!undoStack.length){ toast('Nothing to undo'); return; }
+  const snap=undoStack.pop(); const o=JSON.parse(snap.s);
+  state.candidates=o.candidates; state.openings=o.openings; state.closures=o.closures;
+  state.bin=o.bin; state.standby=o.standby; state.muted=o.muted; state.dupDismissed=o.dupDismissed;
+  persist(); saveLS('pst-bin',state.bin); saveLS('pst-muted',state.muted);
+  if(scrim.classList.contains('on')) closeForm();
+  render(); updateUndoBtn(); toast('Undone: '+snap.label);
+}
+function updateUndoBtn(){ const b=document.getElementById('undoBtn'); if(!b) return;
+  if(undoStack.length){ b.style.display='flex'; b.title='Undo: '+undoStack[undoStack.length-1].label; }
+  else b.style.display='none'; }
 function esc(s){return (s==null?'':s.toString()).replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]))}
 function hostOf(url){ try{ return new URL(url).hostname.replace(/^www\./,''); }catch(e){ return 'Source'; } }
 /* Build a location line from only the parts that exist, so an empty town no longer
@@ -841,7 +863,7 @@ function buildForm(kind,data,autoSet,ctx){
     const geo = isIncome ? `<a href="https://geomap.ffiec.gov/ffiecgeomap/" target="_blank" rel="noopener">Look up on FFIEC geomap &nearr;</a>` : '';
     html+=`<div class="fgroup"><p class="gt"><span>${gt}</span>${geo}</p>${fields}`;
     if(isIncome) html+=`<p class="cap">Auto-filled from the U.S. Census tract <b>median family income</b> — the same figure the FFIEC geomap shows — looked up from the street address. Blank when there's no street address to look up. Cross-check any value on the <a href="https://geomap.ffiec.gov/ffiecgeomap/" target="_blank" rel="noopener">FFIEC geomap</a>.</p>`;
-    if(isDemo) html+=`<p class="cap">Percentages and enrolled counts are the <b>school's student body</b> (its latest NCES Private School Survey filing), not the surrounding area. "Other" bundles multiracial and other categories. Blank where the school didn't report.</p>`;
+    if(isDemo) html+=`<p class="cap">Percentages and enrolled counts are the <b>school's student body</b> (its latest NCES Private School Survey filing), not the surrounding area. "Other" bundles multiracial and other categories and auto-fills to 100% minus the rest (type in it to override). Blank where the school didn't report.</p>`;
     html+=`</div>`;
   });
   form.innerHTML=html;
@@ -868,9 +890,26 @@ function buildForm(kind,data,autoSet,ctx){
     enrEl.value=Math.round(total*pct/100);
     const f=enrEl.closest('.field'); if(f) f.classList.add('filled');
   }
+  // "Other" auto-fills to 100 - (Black + Hispanic + Asian + White). Typing in
+  // Other by hand locks it (edit-to-override); the four groups refill it otherwise.
+  const OTHER_SRC=['pct_black','pct_hispanic','pct_asian','pct_white'];
+  const pctOther=form.querySelector('[name="pct_other"]'), enrOther=form.querySelector('[name="enr_other"]');
+  function calcOther(){
+    if(!pctOther || pctOther.dataset.manual==='1') return;
+    let sum=0, any=false;
+    OTHER_SRC.forEach(k=>{ const v=numOf((form.querySelector(`[name="${k}"]`)||{}).value); if(v!=null){ sum+=v; any=true; } });
+    if(!any) return;
+    let o=Math.round((100-sum)*10)/10; if(o<0)o=0; if(o>100)o=100;
+    pctOther.value=o; const f=pctOther.closest('.field'); if(f) f.classList.add('filled');
+    calcDemo(pctOther, enrOther);
+  }
   DEMO_PAIRS.forEach(([p,e])=>{
     const pctEl=form.querySelector(`[name="${p}"]`), enrEl=form.querySelector(`[name="${e}"]`);
-    if(pctEl) pctEl.addEventListener('input',()=>calcDemo(pctEl,enrEl));
+    if(pctEl) pctEl.addEventListener('input',()=>{
+      if(p==='pct_other') pctEl.dataset.manual='1';        // user typed Other -> stop auto-deriving it
+      calcDemo(pctEl,enrEl);
+      if(OTHER_SRC.includes(p)) calcOther();
+    });
     if(enrEl) enrEl.addEventListener('input',()=>{ enrEl.dataset.manual='1'; });   // manual override wins
   });
   if(enrollEl) enrollEl.addEventListener('input',()=>DEMO_PAIRS.forEach(([p,e])=>calcDemo(form.querySelector(`[name="${p}"]`),form.querySelector(`[name="${e}"]`))));
@@ -910,6 +949,7 @@ function collectForm(){
 function saveForm(){
   const data=collectForm();
   if(!data.name){ toast('Add a school name first'); return; }
+  snapshot(editing.mode==='edit'?'edit entry':'approve entry');
   if(editing.mode==='edit'){
     const origKind=editing.origKind||editing.kind;
     const src=origKind==='opening'?state.openings:state.closures;
@@ -918,7 +958,7 @@ function saveForm(){
       e.data={...e.data,...data};
       if(editing.kind!==origKind){ e.kind=editing.kind; src.splice(idx,1); (editing.kind==='opening'?state.openings:state.closures).unshift(e); }
     }
-    closeForm(); render(); toast(editing.kind!==origKind?'Saved &amp; moved to '+editing.kind+'s':'Changes saved'); return;
+    persist(); closeForm(); render(); toast(editing.kind!==origKind?'Saved &amp; moved to '+editing.kind+'s':'Changes saved'); return;
   }
   const c=editing.candidate;
   captureCorrections(c,data);
@@ -941,12 +981,13 @@ function saveForm(){
     }
   }
   state.candidates=state.candidates.filter(x=>x.id!==c.id);
-  closeForm(); render();
+  persist(); closeForm(); render();
   toast(c.merger?'Approved — linked pair added':'Entry approved');
   cheer();
 }
 function flipKind(id){
   const c=state.candidates.find(x=>x.id===id); if(!c) return;
+  snapshot('flip type');
   c.kind = c.kind==='opening' ? 'closure' : 'opening';
   render(); flashCard(id);
   toast('Switched to '+(c.kind==='opening'?'opening':'closure'));
@@ -963,6 +1004,7 @@ function rejectForm(c){
 }
 function confirmReject(id){
   const c=state.candidates.find(x=>x.id===id); if(!c) return;
+  snapshot('reject '+(c.data.name||'entry'));
   const box=document.getElementById('rj_'+id), note=box?box.value.trim():'';
   const chips=[...document.querySelectorAll('.rejbox .on')].map(b=>b.dataset.r);
   const reason=[...chips, note].filter(Boolean).join('; ') || 'No reason given';
@@ -985,8 +1027,8 @@ function renderBin(){
     <button class="btn soft mini" onclick="restoreBin(${i})">&#8630; Restore</button></div>`).join('');
   view.innerHTML=`<div class="section-lead"><div><h2>&#9851; Recycle bin</h2><p>Rejected candidates with your reason. Restoring returns it to the queue and un-mutes it.</p></div><div class="xtools"><button class="btn ghost" onclick="emptyBin()">&#128465;&#65039; Empty bin</button></div></div>${insights}<div class="rows">${rows}</div>`;
 }
-function emptyBin(){ if(!state.bin.length) return; if(!confirm('Empty the recycle bin? This permanently clears '+state.bin.length+' item(s).')) return; state.bin=[]; saveLS('pst-bin',state.bin); render(); toast('Recycle bin emptied'); }
-function restoreBin(i){ const b=state.bin[i]; if(!b) return;
+function emptyBin(){ if(!state.bin.length) return; if(!confirm('Empty the recycle bin? This permanently clears '+state.bin.length+' item(s).')) return; snapshot('empty bin'); state.bin=[]; saveLS('pst-bin',state.bin); render(); toast('Recycle bin emptied'); }
+function restoreBin(i){ const b=state.bin[i]; if(!b) return; snapshot('restore from bin');
   const n=norm(b.name); state.muted.names=state.muted.names.filter(x=>x!==n); saveLS('pst-muted',state.muted);
   state.candidates.unshift({ id:uid(), kind:b.kind||'opening', headline:b.headline||'', needs_name:!b.name, auto:['name'],
     data:{ name:b.name||'', link:b.kind==='closure'?(b.link||''):'', source_links:b.kind==='opening'?(b.link||''):'', date_reported:todayISO(), notes:'Restored from recycle bin.' } });
@@ -1006,7 +1048,7 @@ function addByLink(){
     data:{ name:'', link:'', source_links:url, town:'', state:'', region:'', type:'',
            full_address:'', tract_mfi:'', data_year:'', date_reported:todayISO(),
            notes:'Added by link — enriching…' } };
-  cand.userAdded=true; state.candidates.unshift(cand); if(el) el.value=''; go('queue'); flashCard(cand.id);
+  snapshot('add by link'); cand.userAdded=true; state.candidates.unshift(cand); if(el) el.value=''; go('queue'); flashCard(cand.id);
   if(isOnMaster(cand)) toast('Heads up: this source is already on the master sheet');
   const findCard=()=>state.candidates.find(x=>x.id===cand.id);
   if(!BACKEND_URL){ const c=findCard(); if(c){ c.data.name=url; c.data.notes='Added by link — fill in the details (deploy the backend + set BACKEND_URL to auto-fill).'; } render(); toast('Added — fill it in (backend off)'); return; }
@@ -1030,6 +1072,7 @@ function addByLink(){
 function undoConfirmed(kind,id){
   const list=kind==='opening'?state.openings:state.closures;
   const e=list.find(x=>x.id===id); if(!e) return;
+  snapshot('return to queue');
   const pid=e.pairId;
   let members = pid ? list.filter(x=>x.pairId===pid) : [e];
   const primary = members.find(x=>!x.linked) || e;
@@ -1040,7 +1083,7 @@ function undoConfirmed(kind,id){
   const cand={ id: primary.srcId || uid(), kind, auto: primary.auto.slice(), data:d,
     merger: primary.merger, merger_partner: primary.merger_partner };
   state.candidates.unshift(cand);
-  render(); toast(members.length>1?'Merger pair returned to review queue':'Returned to review queue');
+  persist(); render(); toast(members.length>1?'Merger pair returned to review queue':'Returned to review queue');
 }
 function promote(id){
   const s=state.standby.find(x=>x.id===id); if(!s) return;
@@ -1051,7 +1094,7 @@ function promote(id){
   editing={mode:'new',kind:'closure',candidate:cand};
   counts(); buildForm('closure',cand.data,new Set(cand.auto),cand);
 }
-function dropStandby(id){ state.standby=state.standby.filter(x=>x.id!==id); render(); toast('Removed from standby watch'); }
+function dropStandby(id){ snapshot('remove from standby'); state.standby=state.standby.filter(x=>x.id!==id); render(); toast('Removed from standby watch'); }
 function closeForm(){ scrim.classList.remove('on'); editing=null; }
 
 /* ============================ copy + CSV ============================ */
@@ -1062,7 +1105,7 @@ function tsvFor(kind){ const list=kind==='opening'?state.openings:state.closures
 function copyText(text,msg){ const done=()=>toast(msg||'Copied'); const fb=()=>{ const ta=document.createElement('textarea'); ta.value=text; ta.style.position='fixed'; ta.style.opacity='0'; document.body.appendChild(ta); ta.select(); try{document.execCommand('copy');done();}catch(e){toast('Copy failed — select manually');} ta.remove(); }; if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done).catch(fb); else fb(); }
 function copyRow(kind,id){ const list=kind==='opening'?state.openings:state.closures; const e=list.find(x=>x.id===id); if(!e){ toast('Not found'); return; } copyText(rowCells(kind,e.data),'Entry copied — paste into your sheet'); }
 function copyHeaders(kind){ copyText(headerTsv(kind),'Header row copied'); }
-function removeRow(kind,id){ if(kind==='opening') state.openings=state.openings.filter(x=>x.id!==id); else state.closures=state.closures.filter(x=>x.id!==id); render(); toast('Removed from export'); }
+function removeRow(kind,id){ snapshot('remove from export'); if(kind==='opening') state.openings=state.openings.filter(x=>x.id!==id); else state.closures=state.closures.filter(x=>x.id!==id); persist(); render(); toast('Removed from export'); }
 function copyTable(kind){
   const list=kind==='opening'?state.openings:state.closures;
   if(!list.length){ toast('Nothing to copy yet'); return; }
@@ -1136,6 +1179,10 @@ document.getElementById('cancelForm').onclick=closeForm;
 document.getElementById('saveForm').onclick=saveForm;
 scrim.addEventListener('click',e=>{ if(e.target===scrim) closeForm(); });
 document.addEventListener('keydown',e=>{ if(e.key==='Escape'&&scrim.classList.contains('on')) closeForm(); });
+document.addEventListener('keydown',e=>{
+  const t=e.target, editable=t&&(/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName)||t.isContentEditable);
+  if((e.ctrlKey||e.metaKey)&&(e.key==='z'||e.key==='Z')&&!e.shiftKey&&!editable){ e.preventDefault(); undo(); }
+});
 // Paste your deployed Cloudflare Worker URL between the quotes to turn on the
 // on-type mini-sweep (location + NCES address/type + FFIEC income). Left blank,
 // naming a card still works — it just moves to the queue without auto-enrichment.
@@ -1145,7 +1192,7 @@ async function saveName(id){
   const c=state.candidates.find(x=>x.id===id); if(!c) return;
   const el=document.getElementById('nn_'+id); const v=((el&&el.value)||'').trim();
   if(!v){ if(el){ el.focus(); el.style.borderColor='var(--rose)'; } return; }
-  c.data.name=v; c.needs_name=false;
+  snapshot('name entry'); c.data.name=v; c.needs_name=false;
   if(c.auto && c.auto.indexOf('name')<0) c.auto.push('name');
   if(BACKEND_URL){                         // mini-sweep: enrich the moment a name is entered
     c._enriching=true; render();
