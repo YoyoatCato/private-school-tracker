@@ -204,6 +204,9 @@
       linear-gradient(180deg,#F7F8FC,#EFF0F7);
     background-attachment:fixed;
   }
+  @keyframes pstBounce {0%{transform:translateY(0)}20%{transform:translateY(-14px)}40%{transform:translateY(0)}55%{transform:translateY(-7px)}70%{transform:translateY(0)}85%{transform:translateY(-3px)}100%{transform:translateY(0)}}
+  .card.bounce{animation:pstBounce .9s ease;box-shadow:0 0 0 3px var(--rose),0 10px 26px rgba(0,0,0,.12)!important;border-radius:16px}
+  .kindswitch{display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-bottom:14px;font-size:.92em}
 </style>
 </head>
 <body>
@@ -440,7 +443,7 @@ function captureCorrections(c,data){
   saveLS('pst-corrections',state.corr);
   if(typeof BACKEND_URL!=='undefined' && BACKEND_URL){ try{ fetch(BACKEND_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'correct',linkkey:lk,headlinekey:hk,fields})}).catch(()=>{}); }catch(e){} }
 }
-function isMuted(c){ if(state.showMuted) return false; const n=norm(c.data&&c.data.name), h=norm(c.headline);
+function isMuted(c){ if(state.showMuted||c.userAdded) return false; const n=norm(c.data&&c.data.name), h=norm(c.headline);
   if((n&&state.muted.names.includes(n))||(h&&state.muted.names.includes(h))) return true;
   const t=(((c.data&&c.data.name)||'')+' '+(c.headline||'')).toLowerCase();
   return state.muted.phrases.some(p=>p&&t.includes(p)); }
@@ -564,12 +567,13 @@ function renderQueue(){
     view.innerHTML = `<div class="section-lead"><div><h2>Review queue</h2></div></div>`+addBox+hideNote+dup+empty('&#127793;','Queue is clear','Every candidate from the last sweep has been reviewed. The next run posts new cards here at 8:00 AM ET.');
     return;
   }
-  const needy = visibleAll.filter(c=>c.needs_name);
-  const ready = visibleAll.filter(c=>!c.needs_name);
+  const byRecent=(a,b)=>((b.data&&b.data.date_reported)||'').localeCompare((a.data&&a.data.date_reported)||'')||((a.data&&a.data.name)||'').localeCompare((b.data&&b.data.name)||'');
+  const needy = visibleAll.filter(c=>c.needs_name).sort(byRecent);
+  const ready = visibleAll.filter(c=>!c.needs_name).sort(byRecent);
 
   const readyCard = c=>{
     const d=c.data, isOpen=c.kind==='opening';
-    return `<article class="card ${isOpen?'open':'close'}"><div class="spine"></div><div class="body">
+    return `<article id="card_${c.id}" class="card ${isOpen?'open':'close'}"><div class="spine"></div><div class="body">
       <span class="badge ${isOpen?'open':'close'}">${isOpen?'&#9650; Opening':'&#9660; Closure'}</span>
       ${c.merger?'<span class="badge merger" style="margin-left:6px">&#9888; Merger</span>':''}
       <h3>${esc(d.name)}</h3>
@@ -583,13 +587,14 @@ function renderQueue(){
       ${linkChips(d,c.kind)}
       ${c._rejecting?rejectForm(c):`<div class="card-actions">
         <button class="btn primary" onclick="openForm('${c.id}')">Review &amp; approve</button>
+        <button class="btn ghost" onclick="flipKind('${c.id}')" title="Wrong type? Switch this card">&#8646; Make ${isOpen?'a closure':'an opening'}</button>
         <button class="btn ghost" onclick="reject('${c.id}')">Reject</button>
       </div>`}</div></article>`;
   };
 
   const needCard = c=>{
     const d=c.data, isOpen=c.kind==='opening';
-    return `<article class="card ${isOpen?'open':'close'}" style="outline:2px dashed var(--amber);outline-offset:-2px"><div class="spine" style="background:var(--amber)"></div><div class="body">
+    return `<article id="card_${c.id}" class="card ${isOpen?'open':'close'}" style="outline:2px dashed var(--amber);outline-offset:-2px"><div class="spine" style="background:var(--amber)"></div><div class="body">
       <span class="badge ${isOpen?'open':'close'}">${isOpen?'&#9650; Opening':'&#9660; Closure'}</span>
       <span class="badge" style="margin-left:6px;background:var(--amber-soft);color:var(--amber)">&#9998; Needs a name</span>
       <h3 style="color:var(--muted);font-weight:600">${esc(c.headline||d.name)}</h3>
@@ -602,7 +607,7 @@ function renderQueue(){
         <button class="btn primary" onclick="saveName('${c.id}')">Save name</button>
       </div>
       ${linkChips(d,c.kind)}
-      ${c._rejecting?rejectForm(c):`<div class="card-actions"><button class="btn ghost" onclick="reject('${c.id}')">Reject</button></div>`}
+      ${c._rejecting?rejectForm(c):`<div class="card-actions"><button class="btn ghost" onclick="flipKind('${c.id}')" title="Wrong type? Switch this card">&#8646; Make ${isOpen?'a closure':'an opening'}</button><button class="btn ghost" onclick="reject('${c.id}')">Reject</button></div>`}
       </div></article>`;
   };
 
@@ -624,7 +629,7 @@ function renderConfirmed(kind){
       `Approved entries land here and stay editable. Approve a card from the review queue to add your first.`);
     return;
   }
-  const rows = list.map(e=>{
+  const rows = list.slice().sort((a,b)=>((b.data&&b.data.date_reported)||'').localeCompare((a.data&&a.data.date_reported)||'')).map(e=>{
     const d=e.data, filled=cols.filter(([k])=>d[k]&&d[k]!=='').length;
     return `<div class="row"><div class="lead">
       <div class="name">${esc(d.name)} ${e.linked?'<span class="badge merger">&#9888; linked</span>':''}</div>
@@ -786,7 +791,7 @@ function openForm(candidateId){
 function editConfirmed(kind,id){
   const list=kind==='opening'?state.openings:state.closures;
   const e=list.find(x=>x.id===id); if(!e) return;
-  editing={mode:'edit',kind,id};
+  editing={mode:'edit',kind,origKind:kind,id};
   buildForm(kind,e.data,new Set(e.auto||[]),e);
 }
 function buildForm(kind,data,autoSet,ctx){
@@ -801,6 +806,10 @@ function buildForm(kind,data,autoSet,ctx){
   const groups=isOpen?GROUPS_OPEN:GROUPS_CLOSE;
   const form=document.getElementById('entryForm');
   let html='';
+  html+=`<div class="kindswitch"><span>This entry is an</span>
+    <button type="button" class="btn mini ${isOpen?'primary':'soft'}" onclick="switchKind('opening')">&#9650; Opening</button>
+    <button type="button" class="btn mini ${!isOpen?'primary':'soft'}" onclick="switchKind('closure')">&#9660; Closure</button>
+    <span style="color:var(--muted)">&mdash; switch if it was mis-classified</span></div>`;
   if(ctx&&ctx.merger&&editing.mode==='new'){
     html+=`<div class="merger-note"><span>&#9888;</span><span><b>Merger / consolidation.</b> On save, a second linked entry for <b>${esc(ctx.merger_partner)}</b> is created immediately after this one so the pair sits back-to-back.</span></div>`;
   }
@@ -872,6 +881,18 @@ function buildForm(kind,data,autoSet,ctx){
   document.getElementById('saveForm').textContent = editing.mode==='edit'?'Save changes':'Approve & save';
   scrim.classList.add('on');
 }
+function switchKind(k){
+  if(!editing || editing.kind===k) return;
+  const cur=collectForm();                                  // keep what's already typed
+  editing.kind=k;
+  if(editing.mode==='edit'){
+    const src=(editing.origKind==='opening')?state.openings:state.closures;
+    const e=src.find(x=>x.id===editing.id); if(e){ e.data={...e.data,...cur}; buildForm(k,e.data,new Set(e.auto||[]),e); }
+  } else {
+    const c=editing.candidate; c.kind=k; c.data={...c.data,...cur};
+    buildForm(k,c.data,new Set(c.auto),c);
+  }
+}
 function autoHint(k){
   if(k==='tract_mfi') return 'placeholder="$ tract MFI — FFIEC geomap"';
   if(k==='data_year') return 'placeholder="e.g. 2020"';
@@ -890,9 +911,14 @@ function saveForm(){
   const data=collectForm();
   if(!data.name){ toast('Add a school name first'); return; }
   if(editing.mode==='edit'){
-    const list=editing.kind==='opening'?state.openings:state.closures;
-    const e=list.find(x=>x.id===editing.id); e.data={...e.data,...data};
-    closeForm(); render(); toast('Changes saved'); return;
+    const origKind=editing.origKind||editing.kind;
+    const src=origKind==='opening'?state.openings:state.closures;
+    const idx=src.findIndex(x=>x.id===editing.id); const e=src[idx];
+    if(e){
+      e.data={...e.data,...data};
+      if(editing.kind!==origKind){ e.kind=editing.kind; src.splice(idx,1); (editing.kind==='opening'?state.openings:state.closures).unshift(e); }
+    }
+    closeForm(); render(); toast(editing.kind!==origKind?'Saved &amp; moved to '+editing.kind+'s':'Changes saved'); return;
   }
   const c=editing.candidate;
   captureCorrections(c,data);
@@ -918,6 +944,12 @@ function saveForm(){
   closeForm(); render();
   toast(c.merger?'Approved — linked pair added':'Entry approved');
   cheer();
+}
+function flipKind(id){
+  const c=state.candidates.find(x=>x.id===id); if(!c) return;
+  c.kind = c.kind==='opening' ? 'closure' : 'opening';
+  render(); flashCard(id);
+  toast('Switched to '+(c.kind==='opening'?'opening':'closure'));
 }
 function reject(id){ const c=state.candidates.find(x=>x.id===id); if(c){ c._rejecting=true; render(); } }
 function cancelReject(id){ const c=state.candidates.find(x=>x.id===id); if(c){ c._rejecting=false; render(); } }
@@ -974,7 +1006,7 @@ function addByLink(){
     data:{ name:'', link:'', source_links:url, town:'', state:'', region:'', type:'',
            full_address:'', tract_mfi:'', data_year:'', date_reported:todayISO(),
            notes:'Added by link — enriching…' } };
-  cand.userAdded=true; state.candidates.unshift(cand); if(el) el.value=''; go('queue');
+  cand.userAdded=true; state.candidates.unshift(cand); if(el) el.value=''; go('queue'); flashCard(cand.id);
   if(isOnMaster(cand)) toast('Heads up: this source is already on the master sheet');
   const findCard=()=>state.candidates.find(x=>x.id===cand.id);
   if(!BACKEND_URL){ const c=findCard(); if(c){ c.data.name=url; c.data.notes='Added by link — fill in the details (deploy the backend + set BACKEND_URL to auto-fill).'; } render(); toast('Added — fill it in (backend off)'); return; }
@@ -992,7 +1024,7 @@ function addByLink(){
       const keys=['link','source_links','type','town','state','region','full_address','tract_mfi','data_year'];
       c.auto=keys.filter(k=>c.data[k]).concat(['date_reported']);
       applyCorrections(c);
-      render(); toast('Added & auto-filled — review it below'); cheer();
+      render(); flashCard(c.id); toast('Added & auto-filled — review it below'); cheer();
     }).catch(()=>{ const c=findCard(); if(c){ c.data.name=url; c.data.notes='Added by link — could not reach the backend. Fill in manually.'; } render(); toast('Added, but backend unreachable'); });
 }
 function undoConfirmed(kind,id){
@@ -1053,6 +1085,14 @@ function exportCSV(kind){
 
 /* ============================ toast + nav ============================ */
 let toastTimer;
+function flashCard(id){
+  requestAnimationFrame(()=>{ setTimeout(()=>{
+    const el=document.getElementById('card_'+id); if(!el) return;
+    el.scrollIntoView({behavior:'smooth',block:'center'});
+    el.classList.remove('bounce'); void el.offsetWidth; el.classList.add('bounce');
+    setTimeout(()=>el.classList.remove('bounce'),1000);
+  },60); });
+}
 function toast(msg){
   document.getElementById('toastMsg').textContent=msg;
   const t=document.getElementById('toast'); t.classList.add('on');
