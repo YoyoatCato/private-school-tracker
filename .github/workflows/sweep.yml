@@ -2,32 +2,23 @@
 #
 # WHAT IT DOES
 #   Runs run_pipeline.py every weekday morning, then commits the refreshed
-#   data/candidates.json and data/meta.json back to the repo. If you serve the
-#   repo with GitHub Pages, the dashboard picks up the new candidates on its own.
+#   data/candidates.json, data/meta.json and data/roster.json back to the repo.
 #
-# HOW TO USE
-#   1. Put these files in a GitHub repo (all at the top level):
-#        index.html
-#        run_pipeline.py
-#        All_Closures___Openings.xlsx   (for de-duping; optional)
-#        cute-bgm.mp3                    (if you want the music)
-#      and this file at:  .github/workflows/sweep.yml
-#   2. Repo Settings -> Pages -> deploy from the "main" branch (root).
-#      Your dashboard is then live at https://<you>.github.io/<repo>/
-#   3. Settings -> Actions -> General -> Workflow permissions ->
-#      "Read and write permissions" (lets the job commit the data files).
-#   That's it. It runs itself each weekday and you can also trigger it by hand
-#   under the Actions tab ("Run workflow").
+# OPTIONAL: reference your live master Google Sheet (read-only) for de-duping.
+#   Add two repo secrets under Settings -> Secrets and variables -> Actions:
+#       GOOGLE_SA_JSON   = the whole service-account key .json file contents
+#       MASTER_SHEET_ID  = the long id from the sheet's URL
+#   and share the sheet with the service account's email as *Viewer*.
+#   Left unset, the sweep still runs and de-dupes against the workbook only.
 
 name: Daily school-tracker sweep
 
 on:
   schedule:
-    # GitHub cron is in UTC and does NOT follow daylight saving.
-    # 12:00 UTC = 8:00 AM Eastern during EDT (summer).
-    # For EST (winter) use '0 13 * * 1-5' instead.
+    # GitHub cron is UTC and does NOT follow daylight saving.
+    # 12:00 UTC = 8:00 AM Eastern during EDT (summer). Use '0 13 * * 1-5' for EST.
     - cron: '0 12 * * 1-5'      # Mon-Fri
-  workflow_dispatch: {}          # lets you run it manually from the Actions tab
+  workflow_dispatch: {}
 
 permissions:
   contents: write
@@ -43,15 +34,18 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install openpyxl
+        run: pip install openpyxl google-auth
 
       - name: Run the sweep
+        env:
+          GOOGLE_SA_JSON:  ${{ secrets.GOOGLE_SA_JSON }}
+          MASTER_SHEET_ID: ${{ secrets.MASTER_SHEET_ID }}
         run: python3 run_pipeline.py
 
       - name: Commit refreshed data
         run: |
           git config user.name  "sweep-bot"
           git config user.email "sweep-bot@users.noreply.github.com"
-          git add data/candidates.json data/meta.json
+          git add data/candidates.json data/meta.json data/roster.json
           git commit -m "Daily sweep $(date -u +%Y-%m-%d)" || echo "no changes to commit"
           git push
