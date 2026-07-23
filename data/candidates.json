@@ -33,6 +33,37 @@
   {
     "id": "sw20260723002",
     "kind": "opening",
+    "needs_name": false,
+    "headline": "St Joseph\u2019s Private School Opens New Extension Block",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "St Joseph\u2019s Private School",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-07-14",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.sarawaktribune.com/st-josephs-private-school-opens-new-extension-block/",
+      "notes": "From the Sarawak Tribune sweep \u2014 verify the details before approving. Headline: \"St Joseph\u2019s Private School Opens New Extension Block\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260723003",
+    "kind": "opening",
     "needs_name": true,
     "headline": "Brentwood delays new elementary school opening due to construction, staffing issues",
     "auto": [
@@ -54,39 +85,6 @@
       "exp_enrollment": "",
       "source_links": "https://www.wtae.com/article/brentwood-new-elementary-school-opening-delayed/73228630",
       "notes": "From the WTAE sweep \u2014 headline named no school; add the school name. Headline: \"Brentwood delays new elementary school opening due to construction, staffing issues\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260723003",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Opening of Brentwood Borough's new elementary school delayed until 2027, district says",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Pittsburgh Weather School",
-      "link": "",
-      "town": "",
-      "state": "CO",
-      "region": "Mountain",
-      "type": "",
-      "date_reported": "2026-07-22",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.cbsnews.com/pittsburgh/news/brentwood-borough-elementary-school-opening-delayed/",
-      "notes": "From the CBS News sweep \u2014 verify the details before approving. Headline: \"Opening of Brentwood Borough's new elementary school delayed until 2027, district says\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -133,6 +131,39 @@
     "id": "sw20260723005",
     "kind": "opening",
     "needs_name": false,
+    "headline": "Opening of Brentwood Borough's new elementary school delayed until 2027, district says",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "Pittsburgh Weather School",
+      "link": "",
+      "town": "",
+      "state": "CO",
+      "region": "Mountain",
+      "type": "",
+      "date_reported": "2026-07-22",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.cbsnews.com/pittsburgh/news/brentwood-borough-elementary-school-opening-delayed/",
+      "notes": "From the CBS News sweep \u2014 verify the details before approving. Headline: \"Opening of Brentwood Borough's new elementary school delayed until 2027, district says\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260723006",
+    "kind": "opening",
+    "needs_name": false,
     "headline": "New Pendleton High School preparing for grand opening",
     "auto": [
       "name",
@@ -163,7 +194,7 @@
     }
   },
   {
-    "id": "sw20260723006",
+    "id": "sw20260723007",
     "kind": "opening",
     "needs_name": false,
     "headline": "Greater Clark County celebrates opening of new, improved Parkwood Elementary School",
@@ -196,7 +227,7 @@
     }
   },
   {
-    "id": "sw20260723007",
+    "id": "sw20260723008",
     "kind": "opening",
     "needs_name": true,
     "headline": "New Christian school set to open in Lansing, a result of another's turmoil",
@@ -228,7 +259,7 @@
     }
   },
   {
-    "id": "sw20260723008",
+    "id": "sw20260723009",
     "kind": "opening",
     "needs_name": false,
     "headline": "Magnolia Oaks Academy set to open doors in SilverLeaf community for 2026-2027 school year",
@@ -261,7 +292,7 @@
     }
   },
   {
-    "id": "sw20260723009",
+    "id": "sw20260723010",
     "kind": "opening",
     "needs_name": false,
     "headline": "Opening of new Brentwood Elementary School delayed from September to January",
@@ -292,7 +323,7 @@
     }
   },
   {
-    "id": "sw20260723010",
+    "id": "sw20260723011",
     "kind": "opening",
     "needs_name": false,
     "headline": "MUSD celebrates opening of new K-8 school ahead of 1st day",
@@ -325,7 +356,7 @@
     }
   },
   {
-    "id": "sw20260723011",
+    "id": "sw20260723012",
     "kind": "opening",
     "needs_name": true,
     "headline": "A new nursing school is set to open in this major Salt Lake City suburb",
@@ -358,7 +389,7 @@
     }
   },
   {
-    "id": "sw20260723012",
+    "id": "sw20260723013",
     "kind": "opening",
     "needs_name": false,
     "headline": "New Willow School to open this fall, latest in Lansing bond milestones",
@@ -389,7 +420,7 @@
     }
   },
   {
-    "id": "sw20260723013",
+    "id": "sw20260723014",
     "kind": "opening",
     "needs_name": false,
     "headline": "Greater Clark County celebrates opening of new Parkwood Elementary School",
@@ -422,7 +453,7 @@
     }
   },
   {
-    "id": "sw20260723014",
+    "id": "sw20260723015",
     "kind": "opening",
     "needs_name": false,
     "headline": "New LAUSD superintendent\u2019s Opening of Schools address is part celebratory, part sobering",
@@ -455,7 +486,7 @@
     }
   },
   {
-    "id": "sw20260723015",
+    "id": "sw20260723016",
     "kind": "opening",
     "needs_name": false,
     "headline": "New Towne Acres Elementary School on track for 2027 opening",
@@ -486,7 +517,7 @@
     }
   },
   {
-    "id": "sw20260723016",
+    "id": "sw20260723017",
     "kind": "opening",
     "needs_name": false,
     "headline": "Choctaw-Nicoma Park Schools celebrates opening of new elementary school",
@@ -499,7 +530,7 @@
       "region"
     ],
     "data": {
-      "name": "Cam Sports Thunder OU OSU High School",
+      "name": "Choctaw High School",
       "link": "",
       "town": "",
       "state": "OK",
@@ -520,7 +551,7 @@
     }
   },
   {
-    "id": "sw20260723017",
+    "id": "sw20260723018",
     "kind": "opening",
     "needs_name": false,
     "headline": "It\u2019s elementary; two new schools set to open Aug. 10",
@@ -532,7 +563,7 @@
       "region"
     ],
     "data": {
-      "name": "Veterans Elementary School",
+      "name": "Rye Ranch Elementary School",
       "link": "",
       "town": "",
       "state": "FL",
@@ -553,7 +584,7 @@
     }
   },
   {
-    "id": "sw20260723018",
+    "id": "sw20260723019",
     "kind": "opening",
     "needs_name": false,
     "headline": "'Celebrate new frontiers': SPEF to celebrate grand opening of new Stillwater High School",
@@ -590,7 +621,7 @@
     }
   },
   {
-    "id": "sw20260723019",
+    "id": "sw20260723020",
     "kind": "opening",
     "needs_name": true,
     "headline": "Jupiter nonprofit celebrates 40 years by opening new elementary school",
@@ -613,39 +644,6 @@
       "exp_enrollment": "",
       "source_links": "https://www.wpbf.com/article/edna-w-runner-jupiter-florida-40-years-new-school/71899037",
       "notes": "From the WPBF sweep \u2014 headline named no school; add the school name. Headline: \"Jupiter nonprofit celebrates 40 years by opening new elementary school\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260723020",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Goddard School opening new preschools in Harford, Howard counties",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Goddard School",
-      "link": "",
-      "town": "",
-      "state": "MD",
-      "region": "South Atlantic",
-      "type": "",
-      "date_reported": "2026-07-10",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.baltimoresun.com/2026/07/10/goddard-school-opening-aberdeen-maple-lawn/",
-      "notes": "From the Baltimore Sun sweep \u2014 verify the details before approving. Headline: \"Goddard School opening new preschools in Harford, Howard counties\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -749,7 +747,7 @@
       "region"
     ],
     "data": {
-      "name": "Ruthin School",
+      "name": "Durham High School",
       "covid": "",
       "merging": "",
       "new_school": "",
