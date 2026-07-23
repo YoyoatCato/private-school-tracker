@@ -277,6 +277,10 @@ ARTICLE_JUNK = ("twitter", "bluesky", "whatsapp", " sms", "email", "facebook",
                 "sign up")
 NAME_LEADING_PLACE = {"new", "top", "the", "a", "this", "that", "downtown",
                       "local", "state", "north", "south", "east", "west", "central"}
+# nav/section words that show up in menus, not in real school names -> reject
+SECTION_WORDS = {"sports","varsity","athletics","scores","standings","subscribe",
+                 "newsletter","trending","podcast","obituaries","classifieds",
+                 "advertise","e-edition","headlines","sitemap"}
 
 
 def _clean_html_text(s):
@@ -295,6 +299,8 @@ def _plausible_school_name(nm, host):
     if len(words) < 2:
         return False
     if words[0].lower() in NAME_LEADING_PLACE:
+        return False
+    if any(w.lower().strip(".,") in SECTION_WORDS for w in words):   # e.g. "Sports High School"
         return False
     if len(words) == 2:                                # bare "<Place> School/Academy"
         first = words[0].lower().strip(".,")
@@ -333,17 +339,25 @@ def name_from_html(text, host):
                 nm = extract_school_name(clean_title(cand))
                 if nm and _plausible_school_name(nm, host):
                     return nm
-    body = _clean_html_text(SCRIPT_STYLE_RE.sub(' ', text))   # 2) most-repeated named school
-    counts = {}
-    for m in SCHOOL_NAME_RE.finditer(body[:8000]):
+    body = _clean_html_text(SCRIPT_STYLE_RE.sub(' ', text))   # 2) score named schools by context
+    scan = body[:8000]
+    scores = {}
+    for m in SCHOOL_NAME_RE.finditer(scan):
         nm = extract_school_name(m.group(0))
-        if nm and _plausible_school_name(nm, host):
-            counts.setdefault(nm, 0)
-    if not counts:
+        if not nm or not _plausible_school_name(nm, host):
+            continue
+        pos = m.start()
+        ctx = scan[max(0, pos - 45): pos + len(m.group(0)) + 45].lower()
+        sc = scores.get(nm, 0.0)
+        sc += 3 if pos < 1500 else 1                       # names in the lede matter more
+        if any(v in ctx for v in ("clos", "shut", "open", "launch", "expand")):
+            sc += 2                                          # near an opening/closing verb
+        scores[nm] = sc
+    if not scores:
         return None
-    for nm in counts:
-        counts[nm] = len(re.findall(re.escape(nm), body))
-    best, _ = sorted(counts.items(), key=lambda kv: (-kv[1], len(kv[0])))[0]
+    for nm in scores:                                       # small frequency tiebreak
+        scores[nm] += min(len(re.findall(re.escape(nm), body)), 6) * 0.5
+    best = sorted(scores.items(), key=lambda kv: (-kv[1], len(kv[0])))[0][0]
     return best
 
 
@@ -801,12 +815,32 @@ def load_learned_filters(path):
     return names, phrases, domains
 
 
+def _linkkey(u):
+    try:
+        p = urllib.parse.urlparse(u)
+        return (p.netloc.replace("www.", "") + p.path).rstrip("/").lower()
+    except Exception:
+        return (u or "").lower()
+
+
+def load_corrections(path):
+    """User corrections committed by the dashboard (data/corrections.json):
+    {"byLink": {linkkey: {field: value}}, "byHeadline": {norm(headline): {...}}}.
+    The sweep applies them so a fix you make sticks on future runs."""
+    try:
+        d = json.loads(Path(path).read_text())
+    except Exception:
+        return {}, {}
+    return d.get("byLink", {}) or {}, d.get("byHeadline", {}) or {}
+
+
 def main():
     started = datetime.now(EASTERN) if EASTERN else datetime.now()
     print("Sweep started:", started.isoformat(timespec="seconds"))
 
     known = load_workbook_names(WORKBOOK)
     muted_names, muted_phrases, muted_domains = load_learned_filters(OUT_DIR / "learned_filters.json")
+    corr_by_link, corr_by_headline = load_corrections(OUT_DIR / "corrections.json")
     if muted_names or muted_phrases or muted_domains:
         print(f"  learned filters: {len(muted_names)} names, {len(muted_phrases)} phrases, {len(muted_domains)} domains")
     print(f"  workbook: {len(known)} known school names for de-dupe")
@@ -940,6 +974,15 @@ def main():
                         enroll_source=it["source"], notes=note, type=school_type,
                         town=town, state=state or "", region=region or "", full_address=address,
                         tract_mfi=mfi_str, data_year=("2026" if mfi else ""))
+
+        corr = corr_by_link.get(_linkkey(real_link)) or corr_by_headline.get(nn)
+        if corr:
+            for _k, _v in corr.items():
+                if _k in data:
+                    data[_k] = _v
+            if corr.get("name"):
+                display_name = corr["name"]; data["name"] = corr["name"]; needs_name = False
+            print(f"  applied saved correction for: {display_name}")
 
         auto = ["name", "date_reported"]
         for k in ("link", "source_links", "enroll_source", "type", "town", "state",

@@ -410,9 +410,35 @@ const state = {
   openings: [], closures: [], rejected: [],
   bin: loadLS('pst-bin', []),
   muted: loadLS('pst-muted', {names:[], phrases:[]}),
+  corr: loadLS('pst-corrections', {byLink:{}, byHeadline:{}, examples:[]}),
   showMuted: false
 };
 if(!state.muted.names) state.muted={names:[],phrases:[]};
+if(!state.corr.byLink) state.corr={byLink:{},byHeadline:{},examples:[]};
+/* --- corrections memory: a fix you make before approving auto-applies to
+   future cards from the same link/headline, and (via the worker) to the daily sweep --- */
+function linkKey(u){ try{ const x=new URL(u); return (x.hostname.replace(/^www\./,'')+x.pathname).replace(/\/$/,'').toLowerCase(); }catch(e){ return (u||'').toLowerCase(); } }
+function srcLinkOf(d){ return (d&&(d.source_links||d.link))||''; }
+function applyCorrections(c){
+  if(!c||!c.data) return c;
+  const lk=linkKey(srcLinkOf(c.data)), hk=norm(c.headline||c.data.name);
+  const fx=Object.assign({}, (hk&&state.corr.byHeadline[hk])||{}, (lk&&state.corr.byLink[lk])||{});
+  if(Object.keys(fx).length){ Object.assign(c.data,fx); if(fx.name) c.needs_name=false; c._corrected=true; }
+  return c;
+}
+function captureCorrections(c,data){
+  if(!c||!c.data) return;
+  const fields={}; const auto=new Set(c.auto||[]);
+  auto.forEach(k=>{ const was=(c.data[k]==null?'':String(c.data[k])), now=(data[k]==null?'':String(data[k])); if(now && now!==was) fields[k]=data[k]; });
+  const wasName=c.data.name||''; if((data.name||'') && data.name!==wasName) fields.name=data.name;   // name card may not be in auto[]
+  if(!Object.keys(fields).length) return;
+  const lk=linkKey(srcLinkOf(c.data)), hk=norm(c.headline||wasName);
+  if(lk) state.corr.byLink[lk]=Object.assign(state.corr.byLink[lk]||{},fields);
+  if(hk) state.corr.byHeadline[hk]=Object.assign(state.corr.byHeadline[hk]||{},fields);
+  if(fields.name){ state.corr.examples.push({headline:(c.headline||wasName||'').slice(0,160), name:fields.name}); state.corr.examples=state.corr.examples.slice(-20); }
+  saveLS('pst-corrections',state.corr);
+  if(typeof BACKEND_URL!=='undefined' && BACKEND_URL){ try{ fetch(BACKEND_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'correct',linkkey:lk,headlinekey:hk,fields})}).catch(()=>{}); }catch(e){} }
+}
 function isMuted(c){ if(state.showMuted) return false; const n=norm(c.data&&c.data.name), h=norm(c.headline);
   if((n&&state.muted.names.includes(n))||(h&&state.muted.names.includes(h))) return true;
   const t=(((c.data&&c.data.name)||'')+' '+(c.headline||'')).toLowerCase();
@@ -420,6 +446,7 @@ function isMuted(c){ if(state.showMuted) return false; const n=norm(c.data&&c.da
 function addMuted(name,phrase){ const n=norm(name); if(n&&!state.muted.names.includes(n)) state.muted.names.push(n);
   const p=(phrase||'').trim().toLowerCase(); if(p&&p.length>=4&&!state.muted.phrases.includes(p)) state.muted.phrases.push(p);
   saveLS('pst-muted',state.muted); }
+state.candidates.forEach(applyCorrections);
 let seq = 100;
 function clone(o){return JSON.parse(JSON.stringify(o))}
 function uid(){return "e"+(++seq)}
@@ -829,6 +856,7 @@ function saveForm(){
     closeForm(); render(); toast('Changes saved'); return;
   }
   const c=editing.candidate;
+  captureCorrections(c,data);
   const entry={id:uid(),kind:editing.kind,auto:c.auto.slice(),data,srcId:c.id,merger:c.merger,merger_partner:c.merger_partner};
   if(editing.kind==='opening'){ state.openings.unshift(entry); }
   else {
@@ -911,7 +939,7 @@ function addByLink(){
   const findCard=()=>state.candidates.find(x=>x.id===cand.id);
   if(!BACKEND_URL){ const c=findCard(); if(c){ c.data.name=url; c.data.notes='Added by link — fill in the details (deploy the backend + set BACKEND_URL to auto-fill).'; } render(); toast('Added — fill it in (backend off)'); return; }
   toast('Fetching & auto-filling…');
-  fetch(BACKEND_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({url})})
+  fetch(BACKEND_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({url, examples:state.corr.examples})})
     .then(r=>r.json()).then(e=>{ const c=findCard(); if(!c) return;
       if(e.error){ c.data.name=e.headline||url; c.needs_name=!(e.headline); c.data.notes='Added by link — auto-fill failed ('+e.error+'). Fill in manually.'; render(); toast('Added, but auto-fill failed: '+e.error); return; }
       c.kind=e.kind||'opening'; c.needs_name=!!e.needs_name; c.headline=e.headline||'';
@@ -921,6 +949,7 @@ function addByLink(){
       c.data.notes='Added by link — verify before approving.'+(e.mfi_area?(' Income = 2026 FFIEC MSA/MD MFI for '+e.mfi_area+'.'):'');
       const keys=['link','source_links','type','town','state','region','full_address','tract_mfi','data_year'];
       c.auto=keys.filter(k=>c.data[k]).concat(['date_reported']);
+      applyCorrections(c);
       render(); toast('Added & auto-filled — review it below'); cheer();
     }).catch(()=>{ const c=findCard(); if(c){ c.data.name=url; c.data.notes='Added by link — could not reach the backend. Fill in manually.'; } render(); toast('Added, but backend unreachable'); });
 }
@@ -1008,7 +1037,7 @@ async function refreshFromData(manual){
     let added=0;
     if(Array.isArray(cands)){
       const have=new Set([...state.candidates,...state.openings,...state.closures].map(keyOf));
-      cands.forEach(c=>{ const k=keyOf(c); if(!have.has(k)){ state.candidates.push(c); have.add(k); added++; } });
+      cands.forEach(c=>{ const k=keyOf(c); if(!have.has(k)){ applyCorrections(c); state.candidates.push(c); have.add(k); added++; } });
     }
     counts(); if(activeTab==='queue') render();
     if(manual) toast(added ? `${added} new candidate${added>1?'s':''} added to the queue` : 'Up to date — no new candidates since this morning');
