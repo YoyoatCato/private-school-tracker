@@ -827,6 +827,26 @@ function buildForm(kind,data,autoSet,ctx){
     });
   }
 
+  /* Auto-calc enrolled counts from the total enrollment + each demographic %.
+     enrolled = round(% / 100 * total). Editing a count by hand locks it (stops
+     auto-updating that one); the total or a % change refills the rest. */
+  const enrollEl=form.querySelector('[name="enrollment"]');
+  const DEMO_PAIRS=[['pct_black','enr_black'],['pct_hispanic','enr_hispanic'],['pct_asian','enr_asian'],['pct_white','enr_white'],['pct_other','enr_other']];
+  const numOf=v=>{ const n=parseFloat(String(v||'').replace(/[^0-9.]/g,'')); return isFinite(n)?n:null; };
+  function calcDemo(pctEl,enrEl){
+    if(!pctEl||!enrEl||enrEl.dataset.manual==='1') return;
+    const total=numOf(enrollEl&&enrollEl.value), pct=numOf(pctEl.value);
+    if(total==null||pct==null){ return; }
+    enrEl.value=Math.round(total*pct/100);
+    const f=enrEl.closest('.field'); if(f) f.classList.add('filled');
+  }
+  DEMO_PAIRS.forEach(([p,e])=>{
+    const pctEl=form.querySelector(`[name="${p}"]`), enrEl=form.querySelector(`[name="${e}"]`);
+    if(pctEl) pctEl.addEventListener('input',()=>calcDemo(pctEl,enrEl));
+    if(enrEl) enrEl.addEventListener('input',()=>{ enrEl.dataset.manual='1'; });   // manual override wins
+  });
+  if(enrollEl) enrollEl.addEventListener('input',()=>DEMO_PAIRS.forEach(([p,e])=>calcDemo(form.querySelector(`[name="${p}"]`),form.querySelector(`[name="${e}"]`))));
+
   document.getElementById('formNote').textContent = editing.mode==='edit'
     ? 'Editing a confirmed entry.'
     : 'Auto-tagged fields were filled by the sweep. Leave anything unverified blank.';
