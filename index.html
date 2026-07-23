@@ -411,6 +411,7 @@ const state = {
   bin: loadLS('pst-bin', []),
   muted: loadLS('pst-muted', {names:[], phrases:[]}),
   corr: loadLS('pst-corrections', {byLink:{}, byHeadline:{}, examples:[]}),
+  roster: {names:new Set(), links:new Set(), updated:''},
   showMuted: false
 };
 if(!state.muted.names) state.muted={names:[],phrases:[]};
@@ -446,6 +447,20 @@ function isMuted(c){ if(state.showMuted) return false; const n=norm(c.data&&c.da
 function addMuted(name,phrase){ const n=norm(name); if(n&&!state.muted.names.includes(n)) state.muted.names.push(n);
   const p=(phrase||'').trim().toLowerCase(); if(p&&p.length>=4&&!state.muted.phrases.includes(p)) state.muted.phrases.push(p);
   saveLS('pst-muted',state.muted); }
+/* A candidate is "on master" if its name or its source link already appears in
+   the live master sheet (data/roster.json, refreshed by the daily sweep). User-
+   added cards are only flagged, never hidden, so a paste never silently vanishes. */
+function isOnMaster(c){
+  if(!state.roster) return false;
+  const n=norm(c.data&&c.data.name);
+  if(n && state.roster.names.has(n)) return true;
+  const lk=(typeof linkKey==='function')?linkKey(srcLinkOf(c.data||{})):'';
+  return !!(lk && state.roster.links.has(lk));
+}
+function loadRoster(j){
+  if(!j) return;
+  state.roster={ names:new Set((j.names||[]).map(norm)), links:new Set(j.links||[]), updated:j.updated||'' };
+}
 state.candidates.forEach(applyCorrections);
 let seq = 100;
 function clone(o){return JSON.parse(JSON.stringify(o))}
@@ -540,8 +555,11 @@ function renderQueue(){
     <div style="font-weight:600;margin-bottom:4px">&#10133; Add an entry by link</div>
     <div style="font-size:.9em;color:var(--muted);margin-bottom:8px">Found news the sweep missed? Paste the article link and it auto-fills the same way a sweep does.${BACKEND_URL?'':' <b>(deploy the backend &amp; set BACKEND_URL to enable auto-fill)</b>'}</div>
     <div style="display:flex;gap:8px"><input id="addUrl" placeholder="https://… article link" style="flex:1;min-width:0;padding:8px 11px;border:1px solid var(--line);border-radius:10px;font:inherit;background:var(--card)" onkeydown="if(event.key===\'Enter\')addByLink()"><button class="btn primary" onclick="addByLink()">Add &amp; auto-fill</button></div></div>`;
-  const visibleAll=state.candidates.filter(c=>!isMuted(c)), hiddenN=state.candidates.length-visibleAll.length;
-  const hideNote = hiddenN? `<div class="dupnote"><span>&#9851;</span><span><b>${hiddenN} candidate(s) auto-hidden by learned rejections.</b> <a href="#" onclick="state.showMuted=!state.showMuted;render();return false;">${state.showMuted?'hide again':'show them'}</a></span></div>`:'';
+  const onMaster=c=>!state.showMuted && !c.userAdded && isOnMaster(c);
+  const visibleAll=state.candidates.filter(c=>!isMuted(c) && !onMaster(c));
+  const hiddenN=state.candidates.filter(c=>!state.showMuted&&isMuted(c)).length;
+  const masterN=state.candidates.filter(c=>!isMuted(c)&&onMaster(c)).length;
+  const hideNote = (hiddenN||masterN)? `<div class="dupnote"><span>&#9851;</span><span><b>${[hiddenN?hiddenN+' auto-hidden by learned rejections':'',masterN?masterN+' already on the master sheet':''].filter(Boolean).join(' &middot; ')}.</b> <a href="#" onclick="state.showMuted=!state.showMuted;render();return false;">${state.showMuted?'hide again':'show them'}</a></span></div>`:'';
   if(!visibleAll.length){
     view.innerHTML = `<div class="section-lead"><div><h2>Review queue</h2></div></div>`+addBox+hideNote+dup+empty('&#127793;','Queue is clear','Every candidate from the last sweep has been reviewed. The next run posts new cards here at 8:00 AM ET.');
     return;
@@ -956,7 +974,8 @@ function addByLink(){
     data:{ name:'', link:'', source_links:url, town:'', state:'', region:'', type:'',
            full_address:'', tract_mfi:'', data_year:'', date_reported:todayISO(),
            notes:'Added by link — enriching…' } };
-  state.candidates.unshift(cand); if(el) el.value=''; go('queue');
+  cand.userAdded=true; state.candidates.unshift(cand); if(el) el.value=''; go('queue');
+  if(isOnMaster(cand)) toast('Heads up: this source is already on the master sheet');
   const findCard=()=>state.candidates.find(x=>x.id===cand.id);
   if(!BACKEND_URL){ const c=findCard(); if(c){ c.data.name=url; c.data.notes='Added by link — fill in the details (deploy the backend + set BACKEND_URL to auto-fill).'; } render(); toast('Added — fill it in (backend off)'); return; }
   toast('Fetching & auto-filling…');
@@ -967,7 +986,9 @@ function addByLink(){
       c.data.link=''; c.data.source_links='';                     // let the backend place the news link
       c.data=Object.assign(c.data, e.data||{});
       if(!c.data.name) c.data.name=e.headline||url;
-      c.data.notes='Added by link — verify before approving.'+(e.mfi_area?(' Income = 2026 FFIEC MSA/MD MFI for '+e.mfi_area+'.'):'');
+      if(isOnMaster(c)) c.data.notes='\u26a0 Already on the master sheet — likely a duplicate. ';
+      else c.data.notes='';
+      c.data.notes+='Added by link — verify before approving.'+(e.mfi_area?(' Income = 2026 FFIEC MSA/MD MFI for '+e.mfi_area+'.'):'');
       const keys=['link','source_links','type','town','state','region','full_address','tract_mfi','data_year'];
       c.auto=keys.filter(k=>c.data[k]).concat(['date_reported']);
       applyCorrections(c);
@@ -1053,7 +1074,8 @@ function keyOf(x){ const d=x.data||x||{}; return [(d.name||'').toLowerCase().tri
 async function refreshFromData(manual){
   try{
     const grab=async p=>{ const r=await fetch(p,{cache:'no-store'}); return r.ok?r.json():null; };
-    const [meta,cands]=await Promise.all([grab('data/meta.json').catch(()=>null), grab('data/candidates.json').catch(()=>null)]);
+    const [meta,cands,roster]=await Promise.all([grab('data/meta.json').catch(()=>null), grab('data/candidates.json').catch(()=>null), grab('data/roster.json').catch(()=>null)]);
+    if(roster) loadRoster(roster);
     if(meta&&meta.last_run) state.meta.last_run=meta.last_run;
     let added=0;
     if(Array.isArray(cands)){

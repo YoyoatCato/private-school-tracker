@@ -45,7 +45,7 @@ alert -> "Deliver to" -> "RSS feed", copy the feed URL, and paste it into ALERT_
 When ALERT_FEEDS is non-empty, those feeds are used instead of the Google News search.
 """
 
-import json, re, html, urllib.parse, urllib.request
+import os, json, re, html, urllib.parse, urllib.request
 from datetime import datetime, timezone
 from xml.etree import ElementTree as ET
 from pathlib import Path
@@ -651,6 +651,59 @@ def load_workbook_names(path):
     return {n for n in names if len(n) >= 6}   # ignore very short/ambiguous names
 
 
+def load_sheet_roster():
+    """Read the LIVE master Google Sheet (read-only) via a service account so the
+    sweep can reference everything already on the list. Configure two GitHub
+    Actions secrets:
+        GOOGLE_SA_JSON   - the whole service-account key .json file contents
+        MASTER_SHEET_ID  - the spreadsheet id (long id in the sheet's URL)
+    Share the sheet with the service account's email as *Viewer*. We never edit it.
+    Returns (names:set, linkkeys:set). Silent no-op when unconfigured."""
+    sa_raw = os.environ.get("GOOGLE_SA_JSON", "").strip()
+    sid    = os.environ.get("MASTER_SHEET_ID", "").strip()
+    if not sa_raw or not sid:
+        print("  (Google Sheet roster skipped: set GOOGLE_SA_JSON + MASTER_SHEET_ID secrets to enable)")
+        return set(), set()
+    try:
+        from google.oauth2 import service_account
+        from google.auth.transport.requests import Request as GARequest
+        creds = service_account.Credentials.from_service_account_info(
+            json.loads(sa_raw),
+            scopes=["https://www.googleapis.com/auth/spreadsheets.readonly"])
+        creds.refresh(GARequest())
+        token = creds.token
+        base = f"https://sheets.googleapis.com/v4/spreadsheets/{sid}"
+
+        def api(path):
+            req = urllib.request.Request(base + path,
+                                         headers={"Authorization": "Bearer " + token})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return json.loads(r.read().decode("utf-8", "replace"))
+
+        titles = [sh["properties"]["title"] for sh in api("?fields=sheets(properties(title))").get("sheets", [])]
+        names, linkkeys = set(), set()
+        url_re = re.compile(r"https?://\S+")
+        for t in titles:
+            vals = api("/values/" + urllib.parse.quote(t) + "?majorDimension=ROWS").get("values", [])
+            if not vals:
+                continue
+            header = [str(h).strip().lower() for h in vals[0]]
+            name_i = next((i for i, h in enumerate(header) if "name" in h or "school" in h), 0)
+            for row in vals[1:]:
+                if name_i < len(row) and row[name_i]:
+                    nm = norm(str(row[name_i]))
+                    if len(nm) >= 6:
+                        names.add(nm)
+                for cell in row:
+                    for u in url_re.findall(str(cell)):
+                        linkkeys.add(_linkkey(u.rstrip('.,;)]"')))
+        print(f"  Google Sheet roster: {len(names)} names + {len(linkkeys)} source links across {len(titles)} tab(s)")
+        return names, linkkeys
+    except Exception as e:
+        print(f"  (Google Sheet roster skipped: {e})")
+        return set(), set()
+
+
 # blank record templates matching the dashboard's column schema
 OPEN_KEYS  = ["name","link","town","state","region","type","date_reported","opening_date",
               "exp_enrollment","source_links","notes","tuition","tuition_notes","link_b",
@@ -858,6 +911,8 @@ def main():
     print("Sweep started:", started.isoformat(timespec="seconds"))
 
     known = load_workbook_names(WORKBOOK)
+    sheet_names, sheet_links = load_sheet_roster()   # live master Google Sheet (read-only)
+    known |= sheet_names
     muted_names, muted_phrases, muted_domains = load_learned_filters(OUT_DIR / "learned_filters.json")
     corr_by_link, corr_by_headline = load_corrections(OUT_DIR / "corrections.json")
     if muted_names or muted_phrases or muted_domains:
@@ -922,6 +977,10 @@ def main():
             continue
 
         real_link = resolve_gnews_link(it["link"])
+
+        if sheet_links and _linkkey(real_link) in sheet_links:
+            print(f"  skip (source already on master sheet): {title}")
+            continue
 
         if muted_domains:
             try:
@@ -1021,6 +1080,11 @@ def main():
     hour12 = started.strftime("%I").lstrip("0") or "12"
     last_run = started.strftime(f"%a, %b %d %Y &middot; {hour12}:%M %p") + " ET"
     (OUT_DIR / "meta.json").write_text(json.dumps({"last_run": last_run}))
+    (OUT_DIR / "roster.json").write_text(json.dumps({          # dashboard reads this for live dedup
+        "updated": last_run,
+        "names": sorted(known),
+        "links": sorted(sheet_links),
+    }, indent=2))
 
     opens = sum(1 for c in candidates if c["kind"] == "opening")
     closes = len(candidates) - opens
