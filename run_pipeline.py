@@ -93,6 +93,25 @@ STOP_HINTS   = ("university", "board of education", "public school district",
                 "community and technical college", "technical college",
                 "school board", "county board", "board of trustees", "unified school district",
                 "public school", "public schools")
+
+# Daycares / preschools that only serve below kindergarten are out of scope
+# (unless the name shows elementary or higher grades). See methodology.
+DAYCARE_HINTS = ("daycare", "day care", "day-care", "nursery school", "child care",
+                 "childcare", "learning center for infants", "infant care")
+PRESCHOOL_ONLY = ("preschool", "pre-school", "pre-k", "pre-kindergarten", "prekindergarten")
+GRADE_SIGNALS  = ("elementary", "middle school", "high school", "grade", "k-12", "k-8",
+                  "k-5", "k-6", "kindergarten through", "prep", "seminary", "junior high",
+                  "grammar school", "secondary")
+
+
+def is_below_k_only(title):
+    """True for daycare/preschool-only items with no elementary-or-higher signal."""
+    t = title.lower()
+    if any(h in t for h in DAYCARE_HINTS):
+        return True
+    if any(h in t for h in PRESCHOOL_ONLY) and not any(g in t for g in GRADE_SIGNALS):
+        return True
+    return False
 # short abbreviations that only mean something as a whole word (avoid matching
 # "isd" inside words like "disdain"):
 STOP_WORD_RE = re.compile(r"\bisd\b", re.I)
@@ -865,6 +884,9 @@ def main():
             continue
         if is_non_event(title):
             print(f"  skip (not an opening/closure event): {title}")
+            continue
+        if is_below_k_only(title):
+            print(f"  skip (daycare / preschool-only, below kindergarten): {title}")
             continue
         if US_ONLY:
             hay = (title + " " + it["source"]).lower()
