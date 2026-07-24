@@ -1,6 +1,39 @@
 [
   {
-    "id": "sw20260723001",
+    "id": "sw20260724001",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "Pinnacle Preparatory High School opens to meet growing private school demand",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "Pinnacle Preparatory High School",
+      "link": "",
+      "town": "",
+      "state": "WA",
+      "region": "Pacific",
+      "type": "",
+      "date_reported": "2026-07-10",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://johnsoncitypress.com/news/381414/pinnacle-preparatory-high-school-opens-to-meet-growing-private-school-demand/",
+      "notes": "From the Johnson City Press sweep \u2014 verify the details before approving. Headline: \"Pinnacle Preparatory High School opens to meet growing private school demand\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260724002",
     "kind": "opening",
     "needs_name": true,
     "headline": "A $52,000 private Mandarin immersion school opens as SFUSD\u2019s waitlists grow",
@@ -31,7 +64,7 @@
     }
   },
   {
-    "id": "sw20260723002",
+    "id": "sw20260724003",
     "kind": "opening",
     "needs_name": false,
     "headline": "St Joseph\u2019s Private School Opens New Extension Block",
@@ -62,7 +95,69 @@
     }
   },
   {
-    "id": "sw20260723003",
+    "id": "sw20260724004",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "Grand opening set for Suffolk\u2019s new JFK Middle School",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "JFK Middle School",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-07-23",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.wavy.com/news/grand-opening-set-for-suffolks-new-jfk-middle-school/",
+      "notes": "From the WAVY.com sweep \u2014 verify the details before approving. Headline: \"Grand opening set for Suffolk\u2019s new JFK Middle School\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260724005",
+    "kind": "opening",
+    "needs_name": true,
+    "headline": "Pacific Northwest Ballet to open new school location in Sodo",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "Pacific Northwest Ballet to open new school location in Sodo",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-07-23",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.seattletimes.com/entertainment/dance/pacific-northwest-ballet-to-open-new-school-location-in-sodo/",
+      "notes": "From the The Seattle Times sweep \u2014 headline named no school; add the school name. Headline: \"Pacific Northwest Ballet to open new school location in Sodo\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260724006",
     "kind": "opening",
     "needs_name": true,
     "headline": "Brentwood delays new elementary school opening due to construction, staffing issues",
@@ -77,8 +172,8 @@
       "name": "Brentwood delays new elementary school opening due to construction, staffing issues",
       "link": "",
       "town": "",
-      "state": "AR",
-      "region": "West South Central",
+      "state": "PA",
+      "region": "Middle Atlantic",
       "type": "",
       "date_reported": "2026-07-22",
       "opening_date": "",
@@ -95,40 +190,7 @@
     }
   },
   {
-    "id": "sw20260723004",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "New Brentwood Elementary School\u2019s opening delayed",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Brentwood Elementary School",
-      "link": "",
-      "town": "",
-      "state": "WA",
-      "region": "Pacific",
-      "type": "",
-      "date_reported": "2026-07-23",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.wpxi.com/news/local/new-brentwood-elementary-schools-opening-delayed/KXPLARRAZFHHFODCP5KOQ3T44Q/",
-      "notes": "From the WPXI sweep \u2014 verify the details before approving. Headline: \"New Brentwood Elementary School\u2019s opening delayed\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260723005",
+    "id": "sw20260724007",
     "kind": "opening",
     "needs_name": false,
     "headline": "Opening of Brentwood Borough's new elementary school delayed until 2027, district says",
@@ -161,73 +223,7 @@
     }
   },
   {
-    "id": "sw20260723006",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "New Pendleton High School preparing for grand opening",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Pendleton High School",
-      "link": "",
-      "town": "",
-      "state": "AL",
-      "region": "East South Central",
-      "type": "",
-      "date_reported": "2026-07-23",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://upstatetoday.com/news/new-pendleton-high-school-preparing-for-grand-opening/article_6dc73599-b7da-40fe-b8f4-f3db074685bc.html",
-      "notes": "From the upstatetoday.com sweep \u2014 verify the details before approving. Headline: \"New Pendleton High School preparing for grand opening\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260723007",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Greater Clark County celebrates opening of new, improved Parkwood Elementary School",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Parkwood Elementary School",
-      "link": "",
-      "town": "",
-      "state": "KY",
-      "region": "East South Central",
-      "type": "",
-      "date_reported": "2026-07-23",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.wdrb.com/news/education/greater-clark-county-celebrates-opening-of-new-improved-parkwood-elementary-school/article_fe48d7db-2971-4022-8599-44af65ba8f58.html",
-      "notes": "From the WDRB sweep \u2014 verify the details before approving. Headline: \"Greater Clark County celebrates opening of new, improved Parkwood Elementary School\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260723008",
+    "id": "sw20260724008",
     "kind": "opening",
     "needs_name": true,
     "headline": "New Christian school set to open in Lansing, a result of another's turmoil",
@@ -259,10 +255,10 @@
     }
   },
   {
-    "id": "sw20260723009",
+    "id": "sw20260724009",
     "kind": "opening",
     "needs_name": false,
-    "headline": "Magnolia Oaks Academy set to open doors in SilverLeaf community for 2026-2027 school year",
+    "headline": "New Deer Creek High School set for July 29 grand opening",
     "auto": [
       "name",
       "date_reported",
@@ -271,17 +267,17 @@
       "region"
     ],
     "data": {
-      "name": "Magnolia Oaks Academy",
+      "name": "Deer Creek High School",
       "link": "",
       "town": "",
-      "state": "GA",
-      "region": "South Atlantic",
+      "state": "UT",
+      "region": "Mountain",
       "type": "",
-      "date_reported": "2026-07-22",
+      "date_reported": "2026-07-23",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://www.news4jax.com/news/local/2026/07/22/magnolia-oaks-academy-set-to-open-doors-in-silverleaf-community-for-2026-2027-school-year/",
-      "notes": "From the News4JAX sweep \u2014 verify the details before approving. Headline: \"Magnolia Oaks Academy set to open doors in SilverLeaf community for 2026-2027 school year\"",
+      "source_links": "https://www.kpcw.org/show/local-news-hour/2026-07-23/new-deer-creek-high-school-set-for-july-29-grand-opening",
+      "notes": "From the KPCW sweep \u2014 verify the details before approving. Headline: \"New Deer Creek High School set for July 29 grand opening\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -292,7 +288,7 @@
     }
   },
   {
-    "id": "sw20260723010",
+    "id": "sw20260724010",
     "kind": "opening",
     "needs_name": false,
     "headline": "Opening of new Brentwood Elementary School delayed from September to January",
@@ -323,29 +319,27 @@
     }
   },
   {
-    "id": "sw20260723011",
+    "id": "sw20260724011",
     "kind": "opening",
     "needs_name": false,
-    "headline": "MUSD celebrates opening of new K-8 school ahead of 1st day",
+    "headline": "New Brentwood Elementary School\u2019s opening delayed",
     "auto": [
       "name",
       "date_reported",
-      "source_links",
-      "state",
-      "region"
+      "source_links"
     ],
     "data": {
-      "name": "Alma Farrell Innovation Academy",
+      "name": "Brentwood Elementary School",
       "link": "",
       "town": "",
-      "state": "AZ",
-      "region": "Mountain",
+      "state": "",
+      "region": "",
       "type": "",
-      "date_reported": "2026-07-20",
+      "date_reported": "2026-07-23",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://www.pinalcentral.com/free-access/musd-celebrates-opening-of-new-k-8-school-ahead-of-1st-day/article_2d2f72c5-51d6-4df8-b9ce-4a54988fa384.html",
-      "notes": "From the PinalCentral.com sweep \u2014 verify the details before approving. Headline: \"MUSD celebrates opening of new K-8 school ahead of 1st day\"",
+      "source_links": "https://www.wpxi.com/news/local/new-brentwood-elementary-schools-opening-delayed/KXPLARRAZFHHFODCP5KOQ3T44Q/",
+      "notes": "From the WPXI sweep \u2014 verify the details before approving. Headline: \"New Brentwood Elementary School\u2019s opening delayed\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -356,7 +350,40 @@
     }
   },
   {
-    "id": "sw20260723012",
+    "id": "sw20260724012",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "New Target to open in Upstate this weekend; high school band performs at soft opening",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "Seneca High School",
+      "link": "",
+      "town": "",
+      "state": "SC",
+      "region": "South Atlantic",
+      "type": "",
+      "date_reported": "2026-07-23",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.wyff4.com/article/new-target-seneca-south-carolina/73247539",
+      "notes": "From the WYFF sweep \u2014 verify the details before approving. Headline: \"New Target to open in Upstate this weekend; high school band performs at soft opening\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260724013",
     "kind": "opening",
     "needs_name": true,
     "headline": "A new nursing school is set to open in this major Salt Lake City suburb",
@@ -389,7 +416,40 @@
     }
   },
   {
-    "id": "sw20260723013",
+    "id": "sw20260724014",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "Greater Clark County celebrates opening of new, improved Parkwood Elementary School",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "Parkwood Elementary School",
+      "link": "",
+      "town": "",
+      "state": "KY",
+      "region": "East South Central",
+      "type": "",
+      "date_reported": "2026-07-23",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.wdrb.com/news/education/greater-clark-county-celebrates-opening-of-new-improved-parkwood-elementary-school/article_fe48d7db-2971-4022-8599-44af65ba8f58.html",
+      "notes": "From the WDRB sweep \u2014 verify the details before approving. Headline: \"Greater Clark County celebrates opening of new, improved Parkwood Elementary School\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260724015",
     "kind": "opening",
     "needs_name": false,
     "headline": "New Willow School to open this fall, latest in Lansing bond milestones",
@@ -420,10 +480,10 @@
     }
   },
   {
-    "id": "sw20260723014",
+    "id": "sw20260724016",
     "kind": "opening",
     "needs_name": false,
-    "headline": "Greater Clark County celebrates opening of new Parkwood Elementary School",
+    "headline": "Papillion La Vista opening new elementary school",
     "auto": [
       "name",
       "date_reported",
@@ -432,17 +492,17 @@
       "region"
     ],
     "data": {
-      "name": "Parkwood Elementary School",
+      "name": "High School",
       "link": "",
       "town": "",
-      "state": "KY",
-      "region": "East South Central",
+      "state": "NE",
+      "region": "West North Central",
       "type": "",
-      "date_reported": "2026-07-22",
+      "date_reported": "2026-07-23",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://www.wdrb.com/greater-clark-county-celebrates-opening-of-new-parkwood-elementary-school/video_1d3ab270-7d1f-5a9c-87c5-d34e839b35fd.html",
-      "notes": "From the WDRB sweep \u2014 verify the details before approving. Headline: \"Greater Clark County celebrates opening of new Parkwood Elementary School\"",
+      "source_links": "https://www.wowt.com/video/2026/07/23/papillion-la-vista-opening-new-elementary-school/",
+      "notes": "From the WOWT sweep \u2014 verify the details before approving. Headline: \"Papillion La Vista opening new elementary school\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -453,7 +513,7 @@
     }
   },
   {
-    "id": "sw20260723015",
+    "id": "sw20260724017",
     "kind": "opening",
     "needs_name": false,
     "headline": "New LAUSD superintendent\u2019s Opening of Schools address is part celebratory, part sobering",
@@ -486,27 +546,29 @@
     }
   },
   {
-    "id": "sw20260723016",
+    "id": "sw20260724018",
     "kind": "opening",
     "needs_name": false,
-    "headline": "New Towne Acres Elementary School on track for 2027 opening",
+    "headline": "New Pendleton High School preparing for grand opening",
     "auto": [
       "name",
       "date_reported",
-      "source_links"
+      "source_links",
+      "state",
+      "region"
     ],
     "data": {
-      "name": "Towne Acres Elementary School",
+      "name": "Pendleton High School",
       "link": "",
       "town": "",
-      "state": "",
-      "region": "",
+      "state": "AL",
+      "region": "East South Central",
       "type": "",
-      "date_reported": "2026-07-17",
+      "date_reported": "2026-07-23",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://www.wjhl.com/news/local/new-towne-acres-elementary-school-on-track-for-2027-opening/",
-      "notes": "From the WJHL sweep \u2014 verify the details before approving. Headline: \"New Towne Acres Elementary School on track for 2027 opening\"",
+      "source_links": "https://upstatetoday.com/news/new-pendleton-high-school-preparing-for-grand-opening/article_6dc73599-b7da-40fe-b8f4-f3db074685bc.html",
+      "notes": "From the upstatetoday.com sweep \u2014 verify the details before approving. Headline: \"New Pendleton High School preparing for grand opening\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -517,7 +579,40 @@
     }
   },
   {
-    "id": "sw20260723017",
+    "id": "sw20260724019",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "Magnolia Oaks Academy set to open doors in SilverLeaf community for 2026-2027 school year",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "Magnolia Oaks Academy",
+      "link": "",
+      "town": "",
+      "state": "GA",
+      "region": "South Atlantic",
+      "type": "",
+      "date_reported": "2026-07-22",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.news4jax.com/news/local/2026/07/22/magnolia-oaks-academy-set-to-open-doors-in-silverleaf-community-for-2026-2027-school-year/",
+      "notes": "From the News4JAX sweep \u2014 verify the details before approving. Headline: \"Magnolia Oaks Academy set to open doors in SilverLeaf community for 2026-2027 school year\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260724020",
     "kind": "opening",
     "needs_name": false,
     "headline": "Choctaw-Nicoma Park Schools celebrates opening of new elementary school",
@@ -551,7 +646,7 @@
     }
   },
   {
-    "id": "sw20260723018",
+    "id": "sw20260724021",
     "kind": "opening",
     "needs_name": false,
     "headline": "It\u2019s elementary; two new schools set to open Aug. 10",
@@ -584,66 +679,27 @@
     }
   },
   {
-    "id": "sw20260723019",
+    "id": "sw20260724022",
     "kind": "opening",
     "needs_name": false,
-    "headline": "'Celebrate new frontiers': SPEF to celebrate grand opening of new Stillwater High School",
+    "headline": "New Towne Acres Elementary School on track for 2027 opening",
     "auto": [
       "name",
       "date_reported",
-      "source_links",
-      "town",
-      "state",
-      "region",
-      "full_address",
-      "tract_mfi",
-      "data_year"
+      "source_links"
     ],
     "data": {
-      "name": "Stillwater High School",
-      "link": "",
-      "town": "Stillwater",
-      "state": "OK",
-      "region": "West South Central",
-      "type": "",
-      "date_reported": "2026-07-22",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.stwnewspress.com/news/celebrate-new-frontiers-spef-to-celebrate-grand-opening-of-new-stillwater-high-school/article_e6ecc101-b06e-45cf-bc73-3f12096c1e2d.html",
-      "notes": "From the Stillwater News Press sweep \u2014 verify the details before approving. Headline: \"'Celebrate new frontiers': SPEF to celebrate grand opening of new Stillwater High School\" Address auto-matched from NCES (2023-24 PSS) \u2014 verify. Income = 2026 FFIEC est. MSA/MD MFI for nonmetro Oklahoma.",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "112 E Richmond Rd, Stillwater, OK 74075",
-      "tract_mfi": "75900",
-      "data_year": "2026",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260723020",
-    "kind": "opening",
-    "needs_name": true,
-    "headline": "Jupiter nonprofit celebrates 40 years by opening new elementary school",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Jupiter nonprofit celebrates 40 years by opening new elementary school",
+      "name": "Towne Acres Elementary School",
       "link": "",
       "town": "",
-      "state": "FL",
-      "region": "South Atlantic",
+      "state": "",
+      "region": "",
       "type": "",
-      "date_reported": "2026-07-10",
+      "date_reported": "2026-07-17",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://www.wpbf.com/article/edna-w-runner-jupiter-florida-40-years-new-school/71899037",
-      "notes": "From the WPBF sweep \u2014 headline named no school; add the school name. Headline: \"Jupiter nonprofit celebrates 40 years by opening new elementary school\"",
+      "source_links": "https://www.wjhl.com/news/local/new-towne-acres-elementary-school-on-track-for-2027-opening/",
+      "notes": "From the WJHL sweep \u2014 verify the details before approving. Headline: \"New Towne Acres Elementary School on track for 2027 opening\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -654,40 +710,7 @@
     }
   },
   {
-    "id": "sw20260723021",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "New School To Open In Lansdale",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Goddard School",
-      "link": "",
-      "town": "",
-      "state": "PA",
-      "region": "Middle Atlantic",
-      "type": "",
-      "date_reported": "2026-07-14",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://patch.com/pennsylvania/lansdale/new-school-open-lansdale",
-      "notes": "From the Patch sweep \u2014 verify the details before approving. Headline: \"New School To Open In Lansdale\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260723022",
+    "id": "sw20260724023",
     "kind": "closure",
     "needs_name": false,
     "headline": "New Private School to Open in Palm Desert After Palm Valley Closure",
@@ -734,34 +757,129 @@
     }
   },
   {
-    "id": "sw20260723023",
-    "kind": "closure",
-    "needs_name": false,
-    "headline": "Chinese company closing private schools raises \u2018national security concerns\u2019",
+    "id": "sw20260724024",
+    "kind": "opening",
+    "needs_name": true,
+    "headline": "Jupiter nonprofit celebrates 40 years by opening new elementary school",
     "auto": [
       "name",
       "date_reported",
-      "link",
-      "enroll_source",
+      "source_links",
       "state",
       "region"
     ],
     "data": {
-      "name": "Durham High School",
+      "name": "Jupiter nonprofit celebrates 40 years by opening new elementary school",
+      "link": "",
+      "town": "",
+      "state": "FL",
+      "region": "South Atlantic",
+      "type": "",
+      "date_reported": "2026-07-10",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.wpbf.com/article/edna-w-runner-jupiter-florida-40-years-new-school/71899037",
+      "notes": "From the WPBF sweep \u2014 headline named no school; add the school name. Headline: \"Jupiter nonprofit celebrates 40 years by opening new elementary school\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260724025",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "New School To Open In Lansdale",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "Goddard School",
+      "link": "",
+      "town": "",
+      "state": "PA",
+      "region": "Middle Atlantic",
+      "type": "",
+      "date_reported": "2026-07-14",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://patch.com/pennsylvania/lansdale/new-school-open-lansdale",
+      "notes": "From the Patch sweep \u2014 verify the details before approving. Headline: \"New School To Open In Lansdale\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260724026",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "Port Moresby Grammar School to open new Covered Outdoor Learning Area today",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "Port Moresby Grammar School",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-07-24",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.postcourier.com.pg/port-moresby-grammar-school-to-open-new-covered-outdoor-learning-area-today/",
+      "notes": "From the Post Courier sweep \u2014 verify the details before approving. Headline: \"Port Moresby Grammar School to open new Covered Outdoor Learning Area today\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260724027",
+    "kind": "closure",
+    "needs_name": true,
+    "headline": "Private school in Pepper Pike closing for good",
+    "auto": [
+      "name",
+      "date_reported",
+      "link",
+      "enroll_source"
+    ],
+    "data": {
+      "name": "Private school in Pepper Pike closing for good",
       "covid": "",
       "merging": "",
       "new_school": "",
       "town": "",
-      "state": "WV",
-      "region": "South Atlantic",
+      "state": "",
+      "region": "",
       "type": "",
-      "date_reported": "2026-07-02",
+      "date_reported": "2026-07-23",
       "enrollment": "",
-      "enroll_source": "AOL.com",
+      "enroll_source": "FOX 8 News",
       "year_founded": "",
-      "notes": "From the AOL.com sweep \u2014 verify the details before approving. Headline: \"Chinese company closing private schools raises \u2018national security concerns\u2019\"",
+      "notes": "From the FOX 8 News sweep \u2014 headline named no school; add the school name. Headline: \"Private school in Pepper Pike closing for good\"",
       "prefin": "",
-      "link": "https://www.aol.com/articles/chinese-company-closing-private-schools-194719000.html",
+      "link": "https://fox8.com/news/private-school-in-pepper-pike-closing-for-good/",
       "pct_finaid": "",
       "link2": "",
       "tuition": "",
@@ -783,7 +901,7 @@
     }
   },
   {
-    "id": "sw20260723024",
+    "id": "sw20260724028",
     "kind": "closure",
     "needs_name": false,
     "headline": "Private school in Bucks County shutting down after 42-year run",
@@ -797,7 +915,7 @@
       "region"
     ],
     "data": {
-      "name": "United Friends School",
+      "name": "Lightning School",
       "covid": "",
       "merging": "",
       "new_school": "",
@@ -833,7 +951,56 @@
     }
   },
   {
-    "id": "sw20260723025",
+    "id": "sw20260724029",
+    "kind": "closure",
+    "needs_name": false,
+    "headline": "School Holiday Tomorrow, July 24: Check where schools are closed amid heavy rain & protests, and which dis",
+    "auto": [
+      "name",
+      "date_reported",
+      "link",
+      "enroll_source",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "Read Today's Paper School",
+      "covid": "",
+      "merging": "",
+      "new_school": "",
+      "town": "",
+      "state": "GA",
+      "region": "South Atlantic",
+      "type": "",
+      "date_reported": "2026-07-23",
+      "enrollment": "",
+      "enroll_source": "The Economic Times",
+      "year_founded": "",
+      "notes": "From the The Economic Times sweep \u2014 verify the details before approving. Headline: \"School Holiday Tomorrow, July 24: Check where schools are closed amid heavy rain & protests, and which dis\"",
+      "prefin": "",
+      "link": "https://m.economictimes.com/news/new-updates/school-holiday-tomorrow-july-24-check-where-schools-are-closed-amid-heavy-rain-protests-and-which-districts-are-on-imd-alert/articleshow/132578935.cms",
+      "pct_finaid": "",
+      "link2": "",
+      "tuition": "",
+      "link3": "",
+      "pct_black": "",
+      "enr_black": "",
+      "pct_hispanic": "",
+      "enr_hispanic": "",
+      "pct_asian": "",
+      "enr_asian": "",
+      "pct_white": "",
+      "enr_white": "",
+      "pct_other": "",
+      "enr_other": "",
+      "link4": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": ""
+    }
+  },
+  {
+    "id": "sw20260724030",
     "kind": "closure",
     "needs_name": true,
     "headline": "Concerns grow as new wave of permanent school closures begins in southern West Virginia",
@@ -882,7 +1049,7 @@
     }
   },
   {
-    "id": "sw20260723026",
+    "id": "sw20260724031",
     "kind": "closure",
     "needs_name": false,
     "headline": "Dingess Elementary School slated for permanent closure",
