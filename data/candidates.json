@@ -1,6 +1,54 @@
 [
   {
-    "id": "sw20260729001",
+    "id": "sw20260730001",
+    "kind": "closure",
+    "needs_name": false,
+    "headline": "After 26 years in Pueblo, St. Therese Catholic School is closing",
+    "auto": [
+      "name",
+      "date_reported",
+      "link",
+      "enroll_source",
+      "type"
+    ],
+    "data": {
+      "name": "St. Therese Catholic School",
+      "covid": "",
+      "merging": "",
+      "new_school": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "Roman Catholic",
+      "date_reported": "2026-07-30",
+      "enrollment": "",
+      "enroll_source": "Pueblo Chieftain",
+      "year_founded": "",
+      "notes": "From the Pueblo Chieftain sweep \u2014 verify the details before approving. Headline: \"After 26 years in Pueblo, St. Therese Catholic School is closing\"",
+      "prefin": "",
+      "link": "https://www.chieftain.com/story/news/education/2026/07/30/st-therese-catholic-school-closing-after-26-years-in-pueblo/91100060007/",
+      "pct_finaid": "",
+      "link2": "",
+      "tuition": "",
+      "link3": "",
+      "pct_black": "",
+      "enr_black": "",
+      "pct_hispanic": "",
+      "enr_hispanic": "",
+      "pct_asian": "",
+      "enr_asian": "",
+      "pct_white": "",
+      "enr_white": "",
+      "pct_other": "",
+      "enr_other": "",
+      "link4": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": ""
+    }
+  },
+  {
+    "id": "sw20260730002",
     "kind": "closure",
     "needs_name": false,
     "headline": "Archdiocese of Santa Fe to close 2 Catholic schools",
@@ -54,7 +102,7 @@
     }
   },
   {
-    "id": "sw20260729002",
+    "id": "sw20260730003",
     "kind": "closure",
     "needs_name": false,
     "headline": "Falling enrollment leads to St. Patrick's Catholic School to close",
@@ -63,9 +111,7 @@
       "date_reported",
       "link",
       "enroll_source",
-      "type",
-      "state",
-      "region"
+      "type"
     ],
     "data": {
       "name": "St. Patrick's Catholic School",
@@ -73,8 +119,8 @@
       "merging": "",
       "new_school": "",
       "town": "",
-      "state": "IA",
-      "region": "West North Central",
+      "state": "",
+      "region": "",
       "type": "Roman Catholic",
       "date_reported": "2026-07-15",
       "enrollment": "",
@@ -104,7 +150,56 @@
     }
   },
   {
-    "id": "sw20260729003",
+    "id": "sw20260730004",
+    "kind": "closure",
+    "needs_name": false,
+    "headline": "In Diary, Fauci Bragged of Role in School Closures. At Hearing, He Took the 5th",
+    "auto": [
+      "name",
+      "date_reported",
+      "link",
+      "enroll_source",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "Series School",
+      "covid": "",
+      "merging": "",
+      "new_school": "",
+      "town": "",
+      "state": "TX",
+      "region": "West South Central",
+      "type": "",
+      "date_reported": "2026-07-29",
+      "enrollment": "",
+      "enroll_source": "The 74",
+      "year_founded": "",
+      "notes": "From the The 74 sweep \u2014 verify the details before approving. Headline: \"In Diary, Fauci Bragged of Role in School Closures. At Hearing, He Took the 5th\"",
+      "prefin": "",
+      "link": "https://www.the74million.org/article/in-diary-fauci-bragged-of-role-in-school-closures-at-hearing-he-took-the-5th/",
+      "pct_finaid": "",
+      "link2": "",
+      "tuition": "",
+      "link3": "",
+      "pct_black": "",
+      "enr_black": "",
+      "pct_hispanic": "",
+      "enr_hispanic": "",
+      "pct_asian": "",
+      "enr_asian": "",
+      "pct_white": "",
+      "enr_white": "",
+      "pct_other": "",
+      "enr_other": "",
+      "link4": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": ""
+    }
+  },
+  {
+    "id": "sw20260730005",
     "kind": "closure",
     "needs_name": true,
     "headline": "Dr Fauci's diary allegedly exposes obsession with COVID fame, dishonesty on school closures",
@@ -151,7 +246,102 @@
     }
   },
   {
-    "id": "sw20260729004",
+    "id": "sw20260730006",
+    "kind": "opening",
+    "needs_name": true,
+    "headline": "New private school opening, with AI being the teachers",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "New private school opening, with AI being the teachers",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-07-30",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://kfor.com/news/local/new-private-school-opening-with-ai-being-the-teachers/",
+      "notes": "From the kfor.com sweep \u2014 headline named no school; add the school name. Headline: \"New private school opening, with AI being the teachers\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260730007",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "A $40,000-per-Year AI School With No Teachers Is Opening in Oklahoma This August",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "Year AI School",
+      "link": "",
+      "town": "",
+      "state": "OK",
+      "region": "West South Central",
+      "type": "",
+      "date_reported": "2026-07-21",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://oklahomawatch.org/2026/07/21/a-40000-per-year-ai-school-with-no-teachers-is-opening-in-oklahoma-this-august/",
+      "notes": "From the Oklahoma Watch sweep \u2014 verify the details before approving. Headline: \"A $40,000-per-Year AI School With No Teachers Is Opening in Oklahoma This August\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260730008",
+    "kind": "opening",
+    "needs_name": true,
+    "headline": "A $65,000-a-year AI school is opening in Miami Beach. Here\u2019s what to know",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "A $65,000-a-year AI school is opening in Miami Beach. Here\u2019s what to know",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-07-16",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.miamiherald.com/news/local/community/miami-dade/miami-beach/article316527687.html",
+      "notes": "From the Miami Herald sweep \u2014 headline named no school; add the school name. Headline: \"A $65,000-a-year AI school is opening in Miami Beach. Here\u2019s what to know\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260730009",
     "kind": "opening",
     "needs_name": false,
     "headline": "St Joseph\u2019s Private School Opens New Extension Block",
@@ -182,27 +372,27 @@
     }
   },
   {
-    "id": "sw20260729005",
+    "id": "sw20260730010",
     "kind": "opening",
-    "needs_name": true,
-    "headline": "New West Valley school opening its doors this school year",
+    "needs_name": false,
+    "headline": "AUSD to Celebrate Opening of New Wood Middle School Campus",
     "auto": [
       "name",
       "date_reported",
       "source_links"
     ],
     "data": {
-      "name": "New West Valley school opening its doors this school year",
+      "name": "Celebrate Opening of New Wood Middle School",
       "link": "",
       "town": "",
       "state": "",
       "region": "",
       "type": "",
-      "date_reported": "2026-07-28",
+      "date_reported": "2026-07-29",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://www.12news.com/video/syndication/ott/in-the-loop/new-west-valley-school-opening-its-doors-this-school-year/75-6fdb55d3-45d4-45ab-b3a8-ba1a7346245d",
-      "notes": "From the 12News sweep \u2014 headline named no school; add the school name. Headline: \"New West Valley school opening its doors this school year\"",
+      "source_links": "https://www.alamedaunified.org/departments/communications/ausd-news-page/news-details/~board/ausd-news/post/ausd-to-celebrate-opening-of-new-wood-middle-school-campus",
+      "notes": "From the Alameda Unified School District sweep \u2014 verify the details before approving. Headline: \"AUSD to Celebrate Opening of New Wood Middle School Campus\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -213,7 +403,137 @@
     }
   },
   {
-    "id": "sw20260729006",
+    "id": "sw20260730011",
+    "kind": "opening",
+    "needs_name": true,
+    "headline": "Huntsville\u2019s new 125,000 sq. ft. middle school gets OK, plans to open in 2028",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "Huntsville\u2019s new 125,000 sq. ft. middle school gets OK, plans to open in 2028",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-07-29",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.al.com/news/huntsville/2026/07/huntsvilles-new-125000-sq-ft-middle-school-gets-ok-plans-to-open-in-2028.html",
+      "notes": "From the AL.com sweep \u2014 headline named no school; add the school name. Headline: \"Huntsville\u2019s new 125,000 sq. ft. middle school gets OK, plans to open in 2028\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260730012",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "Where will Newark\u2019s New Media High School open this fall? Not in its own building.",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "Newark\u2019s New Media High School",
+      "link": "",
+      "town": "",
+      "state": "CO",
+      "region": "Mountain",
+      "type": "",
+      "date_reported": "2026-07-27",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.chalkbeat.org/newark/2026/07/27/students-at-newest-high-school-new-media-will-attend-bard-early-college/",
+      "notes": "From the chalkbeat.org sweep \u2014 verify the details before approving. Headline: \"Where will Newark\u2019s New Media High School open this fall? Not in its own building.\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260730013",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "MikeCheck: Grizzlies provide opening week boost as Grizz Prep launches \u2018historic new era\u2019",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "Grizz Prep",
+      "link": "",
+      "town": "",
+      "state": "TN",
+      "region": "East South Central",
+      "type": "",
+      "date_reported": "2026-07-30",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.grindcitymedia.com/2026/07/29/mikecheck-grizzlies-provide-opening-week-boost-as-grizz-prep-launches-historic-new-era",
+      "notes": "From the Grind City Media sweep \u2014 verify the details before approving. Headline: \"MikeCheck: Grizzlies provide opening week boost as Grizz Prep launches \u2018historic new era\u2019\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260730014",
+    "kind": "opening",
+    "needs_name": true,
+    "headline": "Brentwood delays opening of new elementary school",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "Brentwood delays opening of new elementary school",
+      "link": "",
+      "town": "",
+      "state": "PA",
+      "region": "Middle Atlantic",
+      "type": "",
+      "date_reported": "2026-07-22",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.wtae.com/article/brentwood-new-elementary-school-opening-delayed/73228630",
+      "notes": "From the WTAE sweep \u2014 headline named no school; add the school name. Headline: \"Brentwood delays opening of new elementary school\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260730015",
     "kind": "opening",
     "needs_name": false,
     "headline": "Grand opening set for Suffolk\u2019s new JFK Middle School",
@@ -244,40 +564,7 @@
     }
   },
   {
-    "id": "sw20260729007",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Where will Newark\u2019s New Media High School open this fall? Not in its own building.",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Newark\u2019s New Media High School",
-      "link": "",
-      "town": "",
-      "state": "CO",
-      "region": "Mountain",
-      "type": "",
-      "date_reported": "2026-07-27",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.chalkbeat.org/newark/2026/07/27/students-at-newest-high-school-new-media-will-attend-bard-early-college/",
-      "notes": "From the Chalkbeat sweep \u2014 verify the details before approving. Headline: \"Where will Newark\u2019s New Media High School open this fall? Not in its own building.\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260729008",
+    "id": "sw20260730016",
     "kind": "opening",
     "needs_name": true,
     "headline": "See inside Madison County\u2019s new $45 million intermediate school that\u2019s opening this fall",
@@ -308,17 +595,17 @@
     }
   },
   {
-    "id": "sw20260729009",
+    "id": "sw20260730017",
     "kind": "opening",
-    "needs_name": false,
-    "headline": "Okemos schools nearly ready to open new Chippewa Middle School",
+    "needs_name": true,
+    "headline": "New West Valley school opening its doors this school year",
     "auto": [
       "name",
       "date_reported",
       "source_links"
     ],
     "data": {
-      "name": "Chippewa Middle School",
+      "name": "New West Valley school opening its doors this school year",
       "link": "",
       "town": "",
       "state": "",
@@ -327,8 +614,8 @@
       "date_reported": "2026-07-28",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://www.lansingstatejournal.com/story/news/education/2026/07/28/new-chippewa-middle-school-opens-in-okemos-this-fall-cornell-kinawa-elementary/91061328007/",
-      "notes": "From the Lansing State Journal sweep \u2014 verify the details before approving. Headline: \"Okemos schools nearly ready to open new Chippewa Middle School\"",
+      "source_links": "https://www.12news.com/video/syndication/ott/in-the-loop/new-west-valley-school-opening-its-doors-this-school-year/75-6fdb55d3-45d4-45ab-b3a8-ba1a7346245d",
+      "notes": "From the 12News sweep \u2014 headline named no school; add the school name. Headline: \"New West Valley school opening its doors this school year\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -339,71 +626,7 @@
     }
   },
   {
-    "id": "sw20260729010",
-    "kind": "opening",
-    "needs_name": true,
-    "headline": "Brentwood delays opening of new elementary school",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Brentwood delays opening of new elementary school",
-      "link": "",
-      "town": "",
-      "state": "FL",
-      "region": "South Atlantic",
-      "type": "",
-      "date_reported": "2026-07-22",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.wtae.com/article/brentwood-new-elementary-school-opening-delayed/73228630",
-      "notes": "From the WTAE sweep \u2014 headline named no school; add the school name. Headline: \"Brentwood delays opening of new elementary school\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260729011",
-    "kind": "opening",
-    "needs_name": true,
-    "headline": "Pacific Northwest Ballet to open new school location in Sodo",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "Pacific Northwest Ballet to open new school location in Sodo",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-07-23",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.seattletimes.com/entertainment/dance/pacific-northwest-ballet-to-open-new-school-location-in-sodo/",
-      "notes": "From the The Seattle Times sweep \u2014 headline named no school; add the school name. Headline: \"Pacific Northwest Ballet to open new school location in Sodo\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260729012",
+    "id": "sw20260730018",
     "kind": "opening",
     "needs_name": true,
     "headline": "AT&T giving away free laptops, school supplies during opening of new learning center in Arkansas",
@@ -436,73 +659,7 @@
     }
   },
   {
-    "id": "sw20260729013",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Litchfield Park to open new library and arts school on historic La Loma campus",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Hilltop School",
-      "link": "",
-      "town": "",
-      "state": "AZ",
-      "region": "Mountain",
-      "type": "",
-      "date_reported": "2026-07-27",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.yourvalley.net/litchfield-park-independent/stories/litchfield-park-to-open-new-library-and-arts-school-on-historic-la-loma-campus,707677",
-      "notes": "From the yourvalley.net sweep \u2014 verify the details before approving. Headline: \"Litchfield Park to open new library and arts school on historic La Loma campus\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260729014",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "New Brentwood Elementary School\u2019s opening delayed",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Brentwood Elementary School",
-      "link": "",
-      "town": "",
-      "state": "KY",
-      "region": "East South Central",
-      "type": "",
-      "date_reported": "2026-07-23",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.wpxi.com/news/local/new-brentwood-elementary-schools-opening-delayed/KXPLARRAZFHHFODCP5KOQ3T44Q/",
-      "notes": "From the WPXI sweep \u2014 verify the details before approving. Headline: \"New Brentwood Elementary School\u2019s opening delayed\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260729015",
+    "id": "sw20260730019",
     "kind": "opening",
     "needs_name": false,
     "headline": "Opening of Brentwood Borough's new elementary school delayed until 2027, district says",
@@ -535,7 +692,138 @@
     }
   },
   {
-    "id": "sw20260729016",
+    "id": "sw20260730020",
+    "kind": "opening",
+    "needs_name": true,
+    "headline": "New Christian school set to open in Lansing, a result of another's turmoil",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "type"
+    ],
+    "data": {
+      "name": "New Christian school set to open in Lansing, a result of another's turmoil",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "Christian",
+      "date_reported": "2026-07-21",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.lansingstatejournal.com/story/news/education/2026/07/21/lansing-hope-christian-school-opening/90945150007/",
+      "notes": "From the Lansing State Journal sweep \u2014 headline named no school; add the school name. Headline: \"New Christian school set to open in Lansing, a result of another's turmoil\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260730021",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "New Brentwood Elementary School\u2019s opening delayed",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "town",
+      "state",
+      "region",
+      "full_address",
+      "tract_mfi",
+      "data_year"
+    ],
+    "data": {
+      "name": "Brentwood Elementary School",
+      "link": "",
+      "town": "Los Angeles",
+      "state": "CA",
+      "region": "Pacific",
+      "type": "",
+      "date_reported": "2026-07-22",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.wpxi.com/news/local/new-brentwood-elementary-schools-opening-delayed/KXPLARRAZFHHFODCP5KOQ3T44Q/",
+      "notes": "From the WPXI sweep \u2014 verify the details before approving. Headline: \"New Brentwood Elementary School\u2019s opening delayed\" Address auto-matched from NCES (2023-24 PSS) \u2014 verify. Income = 2026 FFIEC est. MSA/MD MFI for Los Angeles-Long Beach-Glendale, CA Metro Division.",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "100 S Barrington Pl, Los Angeles, CA 90049",
+      "tract_mfi": "108100",
+      "data_year": "2026",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260730022",
+    "kind": "opening",
+    "needs_name": true,
+    "headline": "Pacific Northwest Ballet to open new school location in Sodo",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "Pacific Northwest Ballet to open new school location in Sodo",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-07-23",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.seattletimes.com/entertainment/dance/pacific-northwest-ballet-to-open-new-school-location-in-sodo/",
+      "notes": "From the The Seattle Times sweep \u2014 headline named no school; add the school name. Headline: \"Pacific Northwest Ballet to open new school location in Sodo\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260730023",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "Opening of new Brentwood Elementary School delayed from September to January",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "Brentwood Elementary School",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-07-21",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://community.triblive.com/news/4098913",
+      "notes": "From the TribLIVE.com sweep \u2014 verify the details before approving. Headline: \"Opening of new Brentwood Elementary School delayed from September to January\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260730024",
     "kind": "opening",
     "needs_name": false,
     "headline": "Greater Clark County celebrates opening of new, improved Parkwood Elementary School",
@@ -568,70 +856,7 @@
     }
   },
   {
-    "id": "sw20260729017",
-    "kind": "opening",
-    "needs_name": true,
-    "headline": "New Christian school set to open in Lansing, a result of another's turmoil",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "type"
-    ],
-    "data": {
-      "name": "New Christian school set to open in Lansing, a result of another's turmoil",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "Christian",
-      "date_reported": "2026-07-21",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.lansingstatejournal.com/story/news/education/2026/07/21/lansing-hope-christian-school-opening/90945150007/",
-      "notes": "From the Lansing State Journal sweep \u2014 headline named no school; add the school name. Headline: \"New Christian school set to open in Lansing, a result of another's turmoil\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260729018",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Opening of new Brentwood Elementary School delayed from September to January",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "Brentwood Elementary School",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-07-21",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://community.triblive.com/news/4098913",
-      "notes": "From the TribLIVE.com sweep \u2014 verify the details before approving. Headline: \"Opening of new Brentwood Elementary School delayed from September to January\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260729019",
+    "id": "sw20260730025",
     "kind": "opening",
     "needs_name": false,
     "headline": "10 Contenders for Florida high school football\u2019s new FHSAA Open Division Championship",
@@ -664,7 +889,7 @@
     }
   },
   {
-    "id": "sw20260729020",
+    "id": "sw20260730026",
     "kind": "opening",
     "needs_name": false,
     "headline": "New Willow School to open this fall, latest in Lansing bond milestones",
@@ -695,7 +920,7 @@
     }
   },
   {
-    "id": "sw20260729021",
+    "id": "sw20260730027",
     "kind": "opening",
     "needs_name": false,
     "headline": "New Towne Acres Elementary School on track for 2027 opening",
@@ -726,7 +951,7 @@
     }
   },
   {
-    "id": "sw20260729022",
+    "id": "sw20260730028",
     "kind": "opening",
     "needs_name": true,
     "headline": "Jupiter nonprofit celebrates 40 years by opening new elementary school",
@@ -759,7 +984,7 @@
     }
   },
   {
-    "id": "sw20260729023",
+    "id": "sw20260730029",
     "kind": "opening",
     "needs_name": false,
     "headline": "New School To Open In Lansdale",
@@ -792,7 +1017,54 @@
     }
   },
   {
-    "id": "sw20260729024",
+    "id": "sw20260730030",
+    "kind": "closure",
+    "needs_name": true,
+    "headline": "Quakertown school's sudden closure alarms families | Exclusive",
+    "auto": [
+      "name",
+      "date_reported",
+      "link",
+      "enroll_source"
+    ],
+    "data": {
+      "name": "Quakertown school's sudden closure alarms families | Exclusive",
+      "covid": "",
+      "merging": "",
+      "new_school": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-07-29",
+      "enrollment": "",
+      "enroll_source": "PhillyBurbs",
+      "year_founded": "",
+      "notes": "From the PhillyBurbs sweep \u2014 headline named no school; add the school name. Headline: \"Quakertown school's sudden closure alarms families | Exclusive\"",
+      "prefin": "",
+      "link": "https://www.phillyburbs.com/story/news/education/2026/07/29/united-friends-quakertown-broad-street-day-school-private-sale-aa-property-holding-bucks-county/91076475007/",
+      "pct_finaid": "",
+      "link2": "",
+      "tuition": "",
+      "link3": "",
+      "pct_black": "",
+      "enr_black": "",
+      "pct_hispanic": "",
+      "enr_hispanic": "",
+      "pct_asian": "",
+      "enr_asian": "",
+      "pct_white": "",
+      "enr_white": "",
+      "pct_other": "",
+      "enr_other": "",
+      "link4": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": ""
+    }
+  },
+  {
+    "id": "sw20260730031",
     "kind": "closure",
     "needs_name": false,
     "headline": "Chinese owners of UK private schools criticized after closures",
@@ -841,7 +1113,7 @@
     }
   },
   {
-    "id": "sw20260729025",
+    "id": "sw20260730032",
     "kind": "closure",
     "needs_name": true,
     "headline": "Private school in Pepper Pike closing for good",
@@ -888,7 +1160,7 @@
     }
   },
   {
-    "id": "sw20260729026",
+    "id": "sw20260730033",
     "kind": "closure",
     "needs_name": false,
     "headline": "New Private School to Open in Palm Desert After Palm Valley Closure",
@@ -935,7 +1207,7 @@
     }
   },
   {
-    "id": "sw20260729027",
+    "id": "sw20260730034",
     "kind": "closure",
     "needs_name": false,
     "headline": "Private school in Bucks County shutting down after 42-year run",
@@ -985,7 +1257,7 @@
     }
   },
   {
-    "id": "sw20260729028",
+    "id": "sw20260730035",
     "kind": "closure",
     "needs_name": false,
     "headline": "Falling birth rates mean schools are closing \u2013 affecting whole communities",
@@ -1032,7 +1304,7 @@
     }
   },
   {
-    "id": "sw20260729029",
+    "id": "sw20260730036",
     "kind": "closure",
     "needs_name": true,
     "headline": "Boone County schools among the latest in statewide string of possible permanent closures",
@@ -1079,7 +1351,7 @@
     }
   },
   {
-    "id": "sw20260729030",
+    "id": "sw20260730037",
     "kind": "closure",
     "needs_name": true,
     "headline": "Concerns grow as new wave of permanent school closures begins in southern West Virginia",
