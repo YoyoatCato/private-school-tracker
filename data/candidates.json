@@ -1,6 +1,6 @@
 [
   {
-    "id": "sw20260803001",
+    "id": "sw20260804001",
     "kind": "closure",
     "needs_name": false,
     "headline": "After 26 years in Pueblo, St. Therese Catholic School is closing",
@@ -48,7 +48,7 @@
     }
   },
   {
-    "id": "sw20260803002",
+    "id": "sw20260804002",
     "kind": "closure",
     "needs_name": false,
     "headline": "Archdiocese of Santa Fe to close 2 Catholic schools",
@@ -102,7 +102,7 @@
     }
   },
   {
-    "id": "sw20260803003",
+    "id": "sw20260804003",
     "kind": "closure",
     "needs_name": false,
     "headline": "Diocese of Pueblo closing St. Therese Catholic School after 26 years",
@@ -150,7 +150,7 @@
     }
   },
   {
-    "id": "sw20260803004",
+    "id": "sw20260804004",
     "kind": "closure",
     "needs_name": false,
     "headline": "Falling enrollment leads to St. Patrick's Catholic School to close",
@@ -200,7 +200,7 @@
     }
   },
   {
-    "id": "sw20260803005",
+    "id": "sw20260804005",
     "kind": "closure",
     "needs_name": false,
     "headline": "In Diary, Fauci Bragged of Role in School Closures. At Hearing, He Took the 5th",
@@ -249,32 +249,34 @@
     }
   },
   {
-    "id": "sw20260803006",
+    "id": "sw20260804006",
     "kind": "closure",
     "needs_name": true,
-    "headline": "We are learning the wrong lesson from Covid school closures - Christina Pagel",
+    "headline": "Did Fauci\u2019s private diary entries contradict his public stances on lab leak, masks, school closures?",
     "auto": [
       "name",
       "date_reported",
       "link",
-      "enroll_source"
+      "enroll_source",
+      "state",
+      "region"
     ],
     "data": {
-      "name": "We are learning the wrong lesson from Covid school closures - Christina Pagel",
+      "name": "Did Fauci\u2019s private diary entries contradict his public stances on lab leak, masks, school closures?",
       "covid": "",
       "merging": "",
       "new_school": "",
       "town": "",
-      "state": "",
-      "region": "",
+      "state": "CA",
+      "region": "Pacific",
       "type": "",
-      "date_reported": "2026-07-31",
+      "date_reported": "2026-08-03",
       "enrollment": "",
-      "enroll_source": "Christina Pagel | Substack",
+      "enroll_source": "PolitiFact",
       "year_founded": "",
-      "notes": "From the Christina Pagel | Substack sweep \u2014 headline named no school; add the school name. Headline: \"We are learning the wrong lesson from Covid school closures - Christina Pagel\"",
+      "notes": "From the PolitiFact sweep \u2014 headline named no school; add the school name. Headline: \"Did Fauci\u2019s private diary entries contradict his public stances on lab leak, masks, school closures?\"",
       "prefin": "",
-      "link": "https://christinapagel.substack.com/p/we-are-learning-the-wrong-lesson",
+      "link": "https://politifact.com/article/2026/aug/03/fauci-diary-lab-leak-masks-school-closures/",
       "pct_finaid": "",
       "link2": "",
       "tuition": "",
@@ -296,7 +298,40 @@
     }
   },
   {
-    "id": "sw20260803007",
+    "id": "sw20260804007",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "National Surveys Showed Most Americans Saw Fauci as Dr. No on Reopening Schools",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "Series School",
+      "link": "",
+      "town": "",
+      "state": "TX",
+      "region": "West South Central",
+      "type": "",
+      "date_reported": "2026-08-01",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.the74million.org/article/national-surveys-showed-most-americans-saw-fauci-as-dr-no-on-reopening-schools/",
+      "notes": "From the The 74 sweep \u2014 verify the details before approving. Headline: \"National Surveys Showed Most Americans Saw Fauci as Dr. No on Reopening Schools\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260804008",
     "kind": "closure",
     "needs_name": true,
     "headline": "Dr Fauci's diary allegedly exposes obsession with COVID fame, dishonesty on school closures",
@@ -304,9 +339,7 @@
       "name",
       "date_reported",
       "link",
-      "enroll_source",
-      "state",
-      "region"
+      "enroll_source"
     ],
     "data": {
       "name": "Dr Fauci's diary allegedly exposes obsession with COVID fame, dishonesty on school closures",
@@ -314,8 +347,8 @@
       "merging": "",
       "new_school": "",
       "town": "",
-      "state": "MA",
-      "region": "New England",
+      "state": "",
+      "region": "",
       "type": "",
       "date_reported": "2026-07-29",
       "enrollment": "",
@@ -345,7 +378,54 @@
     }
   },
   {
-    "id": "sw20260803008",
+    "id": "sw20260804009",
+    "kind": "closure",
+    "needs_name": true,
+    "headline": "We are learning the wrong lesson from Covid school closures",
+    "auto": [
+      "name",
+      "date_reported",
+      "link",
+      "enroll_source"
+    ],
+    "data": {
+      "name": "We are learning the wrong lesson from Covid school closures",
+      "covid": "",
+      "merging": "",
+      "new_school": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-07-31",
+      "enrollment": "",
+      "enroll_source": "christinapagel.substack.com",
+      "year_founded": "",
+      "notes": "From the christinapagel.substack.com sweep \u2014 headline named no school; add the school name. Headline: \"We are learning the wrong lesson from Covid school closures\"",
+      "prefin": "",
+      "link": "https://christinapagel.substack.com/p/we-are-learning-the-wrong-lesson",
+      "pct_finaid": "",
+      "link2": "",
+      "tuition": "",
+      "link3": "",
+      "pct_black": "",
+      "enr_black": "",
+      "pct_hispanic": "",
+      "enr_hispanic": "",
+      "pct_asian": "",
+      "enr_asian": "",
+      "pct_white": "",
+      "enr_white": "",
+      "pct_other": "",
+      "enr_other": "",
+      "link4": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": ""
+    }
+  },
+  {
+    "id": "sw20260804010",
     "kind": "closure",
     "needs_name": true,
     "headline": "Bombshell Fauci diary contradicts public claims on lockdowns, school closures and COVID origins",
@@ -392,7 +472,7 @@
     }
   },
   {
-    "id": "sw20260803009",
+    "id": "sw20260804011",
     "kind": "opening",
     "needs_name": true,
     "headline": "New private school opening, with AI being the teachers",
@@ -412,7 +492,7 @@
       "opening_date": "",
       "exp_enrollment": "",
       "source_links": "https://kfor.com/news/local/new-private-school-opening-with-ai-being-the-teachers/",
-      "notes": "From the KFOR sweep \u2014 headline named no school; add the school name. Headline: \"New private school opening, with AI being the teachers\"",
+      "notes": "From the KFOR.com sweep \u2014 headline named no school; add the school name. Headline: \"New private school opening, with AI being the teachers\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -423,7 +503,7 @@
     }
   },
   {
-    "id": "sw20260803010",
+    "id": "sw20260804012",
     "kind": "opening",
     "needs_name": true,
     "headline": "New private school in Byron opens to offer faith-based education",
@@ -454,62 +534,27 @@
     }
   },
   {
-    "id": "sw20260803011",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "New private school opening in Oklahoma with AI being the teachers - WATE 6 On Your Side",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Texas-based Alpha School",
-      "link": "",
-      "town": "",
-      "state": "OK",
-      "region": "West South Central",
-      "type": "",
-      "date_reported": "2026-08-01",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.wate.com/news/national/new-private-school-opening-in-oklahoma-with-ai-being-the-teachers/amp/",
-      "notes": "From the WATE 6 On Your Side sweep \u2014 verify the details before approving. Headline: \"New private school opening in Oklahoma with AI being the teachers - WATE 6 On Your Side\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260803012",
+    "id": "sw20260804013",
     "kind": "opening",
     "needs_name": true,
-    "headline": "New private school, demolition preparation: 6 trending stories in the South Houston area | Sugar Land - Missouri City",
+    "headline": "New Oklahome private school opening with AI being the teachers",
     "auto": [
       "name",
       "date_reported",
-      "source_links",
-      "state",
-      "region"
+      "source_links"
     ],
     "data": {
-      "name": "New private school, demolition preparation: 6 trending stories in the South Houston area | Sugar Land - Missouri City",
+      "name": "New Oklahome private school opening with AI being the teachers",
       "link": "",
       "town": "",
-      "state": "MO",
-      "region": "West North Central",
+      "state": "",
+      "region": "",
       "type": "",
       "date_reported": "2026-08-01",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://communityimpact.com/sugar-land-missouri-city/business/new-private-school-demolition-preparation-6-trending-stories-in-the-south-houston-area/",
-      "notes": "From the Community Impact sweep \u2014 headline named no school; add the school name. Headline: \"New private school, demolition preparation: 6 trending stories in the South Houston area | Sugar Land - Missouri City\"",
+      "source_links": "https://www.kget.com/national-news/new-private-school-opening-with-ai-being-the-teachers/?nxsparam=8",
+      "notes": "From the KGET.com sweep \u2014 headline named no school; add the school name. Headline: \"New Oklahome private school opening with AI being the teachers\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -520,40 +565,7 @@
     }
   },
   {
-    "id": "sw20260803013",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "New private school opening with AI teachers",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Texas-based Alpha School",
-      "link": "",
-      "town": "",
-      "state": "OK",
-      "region": "West South Central",
-      "type": "",
-      "date_reported": "2026-07-31",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://myfox8.com/news/new-private-school-opening-with-ai-teachers/amp/",
-      "notes": "From the FOX8 WGHP sweep \u2014 verify the details before approving. Headline: \"New private school opening with AI teachers\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260803014",
+    "id": "sw20260804014",
     "kind": "opening",
     "needs_name": false,
     "headline": "A $40,000-Per-Year AI School With No Teachers Is Opening in Oklahoma This August",
@@ -586,7 +598,7 @@
     }
   },
   {
-    "id": "sw20260803015",
+    "id": "sw20260804015",
     "kind": "opening",
     "needs_name": false,
     "headline": "She Abused a Minor. He Served Time for Rape. They Both Launched Private Schools Taking Public Money.",
@@ -619,10 +631,10 @@
     }
   },
   {
-    "id": "sw20260803016",
+    "id": "sw20260804016",
     "kind": "opening",
     "needs_name": false,
-    "headline": "New schools are set to open across Idaho",
+    "headline": "New schools set to open across Idaho",
     "auto": [
       "name",
       "date_reported",
@@ -641,11 +653,11 @@
       "state": "ID",
       "region": "Mountain",
       "type": "",
-      "date_reported": "2026-08-03",
+      "date_reported": "2026-08-04",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://www.idahoednews.org/news/new-schools-are-set-to-open-across-idaho-this-fall/",
-      "notes": "From the Idaho Education News sweep \u2014 verify the details before approving. Headline: \"New schools are set to open across Idaho\" Address auto-matched from NCES (2023-24 PSS) \u2014 verify. Income = 2026 FFIEC est. MSA/MD MFI for Boise City, ID Metro Area.",
+      "source_links": "https://www.idahoednews.org/top-news/new-schools-are-set-to-open-across-idaho-this-fall/",
+      "notes": "From the Idaho Education News sweep \u2014 verify the details before approving. Headline: \"New schools set to open across Idaho\" Address auto-matched from NCES (2023-24 PSS) \u2014 verify. Income = 2026 FFIEC est. MSA/MD MFI for Boise City, ID Metro Area.",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -656,7 +668,104 @@
     }
   },
   {
-    "id": "sw20260803017",
+    "id": "sw20260804017",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "Local district changes 2026-2027 start date for opening of new elementary school",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "Bethel Park Elementary School",
+      "link": "",
+      "town": "",
+      "state": "PA",
+      "region": "Middle Atlantic",
+      "type": "",
+      "date_reported": "2026-08-04",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.wtae.com/article/bethel-park-2026-2027-school-start-new-elementary-school/73338688",
+      "notes": "From the WTAE sweep \u2014 verify the details before approving. Headline: \"Local district changes 2026-2027 start date for opening of new elementary school\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260804018",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "Athens High School construction stays on track as the district looks ahead to a 2027 opening",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "Athens High School",
+      "link": "",
+      "town": "",
+      "state": "OH",
+      "region": "East North Central",
+      "type": "",
+      "date_reported": "2026-08-03",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://woub.org/2026/08/03/athens-high-school-construction-2027-opening/",
+      "notes": "From the WOUB Public Media - sweep \u2014 verify the details before approving. Headline: \"Athens High School construction stays on track as the district looks ahead to a 2027 opening\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260804019",
+    "kind": "opening",
+    "needs_name": true,
+    "headline": "Gwinnett County prepares to open new school",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "Gwinnett County prepares to open new school",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-08-03",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.11alive.com/video/news/education/gwinnett-county-prepares-to-open-new-school/85-648c1a19-6503-41fc-8d0d-b63b8b4eee39",
+      "notes": "From the 11Alive.com sweep \u2014 headline named no school; add the school name. Headline: \"Gwinnett County prepares to open new school\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260804020",
     "kind": "opening",
     "needs_name": false,
     "headline": "Here in Evanston: As new Foster School gets ready to open, a mosaic, memories and a message",
@@ -689,7 +798,40 @@
     }
   },
   {
-    "id": "sw20260803018",
+    "id": "sw20260804021",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "Pine Bluff schools open with new interim superintendent, focus on literacy",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "Literacy School",
+      "link": "",
+      "town": "",
+      "state": "AR",
+      "region": "West South Central",
+      "type": "",
+      "date_reported": "2026-08-03",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://katv.com/news/local/pine-bluff-schools-open-with-new-interim-superintendent-focus-on-literacy-katv-news-share-inform-community-education",
+      "notes": "From the KATV sweep \u2014 verify the details before approving. Headline: \"Pine Bluff schools open with new interim superintendent, focus on literacy\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260804022",
     "kind": "opening",
     "needs_name": false,
     "headline": "KAIT previews new $40 million Southside High School ahead of Aug. 13 opening",
@@ -722,7 +864,7 @@
     }
   },
   {
-    "id": "sw20260803019",
+    "id": "sw20260804023",
     "kind": "opening",
     "needs_name": true,
     "headline": "Two new elementary schools are opening in Manatee County this school year",
@@ -755,71 +897,7 @@
     }
   },
   {
-    "id": "sw20260803020",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Drummond Central's School of DC Marks 9 Years of Opening Doors for New Talent - Little Black Book",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "Drummond Central's School",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-08-03",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://lbbonline.com/news/Drummond-Centrals-School-of-DC-Nine-Years",
-      "notes": "From the Little Black Book | LBBOnline sweep \u2014 verify the details before approving. Headline: \"Drummond Central's School of DC Marks 9 Years of Opening Doors for New Talent - Little Black Book\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260803021",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Harris-Lake Park Invites Public to New Elementary School Grand Opening",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Elementary School",
-      "link": "",
-      "town": "",
-      "state": "IA",
-      "region": "West North Central",
-      "type": "",
-      "date_reported": "2026-07-31",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://northwestiowanow.com/news/278872-harris-lake-park-invites-public-to-new-elementary-school-grand-opening/",
-      "notes": "From the Northwest Iowa Now sweep \u2014 verify the details before approving. Headline: \"Harris-Lake Park Invites Public to New Elementary School Grand Opening\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260803022",
+    "id": "sw20260804024",
     "kind": "opening",
     "needs_name": true,
     "headline": "Brentwood delays opening of new elementary school",
@@ -834,8 +912,8 @@
       "name": "Brentwood delays opening of new elementary school",
       "link": "",
       "town": "",
-      "state": "KY",
-      "region": "East South Central",
+      "state": "PA",
+      "region": "Middle Atlantic",
       "type": "",
       "date_reported": "2026-07-22",
       "opening_date": "",
@@ -852,7 +930,71 @@
     }
   },
   {
-    "id": "sw20260803023",
+    "id": "sw20260804025",
+    "kind": "opening",
+    "needs_name": true,
+    "headline": "A new nursing school is set to open in this major Salt Lake City suburb",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "A new nursing school is set to open in this major Salt Lake City suburb",
+      "link": "",
+      "town": "",
+      "state": "UT",
+      "region": "Mountain",
+      "type": "",
+      "date_reported": "2026-07-21",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.sltrib.com/news/education/2026/07/21/chamberlain-university-open-new/",
+      "notes": "From the The Salt Lake Tribune sweep \u2014 headline named no school; add the school name. Headline: \"A new nursing school is set to open in this major Salt Lake City suburb\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260804026",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "Grand opening set for Suffolk\u2019s new JFK Middle School",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "JFK Middle School",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-07-23",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.wavy.com/news/grand-opening-set-for-suffolks-new-jfk-middle-school/",
+      "notes": "From the WAVY.com sweep \u2014 verify the details before approving. Headline: \"Grand opening set for Suffolk\u2019s new JFK Middle School\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260804027",
     "kind": "closure",
     "needs_name": false,
     "headline": "More than 60 schools have closed in the past five years, will this switch help?",
@@ -901,102 +1043,7 @@
     }
   },
   {
-    "id": "sw20260803024",
-    "kind": "opening",
-    "needs_name": true,
-    "headline": "New tuition-free high school set to open in Summerville",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "New tuition-free high school set to open in Summerville",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-07-30",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.counton2.com/news/local-news/new-tuition-free-high-school-set-to-open-in-summerville/",
-      "notes": "From the WCBD News 2 sweep \u2014 headline named no school; add the school name. Headline: \"New tuition-free high school set to open in Summerville\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260803025",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Grand opening set for Suffolk\u2019s new JFK Middle School",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "JFK Middle School",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-07-23",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.wavy.com/news/grand-opening-set-for-suffolks-new-jfk-middle-school/",
-      "notes": "From the WAVY.com sweep \u2014 verify the details before approving. Headline: \"Grand opening set for Suffolk\u2019s new JFK Middle School\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260803026",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Paramount School of Excellence in South Bend opens middle school expansion",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Paramount School",
-      "link": "",
-      "town": "",
-      "state": "IN",
-      "region": "East North Central",
-      "type": "",
-      "date_reported": "2026-07-31",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.wndu.com/2026/07/31/paramount-school-excellence-south-bend-opens-middle-school-expansion/",
-      "notes": "From the wndu.com sweep \u2014 verify the details before approving. Headline: \"Paramount School of Excellence in South Bend opens middle school expansion\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260803027",
+    "id": "sw20260804028",
     "kind": "opening",
     "needs_name": false,
     "headline": "New Brentwood Elementary School\u2019s opening delayed",
@@ -1011,8 +1058,8 @@
       "name": "Brentwood Elementary School",
       "link": "",
       "town": "",
-      "state": "WA",
-      "region": "Pacific",
+      "state": "IN",
+      "region": "East North Central",
       "type": "",
       "date_reported": "2026-07-22",
       "opening_date": "",
@@ -1029,100 +1076,7 @@
     }
   },
   {
-    "id": "sw20260803028",
-    "kind": "opening",
-    "needs_name": true,
-    "headline": "Huntsville\u2019s new 125,000 sq. ft. middle school gets OK, plans to open in 2028",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "Huntsville\u2019s new 125,000 sq. ft. middle school gets OK, plans to open in 2028",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-07-29",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.al.com/news/huntsville/2026/07/huntsvilles-new-125000-sq-ft-middle-school-gets-ok-plans-to-open-in-2028.html",
-      "notes": "From the AL.com sweep \u2014 headline named no school; add the school name. Headline: \"Huntsville\u2019s new 125,000 sq. ft. middle school gets OK, plans to open in 2028\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260803029",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "King's Academy in St. Cloud prepares to open new school campus",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "King's Academy",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-08-01",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.sctimes.com/story/news/education/2026/08/01/kings-academy-unveiling-new-campus-aug-23-in-st-cloud/91097183007/",
-      "notes": "From the St. Cloud Times sweep \u2014 verify the details before approving. Headline: \"King's Academy in St. Cloud prepares to open new school campus\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260803030",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Johnny Knoxville visits South Doyle High School to open new weight room",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "South Doyle High School",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-07-31",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.knoxnews.com/videos/news/local/2026/07/31/johnny-knoxville-visits-south-doyle-high-school-to-open-new-weight-room/91121882007/",
-      "notes": "From the Knoxville News Sentinel sweep \u2014 verify the details before approving. Headline: \"Johnny Knoxville visits South Doyle High School to open new weight room\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260803031",
+    "id": "sw20260804029",
     "kind": "opening",
     "needs_name": false,
     "headline": "Opening of Brentwood Borough's new elementary school delayed until 2027, district says",
@@ -1155,7 +1109,69 @@
     }
   },
   {
-    "id": "sw20260803032",
+    "id": "sw20260804030",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "King's Academy in St. Cloud prepares to open new school campus",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "King's Academy",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-08-01",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.sctimes.com/story/news/education/2026/08/01/kings-academy-unveiling-new-campus-aug-23-in-st-cloud/91097183007/",
+      "notes": "From the St. Cloud Times sweep \u2014 verify the details before approving. Headline: \"King's Academy in St. Cloud prepares to open new school campus\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260804031",
+    "kind": "opening",
+    "needs_name": true,
+    "headline": "Huntsville\u2019s new 125,000 sq. ft. middle school gets OK, plans to open in 2028",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "Huntsville\u2019s new 125,000 sq. ft. middle school gets OK, plans to open in 2028",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-07-29",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.al.com/news/huntsville/2026/07/huntsvilles-new-125000-sq-ft-middle-school-gets-ok-plans-to-open-in-2028.html",
+      "notes": "From the AL.com sweep \u2014 headline named no school; add the school name. Headline: \"Huntsville\u2019s new 125,000 sq. ft. middle school gets OK, plans to open in 2028\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260804032",
     "kind": "opening",
     "needs_name": true,
     "headline": "New Christian school set to open in Lansing, a result of another's turmoil",
@@ -1187,7 +1203,7 @@
     }
   },
   {
-    "id": "sw20260803033",
+    "id": "sw20260804033",
     "kind": "opening",
     "needs_name": false,
     "headline": "Opening of new Brentwood Elementary School delayed from September to January",
@@ -1218,7 +1234,7 @@
     }
   },
   {
-    "id": "sw20260803034",
+    "id": "sw20260804034",
     "kind": "opening",
     "needs_name": true,
     "headline": "See inside Madison County\u2019s new $45 million intermediate school that\u2019s opening this fall",
@@ -1249,7 +1265,7 @@
     }
   },
   {
-    "id": "sw20260803035",
+    "id": "sw20260804035",
     "kind": "opening",
     "needs_name": true,
     "headline": "Pacific Northwest Ballet to open new school location in Sodo",
@@ -1280,7 +1296,7 @@
     }
   },
   {
-    "id": "sw20260803036",
+    "id": "sw20260804036",
     "kind": "opening",
     "needs_name": false,
     "headline": "New Towne Acres Elementary School on track for 2027 opening",
@@ -1311,29 +1327,27 @@
     }
   },
   {
-    "id": "sw20260803037",
+    "id": "sw20260804037",
     "kind": "opening",
     "needs_name": false,
-    "headline": "Haywood County Schools breaks ground on new high school set to open in fall 2028",
+    "headline": "Drummond Central's School of DC Marks 9 Years of Opening Doors for New Talent - Little Black Book",
     "auto": [
       "name",
       "date_reported",
-      "source_links",
-      "state",
-      "region"
+      "source_links"
     ],
     "data": {
-      "name": "Haywood County High School",
+      "name": "Drummond Central's School",
       "link": "",
       "town": "",
-      "state": "TN",
-      "region": "East South Central",
+      "state": "",
+      "region": "",
       "type": "",
-      "date_reported": "2026-07-14",
+      "date_reported": "2026-08-03",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://www.wbbjtv.com/2026/07/14/haywood-county-schools-breaks-ground-new-high-school-set-open-fall-2028/",
-      "notes": "From the wbbjtv.com sweep \u2014 verify the details before approving. Headline: \"Haywood County Schools breaks ground on new high school set to open in fall 2028\"",
+      "source_links": "https://lbbonline.com/news/Drummond-Centrals-School-of-DC-Nine-Years",
+      "notes": "From the Little Black Book | LBBOnline sweep \u2014 verify the details before approving. Headline: \"Drummond Central's School of DC Marks 9 Years of Opening Doors for New Talent - Little Black Book\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -1344,40 +1358,7 @@
     }
   },
   {
-    "id": "sw20260803038",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "New School To Open In Lansdale",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Goddard School",
-      "link": "",
-      "town": "",
-      "state": "PA",
-      "region": "Middle Atlantic",
-      "type": "",
-      "date_reported": "2026-07-14",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://patch.com/pennsylvania/lansdale/new-school-open-lansdale",
-      "notes": "From the Patch sweep \u2014 verify the details before approving. Headline: \"New School To Open In Lansdale\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260803039",
+    "id": "sw20260804038",
     "kind": "closure",
     "needs_name": false,
     "headline": "Chinese owners of UK private schools criticized after closures",
@@ -1426,54 +1407,7 @@
     }
   },
   {
-    "id": "sw20260803040",
-    "kind": "closure",
-    "needs_name": true,
-    "headline": "Quakertown school's sudden closure alarms families | Exclusive",
-    "auto": [
-      "name",
-      "date_reported",
-      "link",
-      "enroll_source"
-    ],
-    "data": {
-      "name": "Quakertown school's sudden closure alarms families | Exclusive",
-      "covid": "",
-      "merging": "",
-      "new_school": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-07-29",
-      "enrollment": "",
-      "enroll_source": "PhillyBurbs",
-      "year_founded": "",
-      "notes": "From the PhillyBurbs sweep \u2014 headline named no school; add the school name. Headline: \"Quakertown school's sudden closure alarms families | Exclusive\"",
-      "prefin": "",
-      "link": "https://www.phillyburbs.com/story/news/education/2026/07/29/united-friends-quakertown-broad-street-day-school-private-sale-aa-property-holding-bucks-county/91076475007/",
-      "pct_finaid": "",
-      "link2": "",
-      "tuition": "",
-      "link3": "",
-      "pct_black": "",
-      "enr_black": "",
-      "pct_hispanic": "",
-      "enr_hispanic": "",
-      "pct_asian": "",
-      "enr_asian": "",
-      "pct_white": "",
-      "enr_white": "",
-      "pct_other": "",
-      "enr_other": "",
-      "link4": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": ""
-    }
-  },
-  {
-    "id": "sw20260803041",
+    "id": "sw20260804039",
     "kind": "closure",
     "needs_name": false,
     "headline": "New Private School to Open in Palm Desert After Palm Valley Closure",
@@ -1520,7 +1454,54 @@
     }
   },
   {
-    "id": "sw20260803042",
+    "id": "sw20260804040",
+    "kind": "closure",
+    "needs_name": true,
+    "headline": "Quakertown school's sudden closure alarms families | Exclusive",
+    "auto": [
+      "name",
+      "date_reported",
+      "link",
+      "enroll_source"
+    ],
+    "data": {
+      "name": "Quakertown school's sudden closure alarms families | Exclusive",
+      "covid": "",
+      "merging": "",
+      "new_school": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-07-29",
+      "enrollment": "",
+      "enroll_source": "PhillyBurbs",
+      "year_founded": "",
+      "notes": "From the PhillyBurbs sweep \u2014 headline named no school; add the school name. Headline: \"Quakertown school's sudden closure alarms families | Exclusive\"",
+      "prefin": "",
+      "link": "https://www.phillyburbs.com/story/news/education/2026/07/29/united-friends-quakertown-broad-street-day-school-private-sale-aa-property-holding-bucks-county/91076475007/",
+      "pct_finaid": "",
+      "link2": "",
+      "tuition": "",
+      "link3": "",
+      "pct_black": "",
+      "enr_black": "",
+      "pct_hispanic": "",
+      "enr_hispanic": "",
+      "pct_asian": "",
+      "enr_asian": "",
+      "pct_white": "",
+      "enr_white": "",
+      "pct_other": "",
+      "enr_other": "",
+      "link4": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": ""
+    }
+  },
+  {
+    "id": "sw20260804041",
     "kind": "closure",
     "needs_name": true,
     "headline": "Quakertown school closure catches families by surprise",
@@ -1567,57 +1548,7 @@
     }
   },
   {
-    "id": "sw20260803043",
-    "kind": "closure",
-    "needs_name": false,
-    "headline": "Private school in Bucks County shutting down after 42-year run",
-    "auto": [
-      "name",
-      "date_reported",
-      "link",
-      "enroll_source",
-      "type",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Lightning School",
-      "covid": "",
-      "merging": "",
-      "new_school": "",
-      "town": "",
-      "state": "NJ",
-      "region": "Middle Atlantic",
-      "type": "Independent",
-      "date_reported": "2026-07-14",
-      "enrollment": "",
-      "enroll_source": "WFMZ.com",
-      "year_founded": "",
-      "notes": "From the WFMZ.com sweep \u2014 verify the details before approving. Headline: \"Private school in Bucks County shutting down after 42-year run\"",
-      "prefin": "",
-      "link": "https://www.wfmz.com/news/schools/private-school-in-bucks-county-shutting-down-after-42-year-run/article_c7b14d1c-fc9b-46a4-9140-b1d36fe0d41b.html",
-      "pct_finaid": "",
-      "link2": "",
-      "tuition": "",
-      "link3": "",
-      "pct_black": "",
-      "enr_black": "",
-      "pct_hispanic": "",
-      "enr_hispanic": "",
-      "pct_asian": "",
-      "enr_asian": "",
-      "pct_white": "",
-      "enr_white": "",
-      "pct_other": "",
-      "enr_other": "",
-      "link4": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": ""
-    }
-  },
-  {
-    "id": "sw20260803044",
+    "id": "sw20260804042",
     "kind": "closure",
     "needs_name": true,
     "headline": "School Holidays Announced in AP and Telangana: PM's Visit and Heavy Rains Prompt Closures",
@@ -1664,7 +1595,7 @@
     }
   },
   {
-    "id": "sw20260803045",
+    "id": "sw20260804043",
     "kind": "closure",
     "needs_name": true,
     "headline": "Some Salem-Keizer elementary schools will close next year. Here\u2019s why.",
@@ -1711,7 +1642,7 @@
     }
   },
   {
-    "id": "sw20260803046",
+    "id": "sw20260804044",
     "kind": "closure",
     "needs_name": true,
     "headline": "Concerns grow as new wave of permanent school closures begins in southern West Virginia",
@@ -1760,7 +1691,7 @@
     }
   },
   {
-    "id": "sw20260803047",
+    "id": "sw20260804045",
     "kind": "closure",
     "needs_name": false,
     "headline": "WSAZ+ | Public meeting tonight before rock blasting begins; elementary school preparing to permanently close",
@@ -1809,7 +1740,7 @@
     }
   },
   {
-    "id": "sw20260803048",
+    "id": "sw20260804046",
     "kind": "closure",
     "needs_name": true,
     "headline": "Boone County schools among the latest in statewide string of possible permanent closures",
