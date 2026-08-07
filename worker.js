@@ -95,7 +95,7 @@ async function analyze(env, reasons){
   // a Workers AI binding named "AI" (Worker -> Settings -> Bindings -> Workers AI).
   if(env.AI){
     try{
-      const model=env.AI_MODEL||"@cf/meta/llama-3.1-8b-instruct";
+      const model=env.AI_MODEL||"@cf/meta/llama-3.3-70b-instruct-fp8-fast";
       const out=await env.AI.run(model,{messages:[{role:"user",content:prompt}],max_tokens:700});
       const text=(out&&(out.response||(out.result&&out.result.response)))||"";
       return text ? {ok:true, text} : {ok:false, error:"Workers AI returned no text: "+JSON.stringify(out).slice(0,400)};
