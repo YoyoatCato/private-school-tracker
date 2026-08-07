@@ -15,7 +15,7 @@ const STATE_DIV = {"alabama": ["AL", "East South Central"], "alaska": ["AK", "Pa
 //   {name, state?, town?}                 -> enrich a named school (location, NCES address, type, income)
 //   {url}                                 -> AUTO-ENTRY: classify + fully enrich a pasted news link
 //   {action:"learn", name?/phrase?/domain?}-> commit to data/learned_filters.json (needs GITHUB_TOKEN+GITHUB_REPO)
-//   {action:"analyze", reasons:[...]}     -> LLM suggestions from rejection reasons (needs LLM_API_KEY)
+//   {action:"analyze", reasons:[...]}     -> AI suggestions from rejection reasons (Workers AI binding "AI", or LLM_API_KEY)
 const UA = { "User-Agent": "Mozilla/5.0 (school-tracker mini-sweep)" };
 const GENERIC = new Set(["the","st","st.","saint","school","schools","academy","catholic","christian","high","middle","elementary","preparatory","prep","learning","center","montessori","of","and","college","holy"]);
 const SCHOOL_HINTS=["school","academy","prep","montessori","microschool","micro-school","learning center","learning academy"];
@@ -89,9 +89,21 @@ async function learn(env, e){
   return {ok:put.ok, status:put.status};
 }
 async function analyze(env, reasons){
-  const key=env.LLM_API_KEY; if(!key) return {ok:false, error:"LLM not configured (set LLM_API_KEY on the Worker)"};
-  const url=env.LLM_URL||"https://api.openai.com/v1/chat/completions"; const model=env.LLM_MODEL||"gpt-4o-mini";
   const prompt="You tune a filter for a US private-school opening/closure news tracker. Read these human rejection reasons and propose up to 8 concrete, reusable filter rules (specific phrases to block, or patterns). Be concise, one bullet each:\n\n"+(reasons||[]).map((r,i)=>(i+1)+". "+r).join("\n");
+  // Preferred path: Cloudflare Workers AI. Runs on the same account that hosts this
+  // Worker, has a free daily allowance, and needs no external key or signup - just add
+  // a Workers AI binding named "AI" (Worker -> Settings -> Bindings -> Workers AI).
+  if(env.AI){
+    try{
+      const model=env.AI_MODEL||"@cf/meta/llama-3.1-8b-instruct";
+      const out=await env.AI.run(model,{messages:[{role:"user",content:prompt}],max_tokens:700});
+      const text=(out&&(out.response||(out.result&&out.result.response)))||"";
+      return text ? {ok:true, text} : {ok:false, error:"Workers AI returned no text: "+JSON.stringify(out).slice(0,400)};
+    }catch(e){ return {ok:false, error:"Workers AI error: "+String(e)}; }
+  }
+  // Fallback: any OpenAI-compatible endpoint (LLM_API_KEY + optional LLM_URL, LLM_MODEL).
+  const key=env.LLM_API_KEY; if(!key) return {ok:false, error:"AI not configured (add a Workers AI binding named AI, or set LLM_API_KEY on the Worker)"};
+  const url=env.LLM_URL||"https://api.openai.com/v1/chat/completions"; const model=env.LLM_MODEL||"gpt-4o-mini";
   try{ const r=await fetch(url,{method:"POST",headers:{Authorization:"Bearer "+key,"Content-Type":"application/json"},body:JSON.stringify({model,messages:[{role:"user",content:prompt}],temperature:0.2})}); const j=await r.json(); return {ok:true, text:(j.choices&&j.choices[0]&&j.choices[0].message&&j.choices[0].message.content)||JSON.stringify(j).slice(0,600)}; }catch(e){ return {ok:false, error:String(e)}; }
 }
 
