@@ -1,6 +1,6 @@
 [
   {
-    "id": "sw20260824001",
+    "id": "sw20260825001",
     "kind": "closure",
     "needs_name": false,
     "headline": "Business Bites: Catholic high school closing; Arts on Fire, Alliance for Youth craft fair vendor applications open; GFPS faculty art show opening; Dahl House reopening; Nest opening in mall; Metal on the Missouri, Drool in the Pool upcoming; youth choir auditio",
@@ -50,7 +50,7 @@
     }
   },
   {
-    "id": "sw20260824002",
+    "id": "sw20260825002",
     "kind": "closure",
     "needs_name": false,
     "headline": "Queen of Martyrs school closing: Students, community members reunite after Evergreen Park, Illinois Catholic school's closure",
@@ -100,7 +100,7 @@
     }
   },
   {
-    "id": "sw20260824003",
+    "id": "sw20260825003",
     "kind": "closure",
     "needs_name": false,
     "headline": "More Albuquerque schools shut down as enrollment keeps falling",
@@ -150,7 +150,7 @@
     }
   },
   {
-    "id": "sw20260824004",
+    "id": "sw20260825004",
     "kind": "closure",
     "needs_name": false,
     "headline": "Queen of Martyrs in Evergreen Park to hold farewell celebration after school closure by Archdiocese of Chicago",
@@ -200,7 +200,7 @@
     }
   },
   {
-    "id": "sw20260824005",
+    "id": "sw20260825005",
     "kind": "closure",
     "needs_name": false,
     "headline": "COVID outbreak causes one-day closure at Park Ridge Achievement Academy",
@@ -249,7 +249,7 @@
     }
   },
   {
-    "id": "sw20260824006",
+    "id": "sw20260825006",
     "kind": "closure",
     "needs_name": true,
     "headline": "COVID-19-related school closures and students\u2019 achievement and motivation: Did teacher support make a difference",
@@ -296,7 +296,7 @@
     }
   },
   {
-    "id": "sw20260824007",
+    "id": "sw20260825007",
     "kind": "closure",
     "needs_name": false,
     "headline": "How Much Did We Learn From School Closures During the Covid-19 Pandemic?",
@@ -345,7 +345,38 @@
     }
   },
   {
-    "id": "sw20260824008",
+    "id": "sw20260825008",
+    "kind": "opening",
+    "needs_name": true,
+    "headline": "New private school opens in north Amarillo with focus on whole-child education",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "New private school opens in north Amarillo with focus on whole-child education",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-08-24",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.myhighplains.com/celebrate-250/new-private-school-opens-in-north-amarillo-with-focus-on-whole-child-education/",
+      "notes": "From the MyHighPlains.com sweep \u2014 headline named no school; add the school name. Headline: \"New private school opens in north Amarillo with focus on whole-child education\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260825009",
     "kind": "opening",
     "needs_name": true,
     "headline": "An elite private school is opening another Bay Area campus. \u2018The workload is staggering\u2019",
@@ -376,7 +407,7 @@
     }
   },
   {
-    "id": "sw20260824009",
+    "id": "sw20260825010",
     "kind": "opening",
     "needs_name": false,
     "headline": "Alpha School Opens: New private offering integrates AI-powered learning model",
@@ -409,30 +440,64 @@
     }
   },
   {
-    "id": "sw20260824010",
+    "id": "sw20260825011",
     "kind": "opening",
     "needs_name": false,
-    "headline": "Gwinnett mother opens academy for son with autism",
+    "headline": "PHOTOS: New Central Middle School Marks Grand Opening with Ribbon Cutting",
     "auto": [
       "name",
       "date_reported",
       "source_links",
-      "type",
+      "town",
+      "state",
+      "region",
+      "full_address"
+    ],
+    "data": {
+      "name": "Central Middle School",
+      "link": "",
+      "town": "Southington",
+      "state": "CT",
+      "region": "New England",
+      "type": "",
+      "date_reported": "2026-08-24",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://greenwichfreepress.com/news/government/photos-new-central-middle-school-marks-grand-opening-with-ribbon-cutting-252613/",
+      "notes": "From the Greenwich Free Press sweep \u2014 verify the details before approving. Headline: \"PHOTOS: New Central Middle School Marks Grand Opening with Ribbon Cutting\" Address auto-matched from NCES (2023-24 PSS) \u2014 verify.",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "1505 W St, Southington, CT 06489",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260825012",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "A fresh start: Amherst ready to open first new elementary school since 1970s",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
       "state",
       "region"
     ],
     "data": {
-      "name": "Ezekiel Preparatory Academy",
+      "name": "Amethyst Brook Elementary School",
       "link": "",
       "town": "",
-      "state": "GA",
-      "region": "South Atlantic",
-      "type": "Special Needs",
-      "date_reported": "2026-08-10",
+      "state": "NY",
+      "region": "Middle Atlantic",
+      "type": "",
+      "date_reported": "2026-08-23",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://www.fox5atlanta.com/news/autism-focused-private-school-launching-lilburn-september",
-      "notes": "From the FOX 5 Atlanta sweep \u2014 verify the details before approving. Headline: \"Gwinnett mother opens academy for son with autism\"",
+      "source_links": "https://gazettenet.com/2026/08/23/a-fresh-start-amherst-ready-to-open-first-new-elementary-school-since-1970s/",
+      "notes": "From the Daily Hampshire Gazette sweep \u2014 verify the details before approving. Headline: \"A fresh start: Amherst ready to open first new elementary school since 1970s\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -443,27 +508,27 @@
     }
   },
   {
-    "id": "sw20260824011",
+    "id": "sw20260825013",
     "kind": "opening",
     "needs_name": false,
-    "headline": "Why private schools opening overseas must adapt to thrive",
+    "headline": "\u2018A place where our future begins:\u2019 MCPS celebrates opening of new Burtonsville Elementary School building",
     "auto": [
       "name",
       "date_reported",
       "source_links"
     ],
     "data": {
-      "name": "Reigate Grammar School",
+      "name": "Burtonsville Elementary School",
       "link": "",
       "town": "",
       "state": "",
       "region": "",
       "type": "",
-      "date_reported": "2026-08-10",
+      "date_reported": "2026-08-24",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://www.tes.com/magazine/analysis/specialist-sector/why-private-schools-opening-overseas-must-adapt-thrive",
-      "notes": "From the Tes sweep \u2014 verify the details before approving. Headline: \"Why private schools opening overseas must adapt to thrive\"",
+      "source_links": "https://bethesdamagazine.com/2026/08/24/burtonsville-es-new-building/",
+      "notes": "From the Bethesda Magazine sweep \u2014 verify the details before approving. Headline: \"\u2018A place where our future begins:\u2019 MCPS celebrates opening of new Burtonsville Elementary School building\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -474,7 +539,7 @@
     }
   },
   {
-    "id": "sw20260824012",
+    "id": "sw20260825014",
     "kind": "opening",
     "needs_name": false,
     "headline": "Wapato to open new PACE High School with ribbon cutting | News | nbcrightnow.com",
@@ -507,104 +572,7 @@
     }
   },
   {
-    "id": "sw20260824013",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "A fresh start: Amherst ready to open first new elementary school since 1970s",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "Amethyst Brook Elementary School",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-08-23",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://gazettenet.com/2026/08/23/a-fresh-start-amherst-ready-to-open-first-new-elementary-school-since-1970s/",
-      "notes": "From the Daily Hampshire Gazette sweep \u2014 verify the details before approving. Headline: \"A fresh start: Amherst ready to open first new elementary school since 1970s\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260824014",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "New Clifton Heights Middle School to Open This Fall, Easing Upper Darby Overcrowding",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Clifton Heights Middle School",
-      "link": "",
-      "town": "",
-      "state": "DE",
-      "region": "South Atlantic",
-      "type": "",
-      "date_reported": "2026-08-23",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://delco.today/2026/08/clifton-heights-middle-school-opens-fall/",
-      "notes": "From the DELCO.Today sweep \u2014 verify the details before approving. Headline: \"New Clifton Heights Middle School to Open This Fall, Easing Upper Darby Overcrowding\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260824015",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Richmond High School for the Arts prepares to open new building",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Richmond High School",
-      "link": "",
-      "town": "",
-      "state": "VA",
-      "region": "South Atlantic",
-      "type": "",
-      "date_reported": "2026-08-20",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.12onyourside.com/2026/08/20/richmond-high-school-arts-prepares-open-new-building/",
-      "notes": "From the WWBT sweep \u2014 verify the details before approving. Headline: \"Richmond High School for the Arts prepares to open new building\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260824016",
+    "id": "sw20260825015",
     "kind": "opening",
     "needs_name": false,
     "headline": "AXIS International Academy's new school ready for 2026-27 school year",
@@ -635,73 +603,7 @@
     }
   },
   {
-    "id": "sw20260824017",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Alexandria schools open Monday with new boundaries, new leaders, and new walk zones",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Alexandria City High School",
-      "link": "",
-      "town": "",
-      "state": "VA",
-      "region": "South Atlantic",
-      "type": "",
-      "date_reported": "2026-08-21",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.alexandriabrief.com/alexandria-schools-open-monday-with-new-boundaries-new-leaders-and-new-walk-zones/",
-      "notes": "From the The Alexandria Brief sweep \u2014 verify the details before approving. Headline: \"Alexandria schools open Monday with new boundaries, new leaders, and new walk zones\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260824018",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Beaufort County celebrates opening of new Washington Elementary School",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Washington Elementary School",
-      "link": "",
-      "town": "",
-      "state": "WA",
-      "region": "Pacific",
-      "type": "",
-      "date_reported": "2026-08-18",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.witn.com/2026/08/18/beaufort-county-celebrates-opening-new-washington-elementary-school/",
-      "notes": "From the WITN sweep \u2014 verify the details before approving. Headline: \"Beaufort County celebrates opening of new Washington Elementary School\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260824019",
+    "id": "sw20260825016",
     "kind": "opening",
     "needs_name": false,
     "headline": "Generations of Cheesemakers celebrate grand opening of new Monroe High School",
@@ -734,106 +636,7 @@
     }
   },
   {
-    "id": "sw20260824020",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Baltimore City Schools open Monday. What\u2019s new?",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Education High School",
-      "link": "",
-      "town": "",
-      "state": "MD",
-      "region": "South Atlantic",
-      "type": "",
-      "date_reported": "2026-08-22",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.baltimoresun.com/2026/08/22/baltimore-schools-new-ceo-dawson/",
-      "notes": "From the Baltimore Sun sweep \u2014 verify the details before approving. Headline: \"Baltimore City Schools open Monday. What\u2019s new?\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260824021",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Architect: New Lexington Elementary School will open in fall 2028",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Lexington Elementary School",
-      "link": "",
-      "town": "",
-      "state": "OH",
-      "region": "East North Central",
-      "type": "",
-      "date_reported": "2026-08-20",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.richlandsource.com/2026/08/20/architect-says-new-lexington-elementary-school-will-open-in-fall-2028/",
-      "notes": "From the Richland Source sweep \u2014 verify the details before approving. Headline: \"Architect: New Lexington Elementary School will open in fall 2028\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260824022",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "New principal starts at Greene Central High School as new facilities open",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Greene Central High School",
-      "link": "",
-      "town": "",
-      "state": "NC",
-      "region": "South Atlantic",
-      "type": "",
-      "date_reported": "2026-08-22",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.witn.com/2026/08/22/new-principal-starts-greene-central-high-school-new-facilities-open/",
-      "notes": "From the WITN sweep \u2014 verify the details before approving. Headline: \"New principal starts at Greene Central High School as new facilities open\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260824023",
+    "id": "sw20260825017",
     "kind": "opening",
     "needs_name": false,
     "headline": "Gallery: Inside the new Foster School ahead of its grand opening",
@@ -864,10 +667,10 @@
     }
   },
   {
-    "id": "sw20260824024",
+    "id": "sw20260825018",
     "kind": "opening",
     "needs_name": false,
-    "headline": "Opening of Brentwood Borough's new elementary school delayed until 2027, district says",
+    "headline": "New facility opens for students at Winding Waters and Weeki Wachee High School",
     "auto": [
       "name",
       "date_reported",
@@ -876,17 +679,17 @@
       "region"
     ],
     "data": {
-      "name": "Pittsburgh Weather School",
+      "name": "Winding Waters and Weeki Wachee High School",
       "link": "",
       "town": "",
-      "state": "CO",
-      "region": "Mountain",
+      "state": "WA",
+      "region": "Pacific",
       "type": "",
-      "date_reported": "2026-08-04",
+      "date_reported": "2026-08-05",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://www.cbsnews.com/pittsburgh/news/brentwood-borough-elementary-school-opening-delayed/",
-      "notes": "From the CBS News sweep \u2014 verify the details before approving. Headline: \"Opening of Brentwood Borough's new elementary school delayed until 2027, district says\"",
+      "source_links": "https://baynews9.com/fl/tampa/news/2026/08/05/hernando-county-school-district-celebrating-grand-opening-of-new-joint-facility-for-winding-waters-and-weeki-wachee-high-school-students",
+      "notes": "From the Bay News 9 sweep \u2014 verify the details before approving. Headline: \"New facility opens for students at Winding Waters and Weeki Wachee High School\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -897,10 +700,10 @@
     }
   },
   {
-    "id": "sw20260824025",
+    "id": "sw20260825019",
     "kind": "opening",
     "needs_name": false,
-    "headline": "Greene Central High School Opens Its Doors: Ribbon Cutting Marks New Chapter for the Rams",
+    "headline": "Durham High School celebrates opening of new football stadium",
     "auto": [
       "name",
       "date_reported",
@@ -909,17 +712,17 @@
       "region"
     ],
     "data": {
-      "name": "Greene Central High School",
+      "name": "Durham High School",
       "link": "",
       "town": "",
-      "state": "NC",
-      "region": "South Atlantic",
+      "state": "CA",
+      "region": "Pacific",
       "type": "",
-      "date_reported": "2026-08-20",
+      "date_reported": "2026-08-23",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://www.neusenews.com/index/2026/8/20/rep-chris-humphrey-celebrates-opening-of-new-greene-central-high-school",
-      "notes": "From the Neuse News sweep \u2014 verify the details before approving. Headline: \"Greene Central High School Opens Its Doors: Ribbon Cutting Marks New Chapter for the Rams\"",
+      "source_links": "https://www.actionnewsnow.com/news/butte-county/durham-high-school-celebrates-opening-of-new-football-stadium/article_bd2787ae-0a2b-461c-ba99-bf3be6401ede.html",
+      "notes": "From the Action News Now sweep \u2014 verify the details before approving. Headline: \"Durham High School celebrates opening of new football stadium\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -930,29 +733,27 @@
     }
   },
   {
-    "id": "sw20260824026",
+    "id": "sw20260825020",
     "kind": "opening",
-    "needs_name": false,
-    "headline": "New vocational high school is getting ready to open in Fall River",
+    "needs_name": true,
+    "headline": "Prestigious ballet school to open in former New Castle church",
     "auto": [
       "name",
       "date_reported",
-      "source_links",
-      "state",
-      "region"
+      "source_links"
     ],
     "data": {
-      "name": "Diman Regional Vocational Technical High School",
+      "name": "Prestigious ballet school to open in former New Castle church",
       "link": "",
       "town": "",
-      "state": "MA",
-      "region": "New England",
+      "state": "",
+      "region": "",
       "type": "",
       "date_reported": "2026-08-21",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://turnto10.com/news/local/new-vocational-high-school-is-getting-ready-to-open-in-fall-river-aug-21-2026",
-      "notes": "From the WJAR sweep \u2014 verify the details before approving. Headline: \"New vocational high school is getting ready to open in Fall River\"",
+      "source_links": "https://www.wkbn.com/news/local-news/new-castle-news/prestigious-ballet-school-to-open-in-former-new-castle-church/",
+      "notes": "From the WKBN.com sweep \u2014 headline named no school; add the school name. Headline: \"Prestigious ballet school to open in former New Castle church\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -963,10 +764,41 @@
     }
   },
   {
-    "id": "sw20260824027",
+    "id": "sw20260825021",
     "kind": "opening",
     "needs_name": false,
-    "headline": "Ribbon-cutting marks opening of new Washington Elementary School in Beaufort County",
+    "headline": "Prepping for school start in southwestern N.S., new CSAP school opening in Clare",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "Evelyn Richardson Memorial Elementary School",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-08-24",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.saltwire.com/nova-scotia/tri-county-vangaurd/prepping-for-school-start-in-southwestern-n-s-new-csap-school-opening-in-clare",
+      "notes": "From the PNI Atlantic News sweep \u2014 verify the details before approving. Headline: \"Prepping for school start in southwestern N.S., new CSAP school opening in Clare\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260825022",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "Beaufort County celebrates opening of new Washington Elementary School",
     "auto": [
       "name",
       "date_reported",
@@ -984,8 +816,8 @@
       "date_reported": "2026-08-18",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://wcti12.com/news/local/ribbon-cutting-marks-opening-of-new-washington-elementary-school-in-beaufort-county",
-      "notes": "From the WCTI sweep \u2014 verify the details before approving. Headline: \"Ribbon-cutting marks opening of new Washington Elementary School in Beaufort County\"",
+      "source_links": "https://www.witn.com/2026/08/18/beaufort-county-celebrates-opening-new-washington-elementary-school/",
+      "notes": "From the WITN sweep \u2014 verify the details before approving. Headline: \"Beaufort County celebrates opening of new Washington Elementary School\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -996,10 +828,10 @@
     }
   },
   {
-    "id": "sw20260824028",
+    "id": "sw20260825023",
     "kind": "opening",
-    "needs_name": true,
-    "headline": "Florida's new 'Open Division' reshapes high school football playoffs, sparking debate among coaches",
+    "needs_name": false,
+    "headline": "Gems Education is opening 5k new school seats this September despite conflict-driven construction delays",
     "auto": [
       "name",
       "date_reported",
@@ -1008,17 +840,17 @@
       "region"
     ],
     "data": {
-      "name": "Florida's new 'Open Division' reshapes high school football playoffs, sparking debate among coaches",
+      "name": "Gems Founders School",
       "link": "",
       "town": "",
-      "state": "FL",
+      "state": "GA",
       "region": "South Atlantic",
       "type": "",
-      "date_reported": "2026-08-21",
+      "date_reported": "2026-08-25",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://www.firstcoastnews.com/article/sports/high-school/hs-football/open-division-reshapes-high-school-football-playoffs-sideline-26/77-6ea0b5df-355f-4f03-8456-0441fd2ebe4b",
-      "notes": "From the firstcoastnews.com sweep \u2014 headline named no school; add the school name. Headline: \"Florida's new 'Open Division' reshapes high school football playoffs, sparking debate among coaches\"",
+      "source_links": "https://enterpriseam.com/uae/2026/08/25/gems-education-is-opening-5k-new-school-seats-this-september-despite-conflict-driven-construction-delays/",
+      "notes": "From the EnterpriseAM sweep \u2014 verify the details before approving. Headline: \"Gems Education is opening 5k new school seats this September despite conflict-driven construction delays\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -1029,7 +861,71 @@
     }
   },
   {
-    "id": "sw20260824029",
+    "id": "sw20260825024",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "Charlton County High School opening delayed; students to start August 13",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "Charlton County High School",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-08-10",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.firstcoastnews.com/article/news/education/charlton-county-high-school-opening-delayed-to-start-august-13/77-97763724-0898-4b53-a488-cce136b840d4",
+      "notes": "From the firstcoastnews.com sweep \u2014 verify the details before approving. Headline: \"Charlton County High School opening delayed; students to start August 13\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260825025",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "New Williston elementary school opening this fall",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "Sloulin Elementary School",
+      "link": "",
+      "town": "",
+      "state": "TX",
+      "region": "West South Central",
+      "type": "",
+      "date_reported": "2026-08-12",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.kfyrtv.com/2026/08/12/new-williston-elementary-school-opening-this-fall/",
+      "notes": "From the KFYR-TV sweep \u2014 verify the details before approving. Headline: \"New Williston elementary school opening this fall\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260825026",
     "kind": "opening",
     "needs_name": false,
     "headline": "New year, new school: Iron County schools celebrate opening of newly rebuilt East Elementary",
@@ -1062,71 +958,7 @@
     }
   },
   {
-    "id": "sw20260824030",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Charlton County High School opening delayed; students to start August 13",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "Charlton County High School",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-08-10",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.firstcoastnews.com/article/news/education/charlton-county-high-school-opening-delayed-to-start-august-13/77-97763724-0898-4b53-a488-cce136b840d4",
-      "notes": "From the firstcoastnews.com sweep \u2014 verify the details before approving. Headline: \"Charlton County High School opening delayed; students to start August 13\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260824031",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Original Foster School alumnus \u2018humbled\u2019 and \u2018thankful\u2019 by new school\u2019s opening",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Original Foster School",
-      "link": "",
-      "town": "",
-      "state": "IL",
-      "region": "East North Central",
-      "type": "",
-      "date_reported": "2026-08-07",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://evanstonroundtable.com/2026/08/07/original-foster-school-alumnus-humbled-and-thankful-by-new-schools-opening/",
-      "notes": "From the Evanston RoundTable sweep \u2014 verify the details before approving. Headline: \"Original Foster School alumnus \u2018humbled\u2019 and \u2018thankful\u2019 by new school\u2019s opening\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260824032",
+    "id": "sw20260825027",
     "kind": "opening",
     "needs_name": false,
     "headline": "Deputies prep for opening of new school",
@@ -1159,106 +991,7 @@
     }
   },
   {
-    "id": "sw20260824033",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "New Williston elementary school opening this fall",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Sloulin Elementary School",
-      "link": "",
-      "town": "",
-      "state": "ND",
-      "region": "West North Central",
-      "type": "",
-      "date_reported": "2026-08-12",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.kfyrtv.com/2026/08/12/new-williston-elementary-school-opening-this-fall/",
-      "notes": "From the KFYR-TV sweep \u2014 verify the details before approving. Headline: \"New Williston elementary school opening this fall\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260824034",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "First look inside new Starr Elementary School, set to open Aug. 31",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Starr Elementary School",
-      "link": "",
-      "town": "",
-      "state": "WA",
-      "region": "Pacific",
-      "type": "",
-      "date_reported": "2026-08-17",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.nbc26.com/greenbay/first-look-inside-new-starr-elementary-school-set-to-open-aug-31",
-      "notes": "From the NBC26 sweep \u2014 verify the details before approving. Headline: \"First look inside new Starr Elementary School, set to open Aug. 31\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260824035",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "More than 39,000 Berkeley County students head back to class as two new schools open",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Midtown Middle School",
-      "link": "",
-      "town": "",
-      "state": "SC",
-      "region": "South Atlantic",
-      "type": "",
-      "date_reported": "2026-08-12",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://abcnews4.com/news/local/more-than-39000-berkeley-county-students-head-back-to-class-as-two-new-schools-open-education-back-to-school-bee-tree-elementary-midtown-middle-school-growth-plan-funding-safety",
-      "notes": "From the WCIV sweep \u2014 verify the details before approving. Headline: \"More than 39,000 Berkeley County students head back to class as two new schools open\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260824036",
+    "id": "sw20260825028",
     "kind": "opening",
     "needs_name": false,
     "headline": "Cherokee Immersion Middle School to open on Monday",
@@ -1291,7 +1024,71 @@
     }
   },
   {
-    "id": "sw20260824037",
+    "id": "sw20260825029",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "More than 39,000 Berkeley County students head back to class as two new schools open",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "Midtown Middle School",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-08-12",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://abcnews4.com/news/local/more-than-39000-berkeley-county-students-head-back-to-class-as-two-new-schools-open-education-back-to-school-bee-tree-elementary-midtown-middle-school-growth-plan-funding-safety",
+      "notes": "From the WCIV sweep \u2014 verify the details before approving. Headline: \"More than 39,000 Berkeley County students head back to class as two new schools open\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260825030",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "Ribbon-cutting marks opening of new Washington Elementary School in Beaufort County",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "Washington Elementary School",
+      "link": "",
+      "town": "",
+      "state": "WA",
+      "region": "Pacific",
+      "type": "",
+      "date_reported": "2026-08-18",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://wcti12.com/news/local/ribbon-cutting-marks-opening-of-new-washington-elementary-school-in-beaufort-county",
+      "notes": "From the WCTI sweep \u2014 verify the details before approving. Headline: \"Ribbon-cutting marks opening of new Washington Elementary School in Beaufort County\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260825031",
     "kind": "opening",
     "needs_name": false,
     "headline": "Opening day pushed back at Charlton County\u2019s new high school; parents and students weigh in",
@@ -1322,7 +1119,40 @@
     }
   },
   {
-    "id": "sw20260824038",
+    "id": "sw20260825032",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "First look inside new Starr Elementary School, set to open Aug. 31",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "Starr Elementary School",
+      "link": "",
+      "town": "",
+      "state": "WA",
+      "region": "Pacific",
+      "type": "",
+      "date_reported": "2026-08-17",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.nbc26.com/greenbay/first-look-inside-new-starr-elementary-school-set-to-open-aug-31",
+      "notes": "From the NBC26 sweep \u2014 verify the details before approving. Headline: \"First look inside new Starr Elementary School, set to open Aug. 31\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260825033",
     "kind": "opening",
     "needs_name": false,
     "headline": "Opening 2 \u2018truly amazing\u2019 new schools gives Joliet District 86 an extra reason to celebrate school year",
@@ -1355,102 +1185,7 @@
     }
   },
   {
-    "id": "sw20260824039",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "The Beautiful New Wood Middle School Campus is Officially Open",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "Beautiful New Wood Middle School",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-08-12",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://alamedapost.com/features/alameda-life/the-beautiful-new-wood-middle-school-campus-is-officially-open/",
-      "notes": "From the Alameda Post sweep \u2014 verify the details before approving. Headline: \"The Beautiful New Wood Middle School Campus is Officially Open\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260824040",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Columbia Schools welcomes opening of Eagle Bluffs Elementary School",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "Eagle Bluffs Elementary School",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-08-04",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.columbiatribune.com/picture-gallery/news/education/2026/08/04/school-officials-mark-opening-of-new-elementary-school-in-columbia/91163007007/",
-      "notes": "From the Columbia Daily Tribune sweep \u2014 verify the details before approving. Headline: \"Columbia Schools welcomes opening of Eagle Bluffs Elementary School\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260824041",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Local district changes 2026-2027 start date for opening of new elementary school",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Bethel Park Elementary School",
-      "link": "",
-      "town": "",
-      "state": "IA",
-      "region": "West North Central",
-      "type": "",
-      "date_reported": "2026-08-04",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.wtae.com/article/bethel-park-2026-2027-school-start-new-elementary-school/73338688",
-      "notes": "From the WTAE sweep \u2014 verify the details before approving. Headline: \"Local district changes 2026-2027 start date for opening of new elementary school\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260824042",
+    "id": "sw20260825034",
     "kind": "opening",
     "needs_name": false,
     "headline": "New $21 million River Stone Day School is set to open in Rockledge",
@@ -1484,38 +1219,7 @@
     }
   },
   {
-    "id": "sw20260824043",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Your Opening Guide to Bethel Park Elementary School",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "Bethel Park Elementary School",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-08-04",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.bpsd.org/apps/news/article/2216063?categoryId=20490",
-      "notes": "From the Bethel Park School District sweep \u2014 verify the details before approving. Headline: \"Your Opening Guide to Bethel Park Elementary School\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260824044",
+    "id": "sw20260825035",
     "kind": "opening",
     "needs_name": false,
     "headline": "New Foster School opens in Evanston\u2019s historic African-American Fifth Ward : \u2018Joyful day\u2019",
@@ -1548,7 +1252,7 @@
     }
   },
   {
-    "id": "sw20260824045",
+    "id": "sw20260825036",
     "kind": "opening",
     "needs_name": false,
     "headline": "Timber Mill High School to open in 2027 with freshmen, sophomores and juniors",
@@ -1579,73 +1283,7 @@
     }
   },
   {
-    "id": "sw20260824046",
-    "kind": "opening",
-    "needs_name": true,
-    "headline": "Transport Department Urges Enhanced Public Transport Services for September 1 School Opening",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Transport Department Urges Enhanced Public Transport Services for September 1 School Opening",
-      "link": "",
-      "town": "",
-      "state": "VA",
-      "region": "South Atlantic",
-      "type": "",
-      "date_reported": "2026-08-24",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.bastillepost.com/global/article/6101849-transport-department-urges-enhanced-public-transport-services-for-september-1-school-opening",
-      "notes": "From the bastillepost.com sweep \u2014 headline named no school; add the school name. Headline: \"Transport Department Urges Enhanced Public Transport Services for September 1 School Opening\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260824047",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "DFW\u2019s six-year streak of opening new high schools ends this fall",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Richland High School",
-      "link": "",
-      "town": "",
-      "state": "TX",
-      "region": "West South Central",
-      "type": "",
-      "date_reported": "2026-08-04",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.audacy.com/krld/news/local/back-to-school-2677654842",
-      "notes": "From the Audacy sweep \u2014 verify the details before approving. Headline: \"DFW\u2019s six-year streak of opening new high schools ends this fall\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260824048",
+    "id": "sw20260825037",
     "kind": "opening",
     "needs_name": false,
     "headline": "Opening planned for new Blind River school",
@@ -1676,7 +1314,7 @@
     }
   },
   {
-    "id": "sw20260824049",
+    "id": "sw20260825038",
     "kind": "closure",
     "needs_name": false,
     "headline": "New School Prepares to Open After Palm Valley Closure",
@@ -1723,7 +1361,89 @@
     }
   },
   {
-    "id": "sw20260824050",
+    "id": "sw20260825039",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "Katy ID launches virtual high school open to students across Texas",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "Legacy Virtual High School",
+      "link": "",
+      "town": "",
+      "state": "TX",
+      "region": "West South Central",
+      "type": "",
+      "date_reported": "2026-08-12",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.click2houston.com/news/local/2026/08/12/katy-id-launches-virtual-high-school-open-to-students-across-texas/",
+      "notes": "From the Click2Houston sweep \u2014 verify the details before approving. Headline: \"Katy ID launches virtual high school open to students across Texas\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260825040",
+    "kind": "closure",
+    "needs_name": false,
+    "headline": "Three Logan County schools slated for permanent closure amid declining enrollment",
+    "auto": [
+      "name",
+      "date_reported",
+      "link",
+      "enroll_source",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "Baseball High School",
+      "covid": "",
+      "merging": "",
+      "new_school": "",
+      "town": "",
+      "state": "WV",
+      "region": "South Atlantic",
+      "type": "",
+      "date_reported": "2026-08-13",
+      "enrollment": "",
+      "enroll_source": "WVOW Radio",
+      "year_founded": "",
+      "notes": "From the WVOW Radio sweep \u2014 verify the details before approving. Headline: \"Three Logan County schools slated for permanent closure amid declining enrollment\"",
+      "prefin": "",
+      "link": "https://www.wvowradio.com/post/three-logan-county-schools-slated-for-permanent-closured-amid-declining-enrollment",
+      "pct_finaid": "",
+      "link2": "",
+      "tuition": "",
+      "link3": "",
+      "pct_black": "",
+      "enr_black": "",
+      "pct_hispanic": "",
+      "enr_hispanic": "",
+      "pct_asian": "",
+      "enr_asian": "",
+      "pct_white": "",
+      "enr_white": "",
+      "pct_other": "",
+      "enr_other": "",
+      "link4": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": ""
+    }
+  },
+  {
+    "id": "sw20260825041",
     "kind": "closure",
     "needs_name": true,
     "headline": "Unlicensed Schools Face Permanent Closure",
