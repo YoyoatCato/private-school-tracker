@@ -1,6 +1,6 @@
 [
   {
-    "id": "sw20260907001",
+    "id": "sw20260908001",
     "kind": "closure",
     "needs_name": false,
     "headline": "Where a Catholic School Closed, a Charter School Opens",
@@ -48,7 +48,7 @@
     }
   },
   {
-    "id": "sw20260907002",
+    "id": "sw20260908002",
     "kind": "closure",
     "needs_name": true,
     "headline": "Several Northeast Ohio schools to close Wednesday amid dangerous heat",
@@ -97,7 +97,7 @@
     }
   },
   {
-    "id": "sw20260907003",
+    "id": "sw20260908003",
     "kind": "closure",
     "needs_name": false,
     "headline": "Business Bites: Catholic high school closing; new CEO for Great Falls Clinic; Arts on Fire, Alliance for Youth craft fair vendor applications open; GFPS faculty art show opening; Dahl House reopening; Nest opening in mall; Metal on the Missouri, Drool in the Po",
@@ -147,7 +147,7 @@
     }
   },
   {
-    "id": "sw20260907004",
+    "id": "sw20260908004",
     "kind": "closure",
     "needs_name": true,
     "headline": "COVID levels on the rise in 47 states, schools in 2 states close to slow the spread",
@@ -194,54 +194,7 @@
     }
   },
   {
-    "id": "sw20260907005",
-    "kind": "closure",
-    "needs_name": true,
-    "headline": "COVID-19-related school closures and students\u2019 achievement and motivation: Did teacher support make a difference",
-    "auto": [
-      "name",
-      "date_reported",
-      "link",
-      "enroll_source"
-    ],
-    "data": {
-      "name": "COVID-19-related school closures and students\u2019 achievement and motivation: Did teacher support make a difference",
-      "covid": "",
-      "merging": "",
-      "new_school": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-08-19",
-      "enrollment": "",
-      "enroll_source": "Nature",
-      "year_founded": "",
-      "notes": "From the Nature sweep \u2014 headline named no school; add the school name. Headline: \"COVID-19-related school closures and students\u2019 achievement and motivation: Did teacher support make a difference\"",
-      "prefin": "",
-      "link": "https://www.nature.com/articles/s41539-026-00439-1",
-      "pct_finaid": "",
-      "link2": "",
-      "tuition": "",
-      "link3": "",
-      "pct_black": "",
-      "enr_black": "",
-      "pct_hispanic": "",
-      "enr_hispanic": "",
-      "pct_asian": "",
-      "enr_asian": "",
-      "pct_white": "",
-      "enr_white": "",
-      "pct_other": "",
-      "enr_other": "",
-      "link4": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": ""
-    }
-  },
-  {
-    "id": "sw20260907006",
+    "id": "sw20260908005",
     "kind": "closure",
     "needs_name": false,
     "headline": "COVID outbreak causes one-day closure at Park Ridge Achievement Academy",
@@ -290,34 +243,32 @@
     }
   },
   {
-    "id": "sw20260907007",
+    "id": "sw20260908006",
     "kind": "closure",
-    "needs_name": false,
-    "headline": "Did Acton shut down Ohio? Where did Ramaswamy go to school? We fact-check ads.",
+    "needs_name": true,
+    "headline": "COVID-19-related school closures and students\u2019 achievement and motivation: Did teacher support make a difference",
     "auto": [
       "name",
       "date_reported",
       "link",
-      "enroll_source",
-      "state",
-      "region"
+      "enroll_source"
     ],
     "data": {
-      "name": "Syracuse University\u2019s S.I. Newhouse School",
+      "name": "COVID-19-related school closures and students\u2019 achievement and motivation: Did teacher support make a difference",
       "covid": "",
       "merging": "",
       "new_school": "",
       "town": "",
-      "state": "OH",
-      "region": "East North Central",
+      "state": "",
+      "region": "",
       "type": "",
-      "date_reported": "2026-09-04",
+      "date_reported": "2026-08-19",
       "enrollment": "",
-      "enroll_source": "Ohio Capital Journal",
+      "enroll_source": "nature.com",
       "year_founded": "",
-      "notes": "From the Ohio Capital Journal sweep \u2014 verify the details before approving. Headline: \"Did Acton shut down Ohio? Where did Ramaswamy go to school? We fact-check ads.\"",
+      "notes": "From the nature.com sweep \u2014 headline named no school; add the school name. Headline: \"COVID-19-related school closures and students\u2019 achievement and motivation: Did teacher support make a difference\"",
       "prefin": "",
-      "link": "https://ohiocapitaljournal.com/2026/09/04/did-acton-shut-down-ohio-where-did-ramaswamy-go-to-school-we-fact-check-ads/",
+      "link": "https://www.nature.com/articles/s41539-026-00439-1",
       "pct_finaid": "",
       "link2": "",
       "tuition": "",
@@ -339,7 +290,7 @@
     }
   },
   {
-    "id": "sw20260907008",
+    "id": "sw20260908007",
     "kind": "closure",
     "needs_name": true,
     "headline": "Cooper's 2020 announcement of the reopening of schools from COVID-era closures (Video)",
@@ -386,7 +337,7 @@
     }
   },
   {
-    "id": "sw20260907009",
+    "id": "sw20260908008",
     "kind": "opening",
     "needs_name": true,
     "headline": "An elite private school is opening another Bay Area campus. \u2018The workload is staggering\u2019",
@@ -406,7 +357,7 @@
       "opening_date": "",
       "exp_enrollment": "",
       "source_links": "https://www.sfchronicle.com/eastbay/article/basis-independent-private-school-dublin-22385567.php",
-      "notes": "From the sfchronicle.com sweep \u2014 headline named no school; add the school name. Headline: \"An elite private school is opening another Bay Area campus. \u2018The workload is staggering\u2019\"",
+      "notes": "From the San Francisco Chronicle sweep \u2014 headline named no school; add the school name. Headline: \"An elite private school is opening another Bay Area campus. \u2018The workload is staggering\u2019\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -417,127 +368,29 @@
     }
   },
   {
-    "id": "sw20260907010",
-    "kind": "opening",
-    "needs_name": true,
-    "headline": "New private school opens in north Amarillo with focus on whole-child education",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "New private school opens in north Amarillo with focus on whole-child education",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-08-24",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.myhighplains.com/celebrate-250/new-private-school-opens-in-north-amarillo-with-focus-on-whole-child-education/",
-      "notes": "From the MyHighPlains.com sweep \u2014 headline named no school; add the school name. Headline: \"New private school opens in north Amarillo with focus on whole-child education\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260907011",
-    "kind": "opening",
-    "needs_name": true,
-    "headline": "Emomali Rahmon presented gifts to orphaned children and opened a new private school with swimming pools and a shooting range in Dushanbe",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "Emomali Rahmon presented gifts to orphaned children and opened a new private school with swimming pools and a shooting range in Dushanbe",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-09-02",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://asiaplus.news/en/2026/09/02/emomali-rahmon-presented-gifts-to-orphaned-children-and-opened-a-new-private-school-with-swimming-pools-and-a-shooting-range-in-dushanbe/",
-      "notes": "From the \u0410\u0437\u0438\u044f-\u041f\u043b\u044e\u0441 sweep \u2014 headline named no school; add the school name. Headline: \"Emomali Rahmon presented gifts to orphaned children and opened a new private school with swimming pools and a shooting range in Dushanbe\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260907012",
+    "id": "sw20260908009",
     "kind": "opening",
     "needs_name": false,
-    "headline": "Private School Predictions Opening Weekend",
+    "headline": "2 new schools open their doors for Cheshire students",
     "auto": [
       "name",
       "date_reported",
       "source_links",
-      "town",
       "state",
-      "region",
-      "full_address",
-      "tract_mfi",
-      "data_year"
+      "region"
     ],
     "data": {
-      "name": "Private School",
+      "name": "Norton Elementary School",
       "link": "",
-      "town": "Dublin",
+      "town": "",
       "state": "VA",
       "region": "South Atlantic",
       "type": "",
-      "date_reported": "2026-08-27",
+      "date_reported": "2026-09-08",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://www.on3.com/sites/virginia-preps/news/private-school-predictions-opening-weekend/",
-      "notes": "From the On3 sweep \u2014 verify the details before approving. Headline: \"Private School Predictions Opening Weekend\" Address auto-matched from NCES (2023-24 PSS) \u2014 verify. Income = 2026 FFIEC est. MSA/MD MFI for Blacksburg-Christiansburg-Radford, VA Metro Area.",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "205 5th St, Dublin, VA 24084",
-      "tract_mfi": "107100",
-      "data_year": "2026",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260907013",
-    "kind": "opening",
-    "needs_name": true,
-    "headline": "New Catholic high school opens in Sioux Falls",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "type"
-    ],
-    "data": {
-      "name": "New Catholic high school opens in Sioux Falls",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "Roman Catholic",
-      "date_reported": "2026-08-20",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.keloland.com/news/local-news/new-catholic-high-school-opens-in-sioux-falls/",
-      "notes": "From the keloland.com sweep \u2014 headline named no school; add the school name. Headline: \"New Catholic high school opens in Sioux Falls\"",
+      "source_links": "https://www.wdbj7.com/video/2026/09/08/2-new-schools-open-their-doors-cheshire-students/",
+      "notes": "From the WDBJ7 sweep \u2014 verify the details before approving. Headline: \"2 new schools open their doors for Cheshire students\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -548,27 +401,27 @@
     }
   },
   {
-    "id": "sw20260907014",
+    "id": "sw20260908010",
     "kind": "opening",
     "needs_name": false,
-    "headline": "Ras Al Khaimah opens 3 private schools to meet growing demand for education",
+    "headline": "Yermo School celebrates milestone grand opening of gym, health center",
     "auto": [
       "name",
       "date_reported",
       "source_links"
     ],
     "data": {
-      "name": "Al Ibdaa Private Academy",
+      "name": "Yermo School",
       "link": "",
       "town": "",
       "state": "",
       "region": "",
       "type": "",
-      "date_reported": "2026-09-02",
+      "date_reported": "2026-09-08",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://www.khaleejtimes.com/uae/education/ras-al-khaimah-3-new-private-schools",
-      "notes": "From the Khaleej Times sweep \u2014 verify the details before approving. Headline: \"Ras Al Khaimah opens 3 private schools to meet growing demand for education\"",
+      "source_links": "https://www.vvdailypress.com/story/news/2026/09/08/yermo-school-new-gym-health-center-serves-students-families/91615020007/",
+      "notes": "From the vvdailypress.com sweep \u2014 verify the details before approving. Headline: \"Yermo School celebrates milestone grand opening of gym, health center\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -579,27 +432,27 @@
     }
   },
   {
-    "id": "sw20260907015",
+    "id": "sw20260908011",
     "kind": "opening",
     "needs_name": true,
-    "headline": "Issyk-Kul: New school in Frunze village will open in September",
+    "headline": "New School of Rock location opening in Rockville",
     "auto": [
       "name",
       "date_reported",
       "source_links"
     ],
     "data": {
-      "name": "Issyk-Kul: New school in Frunze village will open in September",
+      "name": "New School of Rock location opening in Rockville",
       "link": "",
       "town": "",
       "state": "",
       "region": "",
       "type": "",
-      "date_reported": "2026-09-07",
+      "date_reported": "2026-09-05",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://egov.kg/en/ministry/construction/news/47186",
-      "notes": "From the EGOV.KG sweep \u2014 headline named no school; add the school name. Headline: \"Issyk-Kul: New school in Frunze village will open in September\"",
+      "source_links": "https://www.wusa9.com/video/news/community/new-school-of-rock-location-opening-in-rockville/65-d62c7369-9252-435e-87de-aa60813c0828",
+      "notes": "From the WUSA9 sweep \u2014 headline named no school; add the school name. Headline: \"New School of Rock location opening in Rockville\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -610,7 +463,7 @@
     }
   },
   {
-    "id": "sw20260907016",
+    "id": "sw20260908012",
     "kind": "opening",
     "needs_name": false,
     "headline": "Grand Opening of Watertown\u2019s New High School Draws Hundreds, See the Video",
@@ -643,106 +496,7 @@
     }
   },
   {
-    "id": "sw20260907017",
-    "kind": "opening",
-    "needs_name": true,
-    "headline": "New School of Rock location opening in Rockville",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "New School of Rock location opening in Rockville",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-09-05",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.wusa9.com/video/news/community/new-school-of-rock-location-opening-in-rockville/65-d62c7369-9252-435e-87de-aa60813c0828",
-      "notes": "From the WUSA9 sweep \u2014 headline named no school; add the school name. Headline: \"New School of Rock location opening in Rockville\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260907018",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Officials celebrate opening of new school-based food pantry at Woonsocket High School",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "town",
-      "state",
-      "region",
-      "full_address",
-      "tract_mfi",
-      "data_year"
-    ],
-    "data": {
-      "name": "Woonsocket High School",
-      "link": "",
-      "town": "Woonsocket",
-      "state": "RI",
-      "region": "New England",
-      "type": "",
-      "date_reported": "2026-09-03",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.valleybreeze.com/news/officials-celebrate-opening-of-new-school-based-food-pantry-at-woonsocket-high-school/article_92147a03-7802-48ad-8c8d-ea013d36f32f.html",
-      "notes": "From the The Valley Breeze sweep \u2014 verify the details before approving. Headline: \"Officials celebrate opening of new school-based food pantry at Woonsocket High School\" Address auto-matched from NCES (2023-24 PSS) \u2014 verify. Income = 2026 FFIEC est. MSA/MD MFI for Providence-Warwick, RI-MA Metro Area.",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "1210 Mendon Rd, Woonsocket, RI 02895",
-      "tract_mfi": "113400",
-      "data_year": "2026",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260907019",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "New $4 million track and field complex set to open at Amherst-Pelham High School",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "Amherst-Pelham High School",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-09-04",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.wwlp.com/news/local-news/hampshire-county/new-4-million-track-and-field-complex-set-to-open-at-amherst-pelham-high-school/",
-      "notes": "From the WWLP sweep \u2014 verify the details before approving. Headline: \"New $4 million track and field complex set to open at Amherst-Pelham High School\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260907020",
+    "id": "sw20260908013",
     "kind": "opening",
     "needs_name": false,
     "headline": "New Lancaster High School opens with ribbon-cutting ceremony Wednesday",
@@ -779,7 +533,75 @@
     }
   },
   {
-    "id": "sw20260907021",
+    "id": "sw20260908014",
+    "kind": "opening",
+    "needs_name": true,
+    "headline": "Issyk-Kul: New school in Frunze village will open in September",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "Issyk-Kul: New school in Frunze village will open in September",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-09-07",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://egov.kg/en/ministry/construction/news/47186",
+      "notes": "From the EGOV.KG sweep \u2014 headline named no school; add the school name. Headline: \"Issyk-Kul: New school in Frunze village will open in September\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260908015",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "Officials celebrate opening of new school-based food pantry at Woonsocket High School",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "town",
+      "state",
+      "region",
+      "full_address",
+      "tract_mfi",
+      "data_year"
+    ],
+    "data": {
+      "name": "Woonsocket High School",
+      "link": "",
+      "town": "Woonsocket",
+      "state": "RI",
+      "region": "New England",
+      "type": "",
+      "date_reported": "2026-09-03",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.valleybreeze.com/news/officials-celebrate-opening-of-new-school-based-food-pantry-at-woonsocket-high-school/article_92147a03-7802-48ad-8c8d-ea013d36f32f.html",
+      "notes": "From the valleybreeze.com sweep \u2014 verify the details before approving. Headline: \"Officials celebrate opening of new school-based food pantry at Woonsocket High School\" Address auto-matched from NCES (2023-24 PSS) \u2014 verify. Income = 2026 FFIEC est. MSA/MD MFI for Providence-Warwick, RI-MA Metro Area.",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "1210 Mendon Rd, Woonsocket, RI 02895",
+      "tract_mfi": "113400",
+      "data_year": "2026",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260908016",
     "kind": "opening",
     "needs_name": false,
     "headline": "Construction pushes Knob Noster High School opening to after Labor Day",
@@ -812,7 +634,38 @@
     }
   },
   {
-    "id": "sw20260907022",
+    "id": "sw20260908017",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "New Durham School of the Arts expected to open in fall of 2028; campus 60% finished",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "Durham School",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-09-01",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.cbs17.com/news/local-news/durham-county-news/new-durham-school-of-the-arts-expected-to-open-in-fall-of-2028-campus-60-finished/",
+      "notes": "From the CBS17.com sweep \u2014 verify the details before approving. Headline: \"New Durham School of the Arts expected to open in fall of 2028; campus 60% finished\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260908018",
     "kind": "opening",
     "needs_name": false,
     "headline": "Sand Springs celebrates opening of new middle school built with 2024 bond money",
@@ -845,7 +698,7 @@
     }
   },
   {
-    "id": "sw20260907023",
+    "id": "sw20260908019",
     "kind": "opening",
     "needs_name": false,
     "headline": "Lansing Christian School splits after dispute, new school being formed",
@@ -877,10 +730,10 @@
     }
   },
   {
-    "id": "sw20260907024",
+    "id": "sw20260908020",
     "kind": "opening",
     "needs_name": false,
-    "headline": "Pittsburgh School Celebrates Opening Of New $400K Schoolyard",
+    "headline": "\u2018Come Ashore\u2019: West Seattle celebrates the grand opening of the new $67 million Alki Elementary School",
     "auto": [
       "name",
       "date_reported",
@@ -889,17 +742,17 @@
       "region"
     ],
     "data": {
-      "name": "Pittsburgh School",
+      "name": "Alki Elementary School",
       "link": "",
       "town": "",
-      "state": "PA",
-      "region": "Middle Atlantic",
+      "state": "WA",
+      "region": "Pacific",
       "type": "",
-      "date_reported": "2026-09-04",
+      "date_reported": "2026-08-26",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://patch.com/pennsylvania/pittsburgh/pittsburgh-school-celebrates-opening-new-400k-schoolyard",
-      "notes": "From the Patch sweep \u2014 verify the details before approving. Headline: \"Pittsburgh School Celebrates Opening Of New $400K Schoolyard\"",
+      "source_links": "https://www.westsideseattle.com/robinson-papers/2026/08/26/come-ashore-west-seattle-celebrates-grand-opening-new-67-million-alki",
+      "notes": "From the Westside Seattle sweep \u2014 verify the details before approving. Headline: \"\u2018Come Ashore\u2019: West Seattle celebrates the grand opening of the new $67 million Alki Elementary School\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -910,38 +763,7 @@
     }
   },
   {
-    "id": "sw20260907025",
-    "kind": "opening",
-    "needs_name": true,
-    "headline": "New school to open in Mai village of Talas region",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "New school to open in Mai village of Talas region",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-09-06",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://akipress.com/news:917215:New_school_to_open_in_Mai_village_of_Talas_region/",
-      "notes": "From the AKIpress News Agency sweep \u2014 headline named no school; add the school name. Headline: \"New school to open in Mai village of Talas region\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260907026",
+    "id": "sw20260908021",
     "kind": "opening",
     "needs_name": true,
     "headline": "'School's Open, Drive Carefully' - 80 years of safety education",
@@ -974,106 +796,7 @@
     }
   },
   {
-    "id": "sw20260907027",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "\u2018Come Ashore\u2019: West Seattle celebrates the grand opening of the new $67 million Alki Elementary School",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Alki Elementary School",
-      "link": "",
-      "town": "",
-      "state": "WA",
-      "region": "Pacific",
-      "type": "",
-      "date_reported": "2026-08-26",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.westsideseattle.com/robinson-papers/2026/08/26/come-ashore-west-seattle-celebrates-grand-opening-new-67-million-alki",
-      "notes": "From the westsideseattle.com sweep \u2014 verify the details before approving. Headline: \"\u2018Come Ashore\u2019: West Seattle celebrates the grand opening of the new $67 million Alki Elementary School\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260907028",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "New Traffic Pattern In Effect For Opening Of New School In Cheshire",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Effect For Opening Of New School",
-      "link": "",
-      "town": "",
-      "state": "CT",
-      "region": "New England",
-      "type": "",
-      "date_reported": "2026-09-02",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://patch.com/connecticut/cheshire/new-traffic-pattern-effect-opening-new-school-cheshire",
-      "notes": "From the Patch sweep \u2014 verify the details before approving. Headline: \"New Traffic Pattern In Effect For Opening Of New School In Cheshire\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260907029",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Beaufort County celebrates opening of new Washington Elementary School",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Washington Elementary School",
-      "link": "",
-      "town": "",
-      "state": "WA",
-      "region": "Pacific",
-      "type": "",
-      "date_reported": "2026-08-18",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.witn.com/2026/08/18/beaufort-county-celebrates-opening-new-washington-elementary-school/",
-      "notes": "From the WITN sweep \u2014 verify the details before approving. Headline: \"Beaufort County celebrates opening of new Washington Elementary School\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260907030",
+    "id": "sw20260908022",
     "kind": "opening",
     "needs_name": false,
     "headline": "AXIS International Academy's new school ready for 2026-27 school year",
@@ -1093,7 +816,7 @@
       "opening_date": "",
       "exp_enrollment": "",
       "source_links": "https://www.coloradoan.com/story/news/education/2026/08/21/axis-international-academy-to-open-school-year-in-its-new-facility/91348145007/",
-      "notes": "From the coloradoan.com sweep \u2014 verify the details before approving. Headline: \"AXIS International Academy's new school ready for 2026-27 school year\"",
+      "notes": "From the The Coloradoan sweep \u2014 verify the details before approving. Headline: \"AXIS International Academy's new school ready for 2026-27 school year\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -1104,7 +827,7 @@
     }
   },
   {
-    "id": "sw20260907031",
+    "id": "sw20260908023",
     "kind": "opening",
     "needs_name": false,
     "headline": "Opening day for students at Burlington\u2019s brand new high school",
@@ -1137,27 +860,29 @@
     }
   },
   {
-    "id": "sw20260907032",
+    "id": "sw20260908024",
     "kind": "opening",
     "needs_name": false,
-    "headline": "New Traffic Plan for the Opening of Amethyst Brook Elementary School",
+    "headline": "New Traffic Pattern In Effect For Opening Of New School In Cheshire",
     "auto": [
       "name",
       "date_reported",
-      "source_links"
+      "source_links",
+      "state",
+      "region"
     ],
     "data": {
-      "name": "Opening of Amethyst Brook Elementary School",
+      "name": "Effect For Opening Of New School",
       "link": "",
       "town": "",
-      "state": "",
-      "region": "",
+      "state": "CT",
+      "region": "New England",
       "type": "",
-      "date_reported": "2026-08-25",
+      "date_reported": "2026-09-02",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://www.amherstindy.org/2026/08/25/new-traffic-plan-for-the-opening-of-amethyst-brook-elementary-school/",
-      "notes": "From the Amherst Indy sweep \u2014 verify the details before approving. Headline: \"New Traffic Plan for the Opening of Amethyst Brook Elementary School\"",
+      "source_links": "https://patch.com/connecticut/cheshire/new-traffic-pattern-effect-opening-new-school-cheshire",
+      "notes": "From the Patch sweep \u2014 verify the details before approving. Headline: \"New Traffic Pattern In Effect For Opening Of New School In Cheshire\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -1168,38 +893,7 @@
     }
   },
   {
-    "id": "sw20260907033",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Beaverton High School students and staff start the new year in a new school",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "Beaverton High School",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-08-19",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.kgw.com/article/news/education/new-beaverton-high-school-ready-finish-tour-building-facilities/283-4d48249a-f81b-4567-a210-a873ebd11760",
-      "notes": "From the KGW sweep \u2014 verify the details before approving. Headline: \"Beaverton High School students and staff start the new year in a new school\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260907034",
+    "id": "sw20260908025",
     "kind": "closure",
     "needs_name": false,
     "headline": "New far West Side school to open soon, bringing early childhood education closer to families",
@@ -1208,19 +902,15 @@
       "date_reported",
       "link",
       "enroll_source",
-      "town",
       "state",
-      "region",
-      "full_address",
-      "tract_mfi",
-      "data_year"
+      "region"
     ],
     "data": {
-      "name": "Goddard School",
+      "name": "Former Somerset Academy",
       "covid": "",
       "merging": "",
       "new_school": "",
-      "town": "Richmond",
+      "town": "",
       "state": "TX",
       "region": "West South Central",
       "type": "",
@@ -1228,7 +918,7 @@
       "enrollment": "",
       "enroll_source": "KSAT",
       "year_founded": "",
-      "notes": "From the KSAT sweep \u2014 verify the details before approving. Headline: \"New far West Side school to open soon, bringing early childhood education closer to families\" Address auto-matched from NCES (2023-24 PSS) \u2014 verify. Income = 2026 FFIEC est. MSA/MD MFI for Houston-Pasadena-The Woodlands, TX Metro Area.",
+      "notes": "From the KSAT sweep \u2014 verify the details before approving. Headline: \"New far West Side school to open soon, bringing early childhood education closer to families\"",
       "prefin": "",
       "link": "https://www.ksat.com/news/local/2026/08/27/couple-builds-new-school-giving-far-west-side-families-closer-options-for-childcare-needs/",
       "pct_finaid": "",
@@ -1246,13 +936,13 @@
       "pct_other": "",
       "enr_other": "",
       "link4": "",
-      "full_address": "21024 W Bellfort, Richmond, TX 77406",
-      "tract_mfi": "105100",
-      "data_year": "2026"
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": ""
     }
   },
   {
-    "id": "sw20260907035",
+    "id": "sw20260908026",
     "kind": "opening",
     "needs_name": false,
     "headline": "Lottery funds help open new schools across Eastern Carolina",
@@ -1285,7 +975,7 @@
     }
   },
   {
-    "id": "sw20260907036",
+    "id": "sw20260908027",
     "kind": "opening",
     "needs_name": false,
     "headline": "New Pennsbury High School Opening Remains On Schedule",
@@ -1318,7 +1008,7 @@
     }
   },
   {
-    "id": "sw20260907037",
+    "id": "sw20260908028",
     "kind": "closure",
     "needs_name": false,
     "headline": "Weeks after school\u2019s closure, private student records remain in empty building",
@@ -1367,7 +1057,7 @@
     }
   },
   {
-    "id": "sw20260907038",
+    "id": "sw20260908029",
     "kind": "closure",
     "needs_name": true,
     "headline": "Facing a school closure, Mingo County parents file lawsuit to block Hope Scholarship expansion",
@@ -1416,10 +1106,10 @@
     }
   },
   {
-    "id": "sw20260907039",
+    "id": "sw20260908030",
     "kind": "closure",
     "needs_name": false,
-    "headline": "One of Miami-Dade's oldest Black schools faces uncertain future as district weighs school closures",
+    "headline": "Olathe unveils proposal to permanently close these 6 schools by next spring",
     "auto": [
       "name",
       "date_reported",
@@ -1429,68 +1119,21 @@
       "region"
     ],
     "data": {
-      "name": "FC Inter Miami FC Canes High School",
+      "name": "Indian Trail Middle School",
       "covid": "",
       "merging": "",
       "new_school": "",
       "town": "",
-      "state": "CO",
-      "region": "Mountain",
-      "type": "",
-      "date_reported": "2026-09-03",
-      "enrollment": "",
-      "enroll_source": "CBS News",
-      "year_founded": "",
-      "notes": "From the CBS News sweep \u2014 verify the details before approving. Headline: \"One of Miami-Dade's oldest Black schools faces uncertain future as district weighs school closures\"",
-      "prefin": "",
-      "link": "https://www.cbsnews.com/miami/news/miami-dade-dunbar-k8-overtown-school-closure-uncertainity/",
-      "pct_finaid": "",
-      "link2": "",
-      "tuition": "",
-      "link3": "",
-      "pct_black": "",
-      "enr_black": "",
-      "pct_hispanic": "",
-      "enr_hispanic": "",
-      "pct_asian": "",
-      "enr_asian": "",
-      "pct_white": "",
-      "enr_white": "",
-      "pct_other": "",
-      "enr_other": "",
-      "link4": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": ""
-    }
-  },
-  {
-    "id": "sw20260907040",
-    "kind": "closure",
-    "needs_name": true,
-    "headline": "Olathe unveils proposal to permanently close these 6 schools by next spring",
-    "auto": [
-      "name",
-      "date_reported",
-      "link",
-      "enroll_source"
-    ],
-    "data": {
-      "name": "Olathe unveils proposal to permanently close these 6 schools by next spring",
-      "covid": "",
-      "merging": "",
-      "new_school": "",
-      "town": "",
-      "state": "",
-      "region": "",
+      "state": "OH",
+      "region": "East North Central",
       "type": "",
       "date_reported": "2026-09-04",
       "enrollment": "",
-      "enroll_source": "Kansas City Star",
+      "enroll_source": "Yahoo",
       "year_founded": "",
-      "notes": "From the Kansas City Star sweep \u2014 headline named no school; add the school name. Headline: \"Olathe unveils proposal to permanently close these 6 schools by next spring\"",
+      "notes": "From the Yahoo sweep \u2014 verify the details before approving. Headline: \"Olathe unveils proposal to permanently close these 6 schools by next spring\"",
       "prefin": "",
-      "link": "https://www.kansascity.com/news/politics-government/article317133568.html",
+      "link": "https://www.yahoo.com/news/articles/olathe-unveils-proposal-permanently-close-205906154.html",
       "pct_finaid": "",
       "link2": "",
       "tuition": "",
@@ -1512,7 +1155,7 @@
     }
   },
   {
-    "id": "sw20260907041",
+    "id": "sw20260908031",
     "kind": "closure",
     "needs_name": false,
     "headline": "Charlevoix County charter school Concord Academy Boyne to close permanently",
@@ -1561,7 +1204,54 @@
     }
   },
   {
-    "id": "sw20260907042",
+    "id": "sw20260908032",
+    "kind": "closure",
+    "needs_name": false,
+    "headline": "Mothballed Falkirk primary schools set for permanent closure",
+    "auto": [
+      "name",
+      "date_reported",
+      "link",
+      "enroll_source"
+    ],
+    "data": {
+      "name": "Limerigg Primary School",
+      "covid": "",
+      "merging": "",
+      "new_school": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-09-08",
+      "enrollment": "",
+      "enroll_source": "The Herald",
+      "year_founded": "",
+      "notes": "From the The Herald sweep \u2014 verify the details before approving. Headline: \"Mothballed Falkirk primary schools set for permanent closure\"",
+      "prefin": "",
+      "link": "https://www.heraldscotland.com/news/26531732.mothballed-falkirk-schools-set-permanent-closure/",
+      "pct_finaid": "",
+      "link2": "",
+      "tuition": "",
+      "link3": "",
+      "pct_black": "",
+      "enr_black": "",
+      "pct_hispanic": "",
+      "enr_hispanic": "",
+      "pct_asian": "",
+      "enr_asian": "",
+      "pct_white": "",
+      "enr_white": "",
+      "pct_other": "",
+      "enr_other": "",
+      "link4": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": ""
+    }
+  },
+  {
+    "id": "sw20260908033",
     "kind": "closure",
     "needs_name": false,
     "headline": "Vatican upholds decision to close St. Hubert School in Hoffman Estates",
