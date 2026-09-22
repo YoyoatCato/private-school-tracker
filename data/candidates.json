@@ -1,152 +1,6 @@
 [
   {
-    "id": "sw20260921001",
-    "kind": "closure",
-    "needs_name": false,
-    "headline": "Vatican upholds decision to close St. Hubert School in Hoffman Estates",
-    "auto": [
-      "name",
-      "date_reported",
-      "link",
-      "enroll_source",
-      "type"
-    ],
-    "data": {
-      "name": "St. Hubert School",
-      "covid": "",
-      "merging": "",
-      "new_school": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "Roman Catholic",
-      "date_reported": "2026-09-01",
-      "enrollment": "",
-      "enroll_source": "Daily Herald",
-      "year_founded": "",
-      "notes": "From the Daily Herald sweep \u2014 verify the details before approving. Headline: \"Vatican upholds decision to close St. Hubert School in Hoffman Estates\"",
-      "prefin": "",
-      "link": "https://www.dailyherald.com/20260901/news/vatican-upholds-decision-to-close-st-hubert-school-in-hoffman-estates/",
-      "pct_finaid": "",
-      "link2": "",
-      "tuition": "",
-      "link3": "",
-      "pct_black": "",
-      "enr_black": "",
-      "pct_hispanic": "",
-      "enr_hispanic": "",
-      "pct_asian": "",
-      "enr_asian": "",
-      "pct_white": "",
-      "enr_white": "",
-      "pct_other": "",
-      "enr_other": "",
-      "link4": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": ""
-    }
-  },
-  {
-    "id": "sw20260921002",
-    "kind": "closure",
-    "needs_name": true,
-    "headline": "Several Northeast Ohio schools to close Wednesday amid dangerous heat",
-    "auto": [
-      "name",
-      "date_reported",
-      "link",
-      "enroll_source",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Several Northeast Ohio schools to close Wednesday amid dangerous heat",
-      "covid": "",
-      "merging": "",
-      "new_school": "",
-      "town": "",
-      "state": "OH",
-      "region": "East North Central",
-      "type": "",
-      "date_reported": "2026-09-01",
-      "enrollment": "",
-      "enroll_source": "Cleveland.com",
-      "year_founded": "",
-      "notes": "From the Cleveland.com sweep \u2014 headline named no school; add the school name. Headline: \"Several Northeast Ohio schools to close Wednesday amid dangerous heat\"",
-      "prefin": "",
-      "link": "https://www.cleveland.com/weather/2026/09/some-northeast-ohio-schools-will-close-wednesday-amid-dangerous-heat.html",
-      "pct_finaid": "",
-      "link2": "",
-      "tuition": "",
-      "link3": "",
-      "pct_black": "",
-      "enr_black": "",
-      "pct_hispanic": "",
-      "enr_hispanic": "",
-      "pct_asian": "",
-      "enr_asian": "",
-      "pct_white": "",
-      "enr_white": "",
-      "pct_other": "",
-      "enr_other": "",
-      "link4": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": ""
-    }
-  },
-  {
-    "id": "sw20260921003",
-    "kind": "closure",
-    "needs_name": false,
-    "headline": "How Much Did We Learn From School Closures During the Covid-19 Pandemic?",
-    "auto": [
-      "name",
-      "date_reported",
-      "link",
-      "enroll_source",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Much Did We Learn From School",
-      "covid": "",
-      "merging": "",
-      "new_school": "",
-      "town": "",
-      "state": "CA",
-      "region": "Pacific",
-      "type": "",
-      "date_reported": "2026-09-06",
-      "enrollment": "",
-      "enroll_source": "American Community Media",
-      "year_founded": "",
-      "notes": "From the American Community Media sweep \u2014 verify the details before approving. Headline: \"How Much Did We Learn From School Closures During the Covid-19 Pandemic?\"",
-      "prefin": "",
-      "link": "https://americancommunitymedia.org/news-exchange/how-much-did-we-learn-from-school-closures-during-the-covid-19-pandemic/",
-      "pct_finaid": "",
-      "link2": "",
-      "tuition": "",
-      "link3": "",
-      "pct_black": "",
-      "enr_black": "",
-      "pct_hispanic": "",
-      "enr_hispanic": "",
-      "pct_asian": "",
-      "enr_asian": "",
-      "pct_white": "",
-      "enr_white": "",
-      "pct_other": "",
-      "enr_other": "",
-      "link4": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": ""
-    }
-  },
-  {
-    "id": "sw20260921004",
+    "id": "sw20260922001",
     "kind": "opening",
     "needs_name": false,
     "headline": "Inside the $65K \u2018AI-powered' private school coming to Massachusetts",
@@ -179,7 +33,40 @@
     }
   },
   {
-    "id": "sw20260921005",
+    "id": "sw20260922002",
+    "kind": "opening",
+    "needs_name": true,
+    "headline": "First AI-driven, teacher-free school in Chicago opens with $55,000 annual tuition",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "First AI-driven, teacher-free school in Chicago opens with $55,000 annual tuition",
+      "link": "",
+      "town": "",
+      "state": "TX",
+      "region": "West South Central",
+      "type": "",
+      "date_reported": "2026-09-09",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.nbcchicago.com/news/local/first-ai-driven-teacher-free-school-in-chicago-opens-with-55000-annual-tuition/3986851/",
+      "notes": "From the NBC 5 Chicago sweep \u2014 headline named no school; add the school name. Headline: \"First AI-driven, teacher-free school in Chicago opens with $55,000 annual tuition\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260922003",
     "kind": "opening",
     "needs_name": true,
     "headline": "Emomali Rahmon presented gifts to orphaned children and opened a new private school with swimming pools and a shooting range in Dushanbe",
@@ -210,7 +97,7 @@
     }
   },
   {
-    "id": "sw20260921006",
+    "id": "sw20260922004",
     "kind": "opening",
     "needs_name": true,
     "headline": "Ras Al Khaimah opens three private schools to meet growing demand",
@@ -241,7 +128,135 @@
     }
   },
   {
-    "id": "sw20260921007",
+    "id": "sw20260922005",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "Ras Al Khaimah opens 3 private schools to meet growing demand for education",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "Al Ibdaa Private Academy",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-09-02",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.khaleejtimes.com/uae/education/ras-al-khaimah-3-new-private-schools",
+      "notes": "From the Khaleej Times sweep \u2014 verify the details before approving. Headline: \"Ras Al Khaimah opens 3 private schools to meet growing demand for education\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260922006",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "Your School of Beauty Culture opening new Chicago location",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "Your School",
+      "link": "",
+      "town": "",
+      "state": "IN",
+      "region": "East North Central",
+      "type": "",
+      "date_reported": "2026-09-22",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://abc7chicago.com/videoClip/19856225/",
+      "notes": "From the ABC7 Chicago sweep \u2014 verify the details before approving. Headline: \"Your School of Beauty Culture opening new Chicago location\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260922007",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "FUHSD celebrates the opening of its new robotics center at Cupertino High School",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "Cupertino High School",
+      "link": "",
+      "town": "",
+      "state": "CA",
+      "region": "Pacific",
+      "type": "",
+      "date_reported": "2026-09-22",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://elestoque.org/2026/09/21/news/fuhsd-celebrates-the-opening-of-its-new-robotics-center-at-cupertino-high-school/",
+      "notes": "From the El Estoque sweep \u2014 verify the details before approving. Headline: \"FUHSD celebrates the opening of its new robotics center at Cupertino High School\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260922008",
+    "kind": "opening",
+    "needs_name": true,
+    "headline": "Students and staff from Pathfinder Tech work together to open new school",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "Students and staff from Pathfinder Tech work together to open new school",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-09-18",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.westernmassnews.com/video/2026/09/18/students-staff-pathfinder-tech-work-together-open-new-school/",
+      "notes": "From the westernmassnews.com sweep \u2014 headline named no school; add the school name. Headline: \"Students and staff from Pathfinder Tech work together to open new school\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260922009",
     "kind": "opening",
     "needs_name": false,
     "headline": "Inside the New Wootton High School Set to Open at Crown Farm in 2027",
@@ -274,71 +289,7 @@
     }
   },
   {
-    "id": "sw20260921008",
-    "kind": "opening",
-    "needs_name": true,
-    "headline": "Students and staff from Pathfinder Tech work together to open new school",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "Students and staff from Pathfinder Tech work together to open new school",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-09-18",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.westernmassnews.com/video/2026/09/18/students-staff-pathfinder-tech-work-together-open-new-school/",
-      "notes": "From the Western Mass News sweep \u2014 headline named no school; add the school name. Headline: \"Students and staff from Pathfinder Tech work together to open new school\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260921009",
-    "kind": "opening",
-    "needs_name": true,
-    "headline": "Pitbull says he hopes to open new school 'somewhere in Ohio'",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Pitbull says he hopes to open new school 'somewhere in Ohio'",
-      "link": "",
-      "town": "",
-      "state": "OH",
-      "region": "East North Central",
-      "type": "",
-      "date_reported": "2026-09-16",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.cincinnati.com/videos/entertainment/music/2026/09/16/pitbull-says-he-hopes-to-open-new-school-somewhere-in-ohio/91793859007/",
-      "notes": "From the Cincinnati Enquirer sweep \u2014 headline named no school; add the school name. Headline: \"Pitbull says he hopes to open new school 'somewhere in Ohio'\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260921010",
+    "id": "sw20260922010",
     "kind": "opening",
     "needs_name": true,
     "headline": "Tacoma schools open new elementary school and career center",
@@ -369,38 +320,7 @@
     }
   },
   {
-    "id": "sw20260921011",
-    "kind": "opening",
-    "needs_name": true,
-    "headline": "Comstock celebrates opening of first new school building since 1972",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "Comstock celebrates opening of first new school building since 1972",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-09-10",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.mlive.com/news/kalamazoo/2026/09/comstock-celebrates-opening-of-first-new-school-building-since-1972.html",
-      "notes": "From the MLive.com sweep \u2014 headline named no school; add the school name. Headline: \"Comstock celebrates opening of first new school building since 1972\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260921012",
+    "id": "sw20260922011",
     "kind": "opening",
     "needs_name": false,
     "headline": "New chapter begins with opening of Weldon Middle-High School",
@@ -433,7 +353,40 @@
     }
   },
   {
-    "id": "sw20260921013",
+    "id": "sw20260922012",
+    "kind": "opening",
+    "needs_name": true,
+    "headline": "Pitbull says, 'with God's help,' he hopes to open school in Cincinnati",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "Pitbull says, 'with God's help,' he hopes to open school in Cincinnati",
+      "link": "",
+      "town": "",
+      "state": "OH",
+      "region": "East North Central",
+      "type": "",
+      "date_reported": "2026-09-16",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.cincinnati.com/videos/entertainment/music/2026/09/16/pitbull-says-he-hopes-to-open-new-school-somewhere-in-ohio/91793859007/",
+      "notes": "From the Cincinnati Enquirer sweep \u2014 headline named no school; add the school name. Headline: \"Pitbull says, 'with God's help,' he hopes to open school in Cincinnati\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260922013",
     "kind": "opening",
     "needs_name": false,
     "headline": "Officials: New school opening a hit thanks to hard work",
@@ -456,7 +409,7 @@
       "opening_date": "",
       "exp_enrollment": "",
       "source_links": "https://www.taylorpress.net/article/12282,officials-new-school-opening-a-hit-thanks-to-hard-work",
-      "notes": "From the Taylor Press sweep \u2014 verify the details before approving. Headline: \"Officials: New school opening a hit thanks to hard work\"",
+      "notes": "From the taylorpress.net sweep \u2014 verify the details before approving. Headline: \"Officials: New school opening a hit thanks to hard work\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -467,7 +420,38 @@
     }
   },
   {
-    "id": "sw20260921014",
+    "id": "sw20260922014",
+    "kind": "opening",
+    "needs_name": true,
+    "headline": "Comstock celebrates opening of first new school building since 1972",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "Comstock celebrates opening of first new school building since 1972",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-09-10",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.mlive.com/news/kalamazoo/2026/09/comstock-celebrates-opening-of-first-new-school-building-since-1972.html",
+      "notes": "From the mlive.com sweep \u2014 headline named no school; add the school name. Headline: \"Comstock celebrates opening of first new school building since 1972\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260922015",
     "kind": "opening",
     "needs_name": true,
     "headline": "New School of Rock location opening in Rockville",
@@ -498,21 +482,23 @@
     }
   },
   {
-    "id": "sw20260921015",
+    "id": "sw20260922016",
     "kind": "opening",
     "needs_name": false,
     "headline": "2 new schools open their doors for Cheshire students",
     "auto": [
       "name",
       "date_reported",
-      "source_links"
+      "source_links",
+      "state",
+      "region"
     ],
     "data": {
       "name": "We the People Back To School",
       "link": "",
       "town": "",
-      "state": "",
-      "region": "",
+      "state": "CT",
+      "region": "New England",
       "type": "",
       "date_reported": "2026-09-08",
       "opening_date": "",
@@ -529,108 +515,7 @@
     }
   },
   {
-    "id": "sw20260921016",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Officials celebrate opening of new school-based food pantry at Woonsocket High School",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "town",
-      "state",
-      "region",
-      "full_address",
-      "tract_mfi",
-      "data_year"
-    ],
-    "data": {
-      "name": "Woonsocket High School",
-      "link": "",
-      "town": "Woonsocket",
-      "state": "RI",
-      "region": "New England",
-      "type": "",
-      "date_reported": "2026-09-03",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.valleybreeze.com/news/officials-celebrate-opening-of-new-school-based-food-pantry-at-woonsocket-high-school/article_92147a03-7802-48ad-8c8d-ea013d36f32f.html",
-      "notes": "From the The Valley Breeze sweep \u2014 verify the details before approving. Headline: \"Officials celebrate opening of new school-based food pantry at Woonsocket High School\" Address auto-matched from NCES (2023-24 PSS) \u2014 verify. Income = 2026 FFIEC est. MSA/MD MFI for Providence-Warwick, RI-MA Metro Area.",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "1210 Mendon Rd, Woonsocket, RI 02895",
-      "tract_mfi": "113400",
-      "data_year": "2026",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260921017",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "2 new schools open their doors for Cheshire students - KALB",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Norton Elementary School",
-      "link": "",
-      "town": "",
-      "state": "LA",
-      "region": "West South Central",
-      "type": "",
-      "date_reported": "2026-09-08",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.kalb.com/video/2026/09/08/2-new-schools-open-their-doors-cheshire-students/",
-      "notes": "From the KALB | News Channel 5 sweep \u2014 verify the details before approving. Headline: \"2 new schools open their doors for Cheshire students - KALB\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260921018",
-    "kind": "opening",
-    "needs_name": true,
-    "headline": "When are schools opening their doors in Onondaga County?",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "When are schools opening their doors in Onondaga County?",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-09-01",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.localsyr.com/education/schools-open-cny-2026/",
-      "notes": "From the WSYR sweep \u2014 headline named no school; add the school name. Headline: \"When are schools opening their doors in Onondaga County?\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20260921019",
+    "id": "sw20260922017",
     "kind": "opening",
     "needs_name": false,
     "headline": "New school in state runs contrary to one-size-fits-all classroom. It\u2019s not inexpensive; why CT was chosen",
@@ -663,7 +548,7 @@
     }
   },
   {
-    "id": "sw20260921020",
+    "id": "sw20260922018",
     "kind": "opening",
     "needs_name": true,
     "headline": "Issyk-Kul: New school in Frunze village will open in September",
@@ -694,7 +579,7 @@
     }
   },
   {
-    "id": "sw20260921021",
+    "id": "sw20260922019",
     "kind": "opening",
     "needs_name": false,
     "headline": "Lansing Christian School splits after dispute, new school being formed",
@@ -726,7 +611,40 @@
     }
   },
   {
-    "id": "sw20260921022",
+    "id": "sw20260922020",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "Houston private school says TEFA helped boost enrollment 200% as it opens first brick-and-mortar campus",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "PSAT Academy",
+      "link": "",
+      "town": "",
+      "state": "TX",
+      "region": "West South Central",
+      "type": "",
+      "date_reported": "2026-09-20",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.click2houston.com/news/local/2026/09/07/houston-private-school-says-tefa-helped-boost-enrollment-200percent-as-it-opens-first-brick-and-mortar-campus/",
+      "notes": "From the Click2Houston sweep \u2014 verify the details before approving. Headline: \"Houston private school says TEFA helped boost enrollment 200% as it opens first brick-and-mortar campus\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20260922021",
     "kind": "closure",
     "needs_name": false,
     "headline": "What happened to Oldfields? MD private school almost closed, working to bounce back",
@@ -775,7 +693,7 @@
     }
   },
   {
-    "id": "sw20260921023",
+    "id": "sw20260922022",
     "kind": "closure",
     "needs_name": false,
     "headline": "Closed down private school put up for sale",
@@ -798,9 +716,9 @@
       "type": "",
       "date_reported": "2026-09-11",
       "enrollment": "",
-      "enroll_source": "AOL.com",
+      "enroll_source": "aol.com",
       "year_founded": "",
-      "notes": "From the AOL.com sweep \u2014 verify the details before approving. Headline: \"Closed down private school put up for sale\"",
+      "notes": "From the aol.com sweep \u2014 verify the details before approving. Headline: \"Closed down private school put up for sale\"",
       "prefin": "",
       "link": "https://www.aol.com/articles/closed-down-private-school-put-152439000.html",
       "pct_finaid": "",
@@ -824,10 +742,10 @@
     }
   },
   {
-    "id": "sw20260921024",
+    "id": "sw20260922023",
     "kind": "closure",
     "needs_name": false,
-    "headline": "School holiday tomorrow, September 22: Check if schools will remain closed in your state",
+    "headline": "School holiday today, September 22: Check if schools will remain closed in your state",
     "auto": [
       "name",
       "date_reported",
@@ -842,14 +760,14 @@
       "merging": "",
       "new_school": "",
       "town": "",
-      "state": "CA",
-      "region": "Pacific",
+      "state": "MI",
+      "region": "East North Central",
       "type": "",
       "date_reported": "2026-09-21",
       "enrollment": "",
-      "enroll_source": "The Economic Times",
+      "enroll_source": "economictimes.com",
       "year_founded": "",
-      "notes": "From the The Economic Times sweep \u2014 verify the details before approving. Headline: \"School holiday tomorrow, September 22: Check if schools will remain closed in your state\"",
+      "notes": "From the economictimes.com sweep \u2014 verify the details before approving. Headline: \"School holiday today, September 22: Check if schools will remain closed in your state\"",
       "prefin": "",
       "link": "https://m.economictimes.com/news/new-updates/school-holiday-tomorrow-september-22-check-if-schools-will-remain-closed-in-your-state/articleshow/134388625.cms",
       "pct_finaid": "",
@@ -873,7 +791,7 @@
     }
   },
   {
-    "id": "sw20260921025",
+    "id": "sw20260922024",
     "kind": "closure",
     "needs_name": false,
     "headline": "SUSD Governing Board gets look at next round of school closures options",
@@ -881,9 +799,7 @@
       "name",
       "date_reported",
       "link",
-      "enroll_source",
-      "state",
-      "region"
+      "enroll_source"
     ],
     "data": {
       "name": "Scottsdale Unified School District School",
@@ -891,8 +807,8 @@
       "merging": "",
       "new_school": "",
       "town": "",
-      "state": "AZ",
-      "region": "Mountain",
+      "state": "",
+      "region": "",
       "type": "",
       "date_reported": "2026-09-08",
       "enrollment": "",
@@ -900,7 +816,7 @@
       "year_founded": "",
       "notes": "From the yourvalley.net sweep \u2014 verify the details before approving. Headline: \"SUSD Governing Board gets look at next round of school closures options\"",
       "prefin": "",
-      "link": "https://www.yourvalley.net/stories/susd-governing-board-gets-look-at-next-round-of-school-closures-options,718478",
+      "link": "https://www.yourvalley.net/scottsdale-independent/stories/susd-governing-board-gets-look-at-next-round-of-school-closure-options,718477",
       "pct_finaid": "",
       "link2": "",
       "tuition": "",
@@ -922,7 +838,7 @@
     }
   },
   {
-    "id": "sw20260921026",
+    "id": "sw20260922025",
     "kind": "closure",
     "needs_name": true,
     "headline": "1,200 schools have closed in Michigan since 2000. The 'Big Shrink' is coming",
@@ -971,7 +887,7 @@
     }
   },
   {
-    "id": "sw20260921027",
+    "id": "sw20260922026",
     "kind": "closure",
     "needs_name": false,
     "headline": "One of Miami-Dade's oldest Black schools faces uncertain future as district weighs school closures",
@@ -1020,7 +936,7 @@
     }
   },
   {
-    "id": "sw20260921028",
+    "id": "sw20260922027",
     "kind": "closure",
     "needs_name": false,
     "headline": "Parents react to Logan Elementary School building permanently closing",
@@ -1043,9 +959,9 @@
       "type": "",
       "date_reported": "2026-09-15",
       "enrollment": "",
-      "enroll_source": "WSAZ",
+      "enroll_source": "wsaz.com",
       "year_founded": "",
-      "notes": "From the WSAZ sweep \u2014 verify the details before approving. Headline: \"Parents react to Logan Elementary School building permanently closing\"",
+      "notes": "From the wsaz.com sweep \u2014 verify the details before approving. Headline: \"Parents react to Logan Elementary School building permanently closing\"",
       "prefin": "",
       "link": "https://www.wsaz.com/2026/09/15/parents-react-logan-elementary-school-building-permanently-closing/",
       "pct_finaid": "",
@@ -1069,7 +985,7 @@
     }
   },
   {
-    "id": "sw20260921029",
+    "id": "sw20260922028",
     "kind": "closure",
     "needs_name": true,
     "headline": "Olathe unveils proposal to permanently close these 6 schools by next spring",
@@ -1116,7 +1032,7 @@
     }
   },
   {
-    "id": "sw20260921030",
+    "id": "sw20260922029",
     "kind": "closure",
     "needs_name": false,
     "headline": "School officials announce permanent closure of fire-ravaged Logan Elementary",
@@ -1134,8 +1050,8 @@
       "merging": "",
       "new_school": "",
       "town": "",
-      "state": "KY",
-      "region": "East South Central",
+      "state": "OH",
+      "region": "East North Central",
       "type": "",
       "date_reported": "2026-09-10",
       "enrollment": "",
@@ -1165,7 +1081,7 @@
     }
   },
   {
-    "id": "sw20260921031",
+    "id": "sw20260922030",
     "kind": "closure",
     "needs_name": false,
     "headline": "Mothballed Falkirk primary schools set for permanent closure",
@@ -1212,7 +1128,7 @@
     }
   },
   {
-    "id": "sw20260921032",
+    "id": "sw20260922031",
     "kind": "closure",
     "needs_name": false,
     "headline": "Next steps towards permanent closure of Bernera School and Tolsta School",
