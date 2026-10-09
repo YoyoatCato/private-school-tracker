@@ -1,15 +1,17 @@
 [
   {
-    "id": "sw20261008001",
+    "id": "sw20261009001",
     "kind": "closure",
     "needs_name": false,
-    "headline": "Cardinal Stritch Catholic High School to close in December 2026",
+    "headline": "Cardinal Stritch Catholic High School to close in December",
     "auto": [
       "name",
       "date_reported",
       "link",
       "enroll_source",
-      "type"
+      "type",
+      "state",
+      "region"
     ],
     "data": {
       "name": "Cardinal Stritch Catholic High School",
@@ -17,16 +19,16 @@
       "merging": "",
       "new_school": "",
       "town": "",
-      "state": "",
-      "region": "",
+      "state": "MI",
+      "region": "East North Central",
       "type": "Roman Catholic",
       "date_reported": "2026-10-08",
       "enrollment": "",
-      "enroll_source": "WTOL",
+      "enroll_source": "Toledo Blade",
       "year_founded": "",
-      "notes": "From the WTOL sweep \u2014 verify the details before approving. Headline: \"Cardinal Stritch Catholic High School to close in December 2026\"",
+      "notes": "From the Toledo Blade sweep \u2014 verify the details before approving. Headline: \"Cardinal Stritch Catholic High School to close in December\"",
       "prefin": "",
-      "link": "https://www.wtol.com/article/news/local/cardinal-stritch-catholic-high-school-to-close-in-december-2026/512-15f87321-6751-4c47-8567-697d6d106b6c",
+      "link": "https://www.toledoblade.com/local/education/2026/10/08/cardinal-stritch-catholic-high-school-to-close-in-december/stories/20261008081",
       "pct_finaid": "",
       "link2": "",
       "tuition": "",
@@ -48,7 +50,7 @@
     }
   },
   {
-    "id": "sw20261008002",
+    "id": "sw20261009002",
     "kind": "closure",
     "needs_name": false,
     "headline": "Cardinal Stritch High School to close at the end of December",
@@ -101,32 +103,33 @@
     }
   },
   {
-    "id": "sw20261008003",
+    "id": "sw20261009003",
     "kind": "closure",
-    "needs_name": true,
-    "headline": "Lawsuit over La Reina school closing can proceed",
+    "needs_name": false,
+    "headline": "Cardinal Stritch Catholic High School to close in December 2026",
     "auto": [
       "name",
       "date_reported",
       "link",
-      "enroll_source"
+      "enroll_source",
+      "type"
     ],
     "data": {
-      "name": "Lawsuit over La Reina school closing can proceed",
+      "name": "Cardinal Stritch Catholic High School",
       "covid": "",
       "merging": "",
       "new_school": "",
       "town": "",
       "state": "",
       "region": "",
-      "type": "",
-      "date_reported": "2026-10-02",
+      "type": "Roman Catholic",
+      "date_reported": "2026-10-08",
       "enrollment": "",
-      "enroll_source": "Thousand Oaks Acorn",
+      "enroll_source": "wtol.com",
       "year_founded": "",
-      "notes": "From the Thousand Oaks Acorn sweep \u2014 headline named no school; add the school name. Headline: \"Lawsuit over La Reina school closing can proceed\"",
+      "notes": "From the wtol.com sweep \u2014 verify the details before approving. Headline: \"Cardinal Stritch Catholic High School to close in December 2026\"",
       "prefin": "",
-      "link": "https://www.toacorn.com/articles/lawsuit-over-la-reina-school-closing-can-proceed/",
+      "link": "https://www.wtol.com/article/news/local/cardinal-stritch-catholic-high-school-to-close-in-december-2026/512-15f87321-6751-4c47-8567-697d6d106b6c",
       "pct_finaid": "",
       "link2": "",
       "tuition": "",
@@ -148,10 +151,63 @@
     }
   },
   {
-    "id": "sw20261008004",
+    "id": "sw20261009004",
+    "kind": "closure",
+    "needs_name": false,
+    "headline": "Lawsuit over La Reina school closing can proceed",
+    "auto": [
+      "name",
+      "date_reported",
+      "link",
+      "enroll_source",
+      "town",
+      "state",
+      "region",
+      "full_address",
+      "tract_mfi",
+      "data_year"
+    ],
+    "data": {
+      "name": "La Reina High School",
+      "covid": "",
+      "merging": "",
+      "new_school": "",
+      "town": "Thousand Oaks",
+      "state": "CA",
+      "region": "Pacific",
+      "type": "",
+      "date_reported": "2026-10-02",
+      "enrollment": "",
+      "enroll_source": "Thousand Oaks Acorn",
+      "year_founded": "",
+      "notes": "From the Thousand Oaks Acorn sweep \u2014 verify the details before approving. Headline: \"Lawsuit over La Reina school closing can proceed\" Address auto-matched from NCES (2023-24 PSS) \u2014 verify. Income = 2026 FFIEC est. MSA/MD MFI for Oxnard-Thousand Oaks-Ventura, CA Metro Area.",
+      "prefin": "",
+      "link": "https://www.toacorn.com/articles/lawsuit-over-la-reina-school-closing-can-proceed/",
+      "pct_finaid": "",
+      "link2": "",
+      "tuition": "",
+      "link3": "",
+      "pct_black": "",
+      "enr_black": "",
+      "pct_hispanic": "",
+      "enr_hispanic": "",
+      "pct_asian": "",
+      "enr_asian": "",
+      "pct_white": "",
+      "enr_white": "",
+      "pct_other": "",
+      "enr_other": "",
+      "link4": "",
+      "full_address": "106 W Janss Rd, Thousand Oaks, CA 91360",
+      "tract_mfi": "135600",
+      "data_year": "2026"
+    }
+  },
+  {
+    "id": "sw20261009005",
     "kind": "closure",
     "needs_name": true,
-    "headline": "\u2018GENERATION COVID\u2019 exposes school closures\u2019 toll as \u2018kids have not moved on\u2019",
+    "headline": "'Generation COVID' explores the lasting toll of pandemic-era school closures",
     "auto": [
       "name",
       "date_reported",
@@ -161,13 +217,60 @@
       "region"
     ],
     "data": {
+      "name": "'Generation COVID' explores the lasting toll of pandemic-era school closures",
+      "covid": "",
+      "merging": "",
+      "new_school": "",
+      "town": "",
+      "state": "PA",
+      "region": "Middle Atlantic",
+      "type": "",
+      "date_reported": "2026-10-08",
+      "enrollment": "",
+      "enroll_source": "Fox News",
+      "year_founded": "",
+      "notes": "From the Fox News sweep \u2014 headline named no school; add the school name. Headline: \"'Generation COVID' explores the lasting toll of pandemic-era school closures\"",
+      "prefin": "",
+      "link": "https://www.foxnews.com/media/generation-covid-explores-lasting-toll-pandemic-era-school-closures",
+      "pct_finaid": "",
+      "link2": "",
+      "tuition": "",
+      "link3": "",
+      "pct_black": "",
+      "enr_black": "",
+      "pct_hispanic": "",
+      "enr_hispanic": "",
+      "pct_asian": "",
+      "enr_asian": "",
+      "pct_white": "",
+      "enr_white": "",
+      "pct_other": "",
+      "enr_other": "",
+      "link4": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": ""
+    }
+  },
+  {
+    "id": "sw20261009006",
+    "kind": "closure",
+    "needs_name": true,
+    "headline": "\u2018GENERATION COVID\u2019 exposes school closures\u2019 toll as \u2018kids have not moved on\u2019",
+    "auto": [
+      "name",
+      "date_reported",
+      "link",
+      "enroll_source"
+    ],
+    "data": {
       "name": "\u2018GENERATION COVID\u2019 exposes school closures\u2019 toll as \u2018kids have not moved on\u2019",
       "covid": "",
       "merging": "",
       "new_school": "",
       "town": "",
-      "state": "CO",
-      "region": "Mountain",
+      "state": "",
+      "region": "",
       "type": "",
       "date_reported": "2026-10-08",
       "enrollment": "",
@@ -197,7 +300,7 @@
     }
   },
   {
-    "id": "sw20261008005",
+    "id": "sw20261009007",
     "kind": "opening",
     "needs_name": false,
     "headline": "First Catholic high school opening in Bellingham next fall",
@@ -231,7 +334,7 @@
     }
   },
   {
-    "id": "sw20261008006",
+    "id": "sw20261009008",
     "kind": "opening",
     "needs_name": true,
     "headline": "Federal scholarship for private school and homeschooling opening to most kids in at least 30 states",
@@ -262,7 +365,7 @@
     }
   },
   {
-    "id": "sw20261008007",
+    "id": "sw20261009009",
     "kind": "opening",
     "needs_name": false,
     "headline": "So far, California hasn't joined new federal private school voucher program opening in 30 states",
@@ -295,7 +398,69 @@
     }
   },
   {
-    "id": "sw20261008008",
+    "id": "sw20261009010",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "Frank Gehry\u2019s New Colburn School Concert Hall to Open on September 25, 2027",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "Frank Gehry\u2019s New Colburn School",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-10-09",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.archdaily.com/1186601/frank-gehrys-new-colburn-school-concert-hall-to-open-on-september-25-2027",
+      "notes": "From the ArchDaily sweep \u2014 verify the details before approving. Headline: \"Frank Gehry\u2019s New Colburn School Concert Hall to Open on September 25, 2027\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20261009011",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "New Ovey Comeaux Workforce Innovation Academy to open for 2028-29 school year",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "Ovey Comeaux Workforce Innovation Academy",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-10-09",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.klfy.com/local/lafayette-parish/new-ovey-comeaux-academy-to-open-for-2028-29-school-year/",
+      "notes": "From the KLFY.com sweep \u2014 verify the details before approving. Headline: \"New Ovey Comeaux Workforce Innovation Academy to open for 2028-29 school year\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20261009012",
     "kind": "opening",
     "needs_name": false,
     "headline": "Mullens school construction delay pushes new campus opening to November",
@@ -328,7 +493,38 @@
     }
   },
   {
-    "id": "sw20261008009",
+    "id": "sw20261009013",
+    "kind": "opening",
+    "needs_name": true,
+    "headline": "Accademia Italiana to open new school in Rome",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "Accademia Italiana to open new school in Rome",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-10-09",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://studytravel.network/magazine/news/0/32446",
+      "notes": "From the StudyTravel Network sweep \u2014 headline named no school; add the school name. Headline: \"Accademia Italiana to open new school in Rome\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20261009014",
     "kind": "opening",
     "needs_name": false,
     "headline": "Lighthouse School To Open New Middle School Campus With Acquisition Of Fairgrounds Road Property",
@@ -359,7 +555,7 @@
     }
   },
   {
-    "id": "sw20261008010",
+    "id": "sw20261009015",
     "kind": "opening",
     "needs_name": false,
     "headline": "Nominations are open for new name for Chavez Elementary School",
@@ -392,40 +588,7 @@
     }
   },
   {
-    "id": "sw20261008011",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "New student led credit union opens at Meridian High School",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Meridian High School",
-      "link": "",
-      "town": "",
-      "state": "MS",
-      "region": "East South Central",
-      "type": "",
-      "date_reported": "2026-10-06",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.wtok.com/2026/10/06/new-student-led-credit-union-opens-meridian-high-school/",
-      "notes": "From the WTOK sweep \u2014 verify the details before approving. Headline: \"New student led credit union opens at Meridian High School\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20261008012",
+    "id": "sw20261009016",
     "kind": "opening",
     "needs_name": false,
     "headline": "Santa Monica-Malibu Schools Open New Buildings as $480M Work Continues",
@@ -456,7 +619,7 @@
     }
   },
   {
-    "id": "sw20261008013",
+    "id": "sw20261009017",
     "kind": "opening",
     "needs_name": false,
     "headline": "Somerville Students Do the Honors, Cut Ceremonial Red Ribbon to Open new Playground at Van Derveer Elementary School",
@@ -487,38 +650,7 @@
     }
   },
   {
-    "id": "sw20261008014",
-    "kind": "opening",
-    "needs_name": true,
-    "headline": "Students and staff from Pathfinder Tech work together to open new school",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "Students and staff from Pathfinder Tech work together to open new school",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-09-18",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.westernmassnews.com/video/2026/09/18/students-staff-pathfinder-tech-work-together-open-new-school/",
-      "notes": "From the Western Mass News sweep \u2014 headline named no school; add the school name. Headline: \"Students and staff from Pathfinder Tech work together to open new school\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20261008015",
+    "id": "sw20261009018",
     "kind": "closure",
     "needs_name": false,
     "headline": "Here are all the Phoenix-area schools closed since 2024 or scheduled for closure",
@@ -567,7 +699,7 @@
     }
   },
   {
-    "id": "sw20261008016",
+    "id": "sw20261009019",
     "kind": "closure",
     "needs_name": false,
     "headline": "Parents riled up as potential renters tour 2 Bellingham schools that may close",
@@ -616,7 +748,7 @@
     }
   },
   {
-    "id": "sw20261008017",
+    "id": "sw20261009020",
     "kind": "closure",
     "needs_name": false,
     "headline": "Salem-Keizer last closed schools over a decade ago. Here\u2019s what happened.",
@@ -624,18 +756,16 @@
       "name",
       "date_reported",
       "link",
-      "enroll_source",
-      "state",
-      "region"
+      "enroll_source"
     ],
     "data": {
-      "name": "Valley Inquiry Charter School",
+      "name": "Newsroom School",
       "covid": "",
       "merging": "",
       "new_school": "",
       "town": "",
-      "state": "OR",
-      "region": "Pacific",
+      "state": "",
+      "region": "",
       "type": "",
       "date_reported": "2026-10-08",
       "enrollment": "",
@@ -665,40 +795,7 @@
     }
   },
   {
-    "id": "sw20261008018",
-    "kind": "opening",
-    "needs_name": true,
-    "headline": "Osage Nation Congress appropriates funds needed to reopen private school",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Osage Nation Congress appropriates funds needed to reopen private school",
-      "link": "",
-      "town": "",
-      "state": "TX",
-      "region": "West South Central",
-      "type": "",
-      "date_reported": "2026-10-07",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://tulsaworld.com/news/local/indigenous/article_32cdaa9f-fec5-4204-b836-fb0148ea2441.html",
-      "notes": "From the Tulsa World sweep \u2014 headline named no school; add the school name. Headline: \"Osage Nation Congress appropriates funds needed to reopen private school\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20261008019",
+    "id": "sw20261009021",
     "kind": "closure",
     "needs_name": false,
     "headline": "Local opinion: TUSD School Closures: Independent Research Report",
@@ -747,7 +844,7 @@
     }
   },
   {
-    "id": "sw20261008020",
+    "id": "sw20261009022",
     "kind": "closure",
     "needs_name": false,
     "headline": "Tulsa school closures part of statewide picture of enrollment decline",
@@ -796,7 +893,7 @@
     }
   },
   {
-    "id": "sw20261008021",
+    "id": "sw20261009023",
     "kind": "closure",
     "needs_name": false,
     "headline": "Tucson school closures: takeaways from this week\u2019s engagement meetings and what\u2019s ahead for TUSD",
@@ -817,13 +914,13 @@
       "state": "AZ",
       "region": "Mountain",
       "type": "",
-      "date_reported": "2026-09-26",
+      "date_reported": "2026-09-25",
       "enrollment": "",
       "enroll_source": "AZPM News",
       "year_founded": "",
       "notes": "From the AZPM News sweep \u2014 verify the details before approving. Headline: \"Tucson school closures: takeaways from this week\u2019s engagement meetings and what\u2019s ahead for TUSD\"",
       "prefin": "",
-      "link": "https://news.azpm.org/p/azpmnews/2026/9/26/231354-tucson-school-closures-takeaways-from-this-weeks-engagement-meetings-and-whats-ahead-for-tusd",
+      "link": "https://news.azpm.org/s/104150-tucson-school-closures-takeaways-from-this-weeks-engagement-meetings-and-whats-ahead-for-tusd/",
       "pct_finaid": "",
       "link2": "",
       "tuition": "",
@@ -845,7 +942,7 @@
     }
   },
   {
-    "id": "sw20261008022",
+    "id": "sw20261009024",
     "kind": "closure",
     "needs_name": true,
     "headline": "After opposition campaign by parents, Olathe district to vote on closing 6 schools",
@@ -892,7 +989,7 @@
     }
   },
   {
-    "id": "sw20261008023",
+    "id": "sw20261009025",
     "kind": "closure",
     "needs_name": false,
     "headline": "GA Beauty School To Permanently Close After Losing Accreditation",
@@ -941,7 +1038,7 @@
     }
   },
   {
-    "id": "sw20261008024",
+    "id": "sw20261009026",
     "kind": "closure",
     "needs_name": false,
     "headline": "Next steps towards permanent closure of Bernera School and Tolsta School",
