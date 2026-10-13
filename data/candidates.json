@@ -1,59 +1,6 @@
 [
   {
-    "id": "sw20261012001",
-    "kind": "closure",
-    "needs_name": false,
-    "headline": "Cardinal Stritch High School to close at the end of December",
-    "auto": [
-      "name",
-      "date_reported",
-      "link",
-      "enroll_source",
-      "town",
-      "state",
-      "region",
-      "full_address",
-      "tract_mfi",
-      "data_year"
-    ],
-    "data": {
-      "name": "Cardinal Stritch High School",
-      "covid": "",
-      "merging": "",
-      "new_school": "",
-      "town": "Oregon",
-      "state": "OH",
-      "region": "East North Central",
-      "type": "",
-      "date_reported": "2026-10-08",
-      "enrollment": "",
-      "enroll_source": "WTVG",
-      "year_founded": "",
-      "notes": "From the WTVG sweep \u2014 verify the details before approving. Headline: \"Cardinal Stritch High School to close at the end of December\" Address auto-matched from NCES (2023-24 PSS) \u2014 verify. Income = 2026 FFIEC est. MSA/MD MFI for Toledo, OH Metro Area.",
-      "prefin": "",
-      "link": "https://www.13abc.com/2026/10/08/cardinal-stritch-close-end-year/",
-      "pct_finaid": "",
-      "link2": "",
-      "tuition": "",
-      "link3": "",
-      "pct_black": "",
-      "enr_black": "",
-      "pct_hispanic": "",
-      "enr_hispanic": "",
-      "pct_asian": "",
-      "enr_asian": "",
-      "pct_white": "",
-      "enr_white": "",
-      "pct_other": "",
-      "enr_other": "",
-      "link4": "",
-      "full_address": "3225 Pickle Rd, Oregon, OH 43616",
-      "tract_mfi": "95400",
-      "data_year": "2026"
-    }
-  },
-  {
-    "id": "sw20261012002",
+    "id": "sw20261013001",
     "kind": "closure",
     "needs_name": false,
     "headline": "Cardinal Stritch Catholic High School to close in December 2026",
@@ -101,7 +48,7 @@
     }
   },
   {
-    "id": "sw20261012003",
+    "id": "sw20261013002",
     "kind": "closure",
     "needs_name": false,
     "headline": "Cardinal Stritch Catholic High School to close in December",
@@ -151,7 +98,7 @@
     }
   },
   {
-    "id": "sw20261012004",
+    "id": "sw20261013003",
     "kind": "closure",
     "needs_name": false,
     "headline": "St. Raymond\u2019s Academy for Girls to Close at Conclusion of 2026\u20132027 Academic Year",
@@ -200,38 +147,7 @@
     }
   },
   {
-    "id": "sw20261012005",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Cardinal Stritch High School would have to cut all student life in order to stay open until May, according to document sent to parents",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "Cardinal Stritch High School",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-10-09",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.wtol.com/article/news/local/cardinal-stritch-high-school-would-have-to-cut-student-life-to-stay-open-until-may-document-sent-to-parents/512-409a09b1-e17f-4a46-b4b9-3f1e3f7539a7",
-      "notes": "From the WTOL sweep \u2014 verify the details before approving. Headline: \"Cardinal Stritch High School would have to cut all student life in order to stay open until May, according to document sent to parents\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20261012006",
+    "id": "sw20261013004",
     "kind": "closure",
     "needs_name": false,
     "headline": "Lawsuit over La Reina school closing can proceed",
@@ -284,7 +200,38 @@
     }
   },
   {
-    "id": "sw20261012007",
+    "id": "sw20261013005",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "Cardinal Stritch High School would have to cut all student life in order to stay open until May, according to document sent to parents",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "Cardinal Stritch High School",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-10-09",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.wtol.com/article/news/local/cardinal-stritch-high-school-would-have-to-cut-student-life-to-stay-open-until-may-document-sent-to-parents/512-409a09b1-e17f-4a46-b4b9-3f1e3f7539a7",
+      "notes": "From the wtol.com sweep \u2014 verify the details before approving. Headline: \"Cardinal Stritch High School would have to cut all student life in order to stay open until May, according to document sent to parents\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20261013006",
     "kind": "closure",
     "needs_name": true,
     "headline": "'Generation COVID' explores the lasting toll of pandemic-era school closures",
@@ -333,7 +280,7 @@
     }
   },
   {
-    "id": "sw20261012008",
+    "id": "sw20261013007",
     "kind": "closure",
     "needs_name": true,
     "headline": "\u2018GENERATION COVID\u2019 exposes school closures\u2019 toll as \u2018kids have not moved on\u2019",
@@ -351,8 +298,8 @@
       "merging": "",
       "new_school": "",
       "town": "",
-      "state": "MI",
-      "region": "East North Central",
+      "state": "GA",
+      "region": "South Atlantic",
       "type": "",
       "date_reported": "2026-10-08",
       "enrollment": "",
@@ -382,7 +329,7 @@
     }
   },
   {
-    "id": "sw20261012009",
+    "id": "sw20261013008",
     "kind": "opening",
     "needs_name": false,
     "headline": "First Catholic high school opening in Bellingham next fall",
@@ -416,7 +363,7 @@
     }
   },
   {
-    "id": "sw20261012010",
+    "id": "sw20261013009",
     "kind": "opening",
     "needs_name": true,
     "headline": "Federal scholarship for private school and homeschooling opening to most kids in at least 30 states",
@@ -447,7 +394,7 @@
     }
   },
   {
-    "id": "sw20261012011",
+    "id": "sw20261013010",
     "kind": "opening",
     "needs_name": false,
     "headline": "So far, California hasn't joined new federal private school voucher program opening in 30 states",
@@ -480,7 +427,7 @@
     }
   },
   {
-    "id": "sw20261012012",
+    "id": "sw20261013011",
     "kind": "opening",
     "needs_name": false,
     "headline": "Quiz: Where Could You Open a Private School?",
@@ -511,23 +458,52 @@
     }
   },
   {
-    "id": "sw20261012013",
+    "id": "sw20261013012",
+    "kind": "opening",
+    "needs_name": true,
+    "headline": "Danbury OKs extra parking for indoor pickleball, golf site opening next to westside high school",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "Danbury OKs extra parking for indoor pickleball, golf site opening next to westside high school",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-10-13",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.newstimes.com/news/article/danbury-indoor-pickleball-golf-development-22473671.php",
+      "notes": "From the News-Times sweep \u2014 headline named no school; add the school name. Headline: \"Danbury OKs extra parking for indoor pickleball, golf site opening next to westside high school\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20261013013",
     "kind": "opening",
     "needs_name": true,
     "headline": "New swim school opening at Huntsville\u2019s Bridge Street Town Centre",
     "auto": [
       "name",
       "date_reported",
-      "source_links",
-      "state",
-      "region"
+      "source_links"
     ],
     "data": {
       "name": "New swim school opening at Huntsville\u2019s Bridge Street Town Centre",
       "link": "",
       "town": "",
-      "state": "AL",
-      "region": "East South Central",
+      "state": "",
+      "region": "",
       "type": "",
       "date_reported": "2026-10-12",
       "opening_date": "",
@@ -544,7 +520,7 @@
     }
   },
   {
-    "id": "sw20261012014",
+    "id": "sw20261013014",
     "kind": "opening",
     "needs_name": false,
     "headline": "Mullens school construction delay pushes new campus opening to November",
@@ -577,69 +553,44 @@
     }
   },
   {
-    "id": "sw20261012015",
+    "id": "sw20261013015",
     "kind": "opening",
     "needs_name": false,
-    "headline": "Frank Gehry\u2019s New Colburn School Concert Hall to Open on September 25, 2027",
+    "headline": "Minnesota homecoming shooting suspect walks free two days after allegedly opening fire at high school football game",
     "auto": [
       "name",
       "date_reported",
-      "source_links"
+      "source_links",
+      "town",
+      "state",
+      "region",
+      "full_address",
+      "tract_mfi",
+      "data_year"
     ],
     "data": {
-      "name": "Frank Gehry\u2019s New Colburn School",
+      "name": "Eden Prairie High School",
       "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
+      "town": "Eden Prairie",
+      "state": "MN",
+      "region": "West North Central",
       "type": "",
-      "date_reported": "2026-10-09",
+      "date_reported": "2026-10-12",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://www.archdaily.com/1186601/frank-gehrys-new-colburn-school-concert-hall-to-open-on-september-25-2027",
-      "notes": "From the ArchDaily sweep \u2014 verify the details before approving. Headline: \"Frank Gehry\u2019s New Colburn School Concert Hall to Open on September 25, 2027\"",
+      "source_links": "https://nypost.com/2026/10/12/us-news/minnesota-homecoming-shooting-suspect-adam-abdihakeem-adam-walks-free-two-days-after-allegedly-opening-fire-at-high-school-football-game/",
+      "notes": "From the New York Post sweep \u2014 verify the details before approving. Headline: \"Minnesota homecoming shooting suspect walks free two days after allegedly opening fire at high school football game\" Address auto-matched from NCES (2023-24 PSS) \u2014 verify. Income = 2026 FFIEC est. MSA/MD MFI for Minneapolis-St. Paul-Bloomington, MN-WI Metro Area.",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
+      "full_address": "8098 Glen Ln, Eden Prairie, MN 55344",
+      "tract_mfi": "131100",
+      "data_year": "2026",
       "microschool": ""
     }
   },
   {
-    "id": "sw20261012016",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "DPSCD Celebrates Opening of New $8.8M Athletic Complex at Communication & Media Arts High School",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "Media Arts High School",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-10-09",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://michiganchronicle.com/dpscd-celebrates-opening-of-new-8-8m-athletic-complex-at-communication-media-arts-high-school/",
-      "notes": "From the The Michigan Chronicle sweep \u2014 verify the details before approving. Headline: \"DPSCD Celebrates Opening of New $8.8M Athletic Complex at Communication & Media Arts High School\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20261012017",
+    "id": "sw20261013016",
     "kind": "opening",
     "needs_name": false,
     "headline": "Santa Monica-Malibu Schools Open New Buildings as $480M Work Continues",
@@ -670,27 +621,27 @@
     }
   },
   {
-    "id": "sw20261012018",
+    "id": "sw20261013017",
     "kind": "opening",
     "needs_name": false,
-    "headline": "Gallery of Frank Gehry\u2019s New Colburn School Concert Hall to Open on September 25, 2027 - 4",
+    "headline": "New school facilities open in Leppington electorate as HSC exams begin",
     "auto": [
       "name",
       "date_reported",
       "source_links"
     ],
     "data": {
-      "name": "Frank Gehry\u2019s New Colburn School",
+      "name": "Leppington Public School",
       "link": "",
       "town": "",
       "state": "",
       "region": "",
       "type": "",
-      "date_reported": "2026-10-09",
+      "date_reported": "2026-10-13",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://www.archdaily.com/1186601/frank-gehrys-new-colburn-school-concert-hall-to-open-on-september-25-2027/6ac8074390e29d0189d2efc6-frank-gehrys-new-colburn-school-concert-hall-to-open-on-september-25-2027-photo",
-      "notes": "From the ArchDaily sweep \u2014 verify the details before approving. Headline: \"Gallery of Frank Gehry\u2019s New Colburn School Concert Hall to Open on September 25, 2027 - 4\"",
+      "source_links": "https://ozarab.media/new-school-facilities-open-in-leppington-electorate-as-hsc-exams-begin/",
+      "notes": "From the Oz Arab Media sweep \u2014 verify the details before approving. Headline: \"New school facilities open in Leppington electorate as HSC exams begin\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -701,7 +652,38 @@
     }
   },
   {
-    "id": "sw20261012019",
+    "id": "sw20261013018",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "New School Offers Relief for Some Families, Challenges Remain Elsewhere",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "Concerts School",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-10-10",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://vocm.com/2026/10/10/kenmount-parent/",
+      "notes": "From the VOCM sweep \u2014 verify the details before approving. Headline: \"New School Offers Relief for Some Families, Challenges Remain Elsewhere\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20261013019",
     "kind": "closure",
     "needs_name": false,
     "headline": "Salem-Keizer last closed schools over a decade ago. Here\u2019s what happened.",
@@ -748,7 +730,7 @@
     }
   },
   {
-    "id": "sw20261012020",
+    "id": "sw20261013020",
     "kind": "closure",
     "needs_name": false,
     "headline": "Here are all the Phoenix-area schools closed since 2024 or scheduled for closure",
@@ -797,7 +779,7 @@
     }
   },
   {
-    "id": "sw20261012021",
+    "id": "sw20261013021",
     "kind": "closure",
     "needs_name": false,
     "headline": "Parents riled up as potential renters tour 2 Bellingham schools that may close",
@@ -846,7 +828,7 @@
     }
   },
   {
-    "id": "sw20261012022",
+    "id": "sw20261013022",
     "kind": "closure",
     "needs_name": false,
     "headline": "Resigned to school closures, Carl Cozier parents focus anger on new attendance boundaries",
@@ -893,7 +875,7 @@
     }
   },
   {
-    "id": "sw20261012023",
+    "id": "sw20261013023",
     "kind": "closure",
     "needs_name": false,
     "headline": "Tulsa school closures part of statewide picture of enrollment decline",
@@ -942,7 +924,7 @@
     }
   },
   {
-    "id": "sw20261012024",
+    "id": "sw20261013024",
     "kind": "closure",
     "needs_name": false,
     "headline": "Tucson school closures: takeaways from this week\u2019s engagement meetings and what\u2019s ahead for TUSD",
@@ -991,7 +973,7 @@
     }
   },
   {
-    "id": "sw20261012025",
+    "id": "sw20261013025",
     "kind": "closure",
     "needs_name": false,
     "headline": "Local opinion: TUSD School Closures: Independent Research Report",
@@ -1040,7 +1022,7 @@
     }
   },
   {
-    "id": "sw20261012026",
+    "id": "sw20261013026",
     "kind": "closure",
     "needs_name": true,
     "headline": "After opposition campaign by parents, Olathe district to vote on closing 6 schools",
@@ -1087,7 +1069,7 @@
     }
   },
   {
-    "id": "sw20261012027",
+    "id": "sw20261013027",
     "kind": "closure",
     "needs_name": false,
     "headline": "GA Beauty School To Permanently Close After Losing Accreditation",
