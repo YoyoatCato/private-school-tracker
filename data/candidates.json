@@ -1,6 +1,6 @@
 [
   {
-    "id": "sw20261014001",
+    "id": "sw20261015001",
     "kind": "closure",
     "needs_name": false,
     "headline": "Students, parents protest after Bronx Catholic girls school set to close",
@@ -54,7 +54,7 @@
     }
   },
   {
-    "id": "sw20261014002",
+    "id": "sw20261015002",
     "kind": "closure",
     "needs_name": false,
     "headline": "School Closings: Chicago Area Complete List",
@@ -103,7 +103,7 @@
     }
   },
   {
-    "id": "sw20261014003",
+    "id": "sw20261015003",
     "kind": "closure",
     "needs_name": false,
     "headline": "Families rally to save Bronx catholic school from closing",
@@ -153,7 +153,7 @@
     }
   },
   {
-    "id": "sw20261014004",
+    "id": "sw20261015004",
     "kind": "closure",
     "needs_name": false,
     "headline": "Lawsuit over La Reina school closing can proceed",
@@ -206,79 +206,28 @@
     }
   },
   {
-    "id": "sw20261014005",
-    "kind": "closure",
-    "needs_name": true,
-    "headline": "\u2018GENERATION COVID\u2019 exposes school closures\u2019 toll as \u2018kids have not moved on\u2019",
-    "auto": [
-      "name",
-      "date_reported",
-      "link",
-      "enroll_source",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "\u2018GENERATION COVID\u2019 exposes school closures\u2019 toll as \u2018kids have not moved on\u2019",
-      "covid": "",
-      "merging": "",
-      "new_school": "",
-      "town": "",
-      "state": "GA",
-      "region": "South Atlantic",
-      "type": "",
-      "date_reported": "2026-10-08",
-      "enrollment": "",
-      "enroll_source": "Fox News",
-      "year_founded": "",
-      "notes": "From the Fox News sweep \u2014 headline named no school; add the school name. Headline: \"\u2018GENERATION COVID\u2019 exposes school closures\u2019 toll as \u2018kids have not moved on\u2019\"",
-      "prefin": "",
-      "link": "https://www.foxnews.com/video/6406436035112",
-      "pct_finaid": "",
-      "link2": "",
-      "tuition": "",
-      "link3": "",
-      "pct_black": "",
-      "enr_black": "",
-      "pct_hispanic": "",
-      "enr_hispanic": "",
-      "pct_asian": "",
-      "enr_asian": "",
-      "pct_white": "",
-      "enr_white": "",
-      "pct_other": "",
-      "enr_other": "",
-      "link4": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": ""
-    }
-  },
-  {
-    "id": "sw20261014006",
+    "id": "sw20261015005",
     "kind": "opening",
-    "needs_name": false,
+    "needs_name": true,
     "headline": "First Catholic high school opening in Bellingham next fall",
     "auto": [
       "name",
       "date_reported",
       "source_links",
-      "type",
-      "state",
-      "region"
+      "type"
     ],
     "data": {
-      "name": "Rec Coverage Prep",
+      "name": "First Catholic high school opening in Bellingham next fall",
       "link": "",
       "town": "",
-      "state": "WA",
-      "region": "Pacific",
+      "state": "",
+      "region": "",
       "type": "Roman Catholic",
       "date_reported": "2026-10-05",
       "opening_date": "",
       "exp_enrollment": "",
       "source_links": "https://www.cascadiadaily.com/2026/oct/04/first-catholic-high-school-opening-in-bellingham-next-fall/",
-      "notes": "From the Cascadia Daily News sweep \u2014 verify the details before approving. Headline: \"First Catholic high school opening in Bellingham next fall\"",
+      "notes": "From the Cascadia Daily News sweep \u2014 headline named no school; add the school name. Headline: \"First Catholic high school opening in Bellingham next fall\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -289,7 +238,7 @@
     }
   },
   {
-    "id": "sw20261014007",
+    "id": "sw20261015006",
     "kind": "opening",
     "needs_name": true,
     "headline": "Federal scholarship for private school and homeschooling opening to most kids in at least 30 states",
@@ -320,7 +269,7 @@
     }
   },
   {
-    "id": "sw20261014008",
+    "id": "sw20261015007",
     "kind": "opening",
     "needs_name": false,
     "headline": "So far, California hasn't joined new federal private school voucher program opening in 30 states",
@@ -353,27 +302,29 @@
     }
   },
   {
-    "id": "sw20261014009",
+    "id": "sw20261015008",
     "kind": "opening",
     "needs_name": false,
-    "headline": "Quiz: Where Could You Open a Private School?",
+    "headline": "New Black Medical School Receives Accreditation, Opening Doors for Future Doctors",
     "auto": [
       "name",
       "date_reported",
-      "source_links"
+      "source_links",
+      "state",
+      "region"
     ],
     "data": {
-      "name": "Private School",
+      "name": "Black Medical School",
       "link": "",
       "town": "",
-      "state": "",
-      "region": "",
+      "state": "LA",
+      "region": "West South Central",
       "type": "",
-      "date_reported": "2026-10-02",
+      "date_reported": "2026-10-15",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://projects.propublica.org/private-school-requirements-quiz/",
-      "notes": "From the ProPublica sweep \u2014 verify the details before approving. Headline: \"Quiz: Where Could You Open a Private School?\"",
+      "source_links": "https://chicagocrusader.com/new-black-medical-school-receives-accreditation-opening-doors-for-future-doctors/",
+      "notes": "From the The Chicago Crusader sweep \u2014 verify the details before approving. Headline: \"New Black Medical School Receives Accreditation, Opening Doors for Future Doctors\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -384,7 +335,209 @@
     }
   },
   {
-    "id": "sw20261014010",
+    "id": "sw20261015009",
+    "kind": "opening",
+    "needs_name": true,
+    "headline": "Northeast Vocational HS leaders give updates on new school opening, national programming bid",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "Northeast Vocational HS leaders give updates on new school opening, national programming bid",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-10-15",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://advocatenews.net/malden/news/northeast-vocational-hs-leaders-give-updates-on-new-school-opening-national-programming-bid/",
+      "notes": "From the Advocate News Online sweep \u2014 headline named no school; add the school name. Headline: \"Northeast Vocational HS leaders give updates on new school opening, national programming bid\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20261015010",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "New Starr Elementary School ceremonially opens with ribbon-cutting",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "town",
+      "state",
+      "region",
+      "full_address",
+      "tract_mfi",
+      "data_year"
+    ],
+    "data": {
+      "name": "Starr Elementary School",
+      "link": "",
+      "town": "New London",
+      "state": "WI",
+      "region": "East North Central",
+      "type": "",
+      "date_reported": "2026-10-15",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://fox11online.com/news/crisis-in-the-classroom/starr-elementary-school-ribbon-cutting-green-bay-area-public-district-new-building-keller-kennedy-macarthur-west-side",
+      "notes": "From the WLUK sweep \u2014 verify the details before approving. Headline: \"New Starr Elementary School ceremonially opens with ribbon-cutting\" Address auto-matched from NCES (2023-24 PSS) \u2014 verify. Income = 2026 FFIEC est. MSA/MD MFI for nonmetro Wisconsin.",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "E7475 Rawhide Rd, New London, WI 54961",
+      "tract_mfi": "96000",
+      "data_year": "2026",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20261015011",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "BYU\u2019s School of Medicine now has an opening date. Here\u2019s when students can apply.",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "BYU\u2019s School",
+      "link": "",
+      "town": "",
+      "state": "UT",
+      "region": "Mountain",
+      "type": "",
+      "date_reported": "2026-10-14",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.sltrib.com/news/education/2026/10/14/byus-school-medicine-now-has-an/",
+      "notes": "From the The Salt Lake Tribune sweep \u2014 verify the details before approving. Headline: \"BYU\u2019s School of Medicine now has an opening date. Here\u2019s when students can apply.\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20261015012",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "Open Call: International Competition for a New academic wing of 18. Comprehensive School \"William Gladstone\"",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "Comprehensive School",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-10-15",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.archdaily.com/1186884/open-call-international-competition-for-a-new-academic-wing-of-18-comprehensive-school-william-gladstone",
+      "notes": "From the ArchDaily sweep \u2014 verify the details before approving. Headline: \"Open Call: International Competition for a New academic wing of 18. Comprehensive School \"William Gladstone\"\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20261015013",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "Mid-Michigan Matters: New nature-based school to open near St. Johns",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "town",
+      "state",
+      "region",
+      "full_address",
+      "tract_mfi",
+      "data_year"
+    ],
+    "data": {
+      "name": "Copper Learning Academy",
+      "link": "",
+      "town": "Chassell",
+      "state": "MI",
+      "region": "East North Central",
+      "type": "",
+      "date_reported": "2026-10-14",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.wilx.com/2026/10/14/mid-michigan-matters-new-nature-based-school-open-near-st-johns/",
+      "notes": "From the WILX sweep \u2014 verify the details before approving. Headline: \"Mid-Michigan Matters: New nature-based school to open near St. Johns\" Address auto-matched from NCES (2023-24 PSS) \u2014 verify. Income = 2026 FFIEC est. MSA/MD MFI for nonmetro Michigan.",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "20980 Broemer Rd, Chassell, MI 49916",
+      "tract_mfi": "83600",
+      "data_year": "2026",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20261015014",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "Four years in the making, Xavier-Ochsner medical school prepares to open",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "Saints LSU Pelicans Tulane UNO High School",
+      "link": "",
+      "town": "",
+      "state": "LA",
+      "region": "West South Central",
+      "type": "",
+      "date_reported": "2026-10-14",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.nola.com/news/education/new-orleans-xavier-ochsner-medical-school-recruitment/article_1a85fcbd-f015-4a9b-b0ae-caebd5273cd7.html",
+      "notes": "From the NOLA.com sweep \u2014 verify the details before approving. Headline: \"Four years in the making, Xavier-Ochsner medical school prepares to open\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20261015015",
     "kind": "opening",
     "needs_name": false,
     "headline": "Glenn Middle School breaks new ground, targeting opening date for Aug 2028",
@@ -415,38 +568,7 @@
     }
   },
   {
-    "id": "sw20261014011",
-    "kind": "opening",
-    "needs_name": true,
-    "headline": "New school from ILAC founder Dream English set to open",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "New school from ILAC founder Dream English set to open",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-10-14",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://studytravel.network/magazine/news/0/32460",
-      "notes": "From the StudyTravel Network sweep \u2014 headline named no school; add the school name. Headline: \"New school from ILAC founder Dream English set to open\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20261014012",
+    "id": "sw20261015016",
     "kind": "opening",
     "needs_name": true,
     "headline": "New swim school opening at Huntsville\u2019s Bridge Street Town Centre",
@@ -477,27 +599,27 @@
     }
   },
   {
-    "id": "sw20261014013",
+    "id": "sw20261015017",
     "kind": "opening",
     "needs_name": true,
-    "headline": "Danbury OKs extra parking for indoor pickleball, golf site opening next to westside high school",
+    "headline": "New school from ILAC founder Dream English set to open",
     "auto": [
       "name",
       "date_reported",
       "source_links"
     ],
     "data": {
-      "name": "Danbury OKs extra parking for indoor pickleball, golf site opening next to westside high school",
+      "name": "New school from ILAC founder Dream English set to open",
       "link": "",
       "town": "",
       "state": "",
       "region": "",
       "type": "",
-      "date_reported": "2026-10-13",
+      "date_reported": "2026-10-14",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://www.newstimes.com/news/article/danbury-indoor-pickleball-golf-development-22473671.php",
-      "notes": "From the News-Times sweep \u2014 headline named no school; add the school name. Headline: \"Danbury OKs extra parking for indoor pickleball, golf site opening next to westside high school\"",
+      "source_links": "https://studytravel.network/magazine/news/0/32460",
+      "notes": "From the StudyTravel Network sweep \u2014 headline named no school; add the school name. Headline: \"New school from ILAC founder Dream English set to open\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -508,7 +630,39 @@
     }
   },
   {
-    "id": "sw20261014014",
+    "id": "sw20261015018",
+    "kind": "opening",
+    "needs_name": true,
+    "headline": "Lower speed limits coming to area around new Drayton elementary school",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "type"
+    ],
+    "data": {
+      "name": "Lower speed limits coming to area around new Drayton elementary school",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "Roman Catholic",
+      "date_reported": "2026-10-14",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.elorafergustoday.com/local-news/lower-speed-limits-coming-to-area-around-new-drayton-elementary-school-12888572",
+      "notes": "From the EloraFergusToday.com sweep \u2014 headline named no school; add the school name. Headline: \"Lower speed limits coming to area around new Drayton elementary school\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20261015019",
     "kind": "opening",
     "needs_name": false,
     "headline": "Mullens school construction delay pushes new campus opening to November",
@@ -541,7 +695,38 @@
     }
   },
   {
-    "id": "sw20261014015",
+    "id": "sw20261015020",
+    "kind": "opening",
+    "needs_name": true,
+    "headline": "Accademia Italiana to open new school in Rome",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "Accademia Italiana to open new school in Rome",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-10-08",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://studytravel.network/magazine/news/2/32446/amerigo-education-adds-san-francisco-campus-to-high-school-portfolio",
+      "notes": "From the StudyTravel Network sweep \u2014 headline named no school; add the school name. Headline: \"Accademia Italiana to open new school in Rome\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20261015021",
     "kind": "closure",
     "needs_name": false,
     "headline": "Salem-Keizer last closed schools over a decade ago. Here\u2019s what happened.",
@@ -590,7 +775,7 @@
     }
   },
   {
-    "id": "sw20261014016",
+    "id": "sw20261015022",
     "kind": "closure",
     "needs_name": false,
     "headline": "Here are all the Phoenix-area schools closed since 2024 or scheduled for closure",
@@ -639,9 +824,9 @@
     }
   },
   {
-    "id": "sw20261014017",
+    "id": "sw20261015023",
     "kind": "closure",
-    "needs_name": false,
+    "needs_name": true,
     "headline": "Resigned to school closures, Carl Cozier parents focus anger on new attendance boundaries",
     "auto": [
       "name",
@@ -650,7 +835,7 @@
       "enroll_source"
     ],
     "data": {
-      "name": "Rec Coverage Prep",
+      "name": "Resigned to school closures, Carl Cozier parents focus anger on new attendance boundaries",
       "covid": "",
       "merging": "",
       "new_school": "",
@@ -662,7 +847,7 @@
       "enrollment": "",
       "enroll_source": "Cascadia Daily News",
       "year_founded": "",
-      "notes": "From the Cascadia Daily News sweep \u2014 verify the details before approving. Headline: \"Resigned to school closures, Carl Cozier parents focus anger on new attendance boundaries\"",
+      "notes": "From the Cascadia Daily News sweep \u2014 headline named no school; add the school name. Headline: \"Resigned to school closures, Carl Cozier parents focus anger on new attendance boundaries\"",
       "prefin": "",
       "link": "https://www.cascadiadaily.com/2026/oct/11/resigned-to-school-closures-carl-cozier-parents-focus-anger-on-new-attendance-boundaries/",
       "pct_finaid": "",
@@ -686,7 +871,7 @@
     }
   },
   {
-    "id": "sw20261014018",
+    "id": "sw20261015024",
     "kind": "closure",
     "needs_name": false,
     "headline": "Tulsa school closures part of statewide picture of enrollment decline",
@@ -735,7 +920,7 @@
     }
   },
   {
-    "id": "sw20261014019",
+    "id": "sw20261015025",
     "kind": "closure",
     "needs_name": false,
     "headline": "Tucson school closures: takeaways from this week\u2019s engagement meetings and what\u2019s ahead for TUSD",
@@ -784,7 +969,7 @@
     }
   },
   {
-    "id": "sw20261014020",
+    "id": "sw20261015026",
     "kind": "closure",
     "needs_name": false,
     "headline": "Local opinion: TUSD School Closures: Independent Research Report",
@@ -833,7 +1018,7 @@
     }
   },
   {
-    "id": "sw20261014021",
+    "id": "sw20261015027",
     "kind": "closure",
     "needs_name": true,
     "headline": "After opposition campaign by parents, Olathe district to vote on closing 6 schools",
@@ -859,55 +1044,6 @@
       "notes": "From the Kansas City Star sweep \u2014 headline named no school; add the school name. Headline: \"After opposition campaign by parents, Olathe district to vote on closing 6 schools\"",
       "prefin": "",
       "link": "https://www.kansascity.com/news/local/article317426050.html",
-      "pct_finaid": "",
-      "link2": "",
-      "tuition": "",
-      "link3": "",
-      "pct_black": "",
-      "enr_black": "",
-      "pct_hispanic": "",
-      "enr_hispanic": "",
-      "pct_asian": "",
-      "enr_asian": "",
-      "pct_white": "",
-      "enr_white": "",
-      "pct_other": "",
-      "enr_other": "",
-      "link4": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": ""
-    }
-  },
-  {
-    "id": "sw20261014022",
-    "kind": "closure",
-    "needs_name": false,
-    "headline": "GA Beauty School To Permanently Close After Losing Accreditation",
-    "auto": [
-      "name",
-      "date_reported",
-      "link",
-      "enroll_source",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "GA Beauty School",
-      "covid": "",
-      "merging": "",
-      "new_school": "",
-      "town": "",
-      "state": "GA",
-      "region": "South Atlantic",
-      "type": "",
-      "date_reported": "2026-09-24",
-      "enrollment": "",
-      "enroll_source": "Patch",
-      "year_founded": "",
-      "notes": "From the Patch sweep \u2014 verify the details before approving. Headline: \"GA Beauty School To Permanently Close After Losing Accreditation\"",
-      "prefin": "",
-      "link": "https://patch.com/georgia/conyers-ga/ga-beauty-school-permanently-close-after-losing-accreditation",
       "pct_finaid": "",
       "link2": "",
       "tuition": "",
