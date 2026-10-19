@@ -1,6 +1,6 @@
 [
   {
-    "id": "sw20261016001",
+    "id": "sw20261019001",
     "kind": "closure",
     "needs_name": false,
     "headline": "Students, parents protest after Bronx Catholic girls school set to close",
@@ -54,7 +54,7 @@
     }
   },
   {
-    "id": "sw20261016002",
+    "id": "sw20261019002",
     "kind": "closure",
     "needs_name": false,
     "headline": "Families rally to save Bronx catholic school from closing",
@@ -104,7 +104,7 @@
     }
   },
   {
-    "id": "sw20261016003",
+    "id": "sw20261019003",
     "kind": "closure",
     "needs_name": false,
     "headline": "Lawsuit over La Reina school closing can proceed",
@@ -157,10 +157,10 @@
     }
   },
   {
-    "id": "sw20261016004",
+    "id": "sw20261019004",
     "kind": "closure",
     "needs_name": true,
-    "headline": "\u2018GENERATION COVID\u2019 exposes school closures\u2019 toll as \u2018kids have not moved on\u2019",
+    "headline": "\u2018GENERATION COVID\u2019 reveals impact of school closures as \u2018kids have not moved on\u2019",
     "auto": [
       "name",
       "date_reported",
@@ -170,19 +170,19 @@
       "region"
     ],
     "data": {
-      "name": "\u2018GENERATION COVID\u2019 exposes school closures\u2019 toll as \u2018kids have not moved on\u2019",
+      "name": "\u2018GENERATION COVID\u2019 reveals impact of school closures as \u2018kids have not moved on\u2019",
       "covid": "",
       "merging": "",
       "new_school": "",
       "town": "",
-      "state": "CO",
-      "region": "Mountain",
+      "state": "KS",
+      "region": "West North Central",
       "type": "",
       "date_reported": "2026-10-08",
       "enrollment": "",
       "enroll_source": "Fox News",
       "year_founded": "",
-      "notes": "From the Fox News sweep \u2014 headline named no school; add the school name. Headline: \"\u2018GENERATION COVID\u2019 exposes school closures\u2019 toll as \u2018kids have not moved on\u2019\"",
+      "notes": "From the Fox News sweep \u2014 headline named no school; add the school name. Headline: \"\u2018GENERATION COVID\u2019 reveals impact of school closures as \u2018kids have not moved on\u2019\"",
       "prefin": "",
       "link": "https://www.foxnews.com/video/6406436035112",
       "pct_finaid": "",
@@ -206,7 +206,7 @@
     }
   },
   {
-    "id": "sw20261016005",
+    "id": "sw20261019005",
     "kind": "opening",
     "needs_name": false,
     "headline": "First Catholic high school opening in Bellingham next fall",
@@ -225,7 +225,7 @@
       "state": "WA",
       "region": "Pacific",
       "type": "Roman Catholic",
-      "date_reported": "2026-10-05",
+      "date_reported": "2026-10-04",
       "opening_date": "",
       "exp_enrollment": "",
       "source_links": "https://www.cascadiadaily.com/2026/oct/04/first-catholic-high-school-opening-in-bellingham-next-fall/",
@@ -240,7 +240,7 @@
     }
   },
   {
-    "id": "sw20261016006",
+    "id": "sw20261019006",
     "kind": "opening",
     "needs_name": true,
     "headline": "Federal scholarship for private school and homeschooling opening to most kids in at least 30 states",
@@ -271,7 +271,7 @@
     }
   },
   {
-    "id": "sw20261016007",
+    "id": "sw20261019007",
     "kind": "opening",
     "needs_name": false,
     "headline": "So far, California hasn't joined new federal private school voucher program opening in 30 states",
@@ -304,29 +304,27 @@
     }
   },
   {
-    "id": "sw20261016008",
+    "id": "sw20261019008",
     "kind": "opening",
-    "needs_name": false,
-    "headline": "NBA legends celebrate opening of new school campus in the Bronx",
+    "needs_name": true,
+    "headline": "East Longmeadow celebrates opening of newly built high school",
     "auto": [
       "name",
       "date_reported",
-      "source_links",
-      "state",
-      "region"
+      "source_links"
     ],
     "data": {
-      "name": "Earl Monroe New Renaissance Basketball School",
+      "name": "East Longmeadow celebrates opening of newly built high school",
       "link": "",
       "town": "",
-      "state": "NY",
-      "region": "Middle Atlantic",
+      "state": "",
+      "region": "",
       "type": "",
-      "date_reported": "2026-10-16",
+      "date_reported": "2026-10-19",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://www.cbsnews.com/newyork/video/nba-legends-celebrate-opening-of-new-school-campus-in-the-bronx/",
-      "notes": "From the CBS News sweep \u2014 verify the details before approving. Headline: \"NBA legends celebrate opening of new school campus in the Bronx\"",
+      "source_links": "https://thereminder.com/local-news/east-longmeadow-celebrates-opening-of-newly-built-high-school/",
+      "notes": "From the The Reminder sweep \u2014 headline named no school; add the school name. Headline: \"East Longmeadow celebrates opening of newly built high school\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -337,7 +335,7 @@
     }
   },
   {
-    "id": "sw20261016009",
+    "id": "sw20261019009",
     "kind": "opening",
     "needs_name": false,
     "headline": "BYU\u2019s School of Medicine now has an opening date. Here\u2019s when students can apply.",
@@ -370,10 +368,10 @@
     }
   },
   {
-    "id": "sw20261016010",
+    "id": "sw20261019010",
     "kind": "opening",
     "needs_name": false,
-    "headline": "New Black Medical School Receives Accreditation, Opening Doors for Future Doctors",
+    "headline": "NBA legends celebrate opening of new school campus in the Bronx",
     "auto": [
       "name",
       "date_reported",
@@ -382,17 +380,17 @@
       "region"
     ],
     "data": {
-      "name": "Black Medical School",
+      "name": "Earl Monroe New Renaissance Basketball School",
       "link": "",
       "town": "",
-      "state": "LA",
-      "region": "West South Central",
+      "state": "NY",
+      "region": "Middle Atlantic",
       "type": "",
-      "date_reported": "2026-10-15",
+      "date_reported": "2026-10-16",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://chicagocrusader.com/new-black-medical-school-receives-accreditation-opening-doors-for-future-doctors/",
-      "notes": "From the The Chicago Crusader sweep \u2014 verify the details before approving. Headline: \"New Black Medical School Receives Accreditation, Opening Doors for Future Doctors\"",
+      "source_links": "https://www.cbsnews.com/newyork/video/nba-legends-celebrate-opening-of-new-school-campus-in-the-bronx/",
+      "notes": "From the CBS News sweep \u2014 verify the details before approving. Headline: \"NBA legends celebrate opening of new school campus in the Bronx\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -403,29 +401,30 @@
     }
   },
   {
-    "id": "sw20261016011",
+    "id": "sw20261019011",
     "kind": "opening",
     "needs_name": false,
-    "headline": "Northeast Vocational HS leaders give updates on new school opening, national programming bid",
+    "headline": "New college prep school for low-income families opening in 2027 in Charleston, SC",
     "auto": [
       "name",
       "date_reported",
       "source_links",
+      "type",
       "state",
       "region"
     ],
     "data": {
-      "name": "Northeast Metropolitan Regional Vocational High School",
+      "name": "Cristo Rey Charleston High School",
       "link": "",
       "town": "",
-      "state": "MA",
-      "region": "New England",
-      "type": "",
-      "date_reported": "2026-10-15",
+      "state": "SC",
+      "region": "South Atlantic",
+      "type": "Independent",
+      "date_reported": "2026-10-16",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://advocatenews.net/malden/news/northeast-vocational-hs-leaders-give-updates-on-new-school-opening-national-programming-bid/",
-      "notes": "From the Advocate News Online sweep \u2014 verify the details before approving. Headline: \"Northeast Vocational HS leaders give updates on new school opening, national programming bid\"",
+      "source_links": "https://www.southcarolinapublicradio.org/show/south-carolina-business-review/2026-10-16/new-college-prep-school-for-low-income-families-opening-in-2027-in-charleston-sc",
+      "notes": "From the South Carolina Public Radio sweep \u2014 verify the details before approving. Headline: \"New college prep school for low-income families opening in 2027 in Charleston, SC\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -436,103 +435,27 @@
     }
   },
   {
-    "id": "sw20261016012",
+    "id": "sw20261019012",
     "kind": "opening",
-    "needs_name": false,
-    "headline": "New Starr Elementary School ceremonially opens with ribbon-cutting",
+    "needs_name": true,
+    "headline": "New school from ILAC founder Dream English set to open",
     "auto": [
       "name",
       "date_reported",
-      "source_links",
-      "town",
-      "state",
-      "region",
-      "full_address",
-      "tract_mfi",
-      "data_year"
+      "source_links"
     ],
     "data": {
-      "name": "Starr Elementary School",
-      "link": "",
-      "town": "New London",
-      "state": "WI",
-      "region": "East North Central",
-      "type": "",
-      "date_reported": "2026-10-14",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://fox11online.com/news/crisis-in-the-classroom/starr-elementary-school-ribbon-cutting-green-bay-area-public-district-new-building-keller-kennedy-macarthur-west-side",
-      "notes": "From the WLUK sweep \u2014 verify the details before approving. Headline: \"New Starr Elementary School ceremonially opens with ribbon-cutting\" Address auto-matched from NCES (2023-24 PSS) \u2014 verify. Income = 2026 FFIEC est. MSA/MD MFI for nonmetro Wisconsin.",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "E7475 Rawhide Rd, New London, WI 54961",
-      "tract_mfi": "96000",
-      "data_year": "2026",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20261016013",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Mid-Michigan Matters: New nature-based school to open near St. Johns",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "town",
-      "state",
-      "region",
-      "full_address",
-      "tract_mfi",
-      "data_year"
-    ],
-    "data": {
-      "name": "Copper Learning Academy",
-      "link": "",
-      "town": "Chassell",
-      "state": "MI",
-      "region": "East North Central",
-      "type": "",
-      "date_reported": "2026-10-14",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.wilx.com/video/2026/10/14/mid-michigan-matters-new-nature-based-school-open-near-st-johns/",
-      "notes": "From the WILX sweep \u2014 verify the details before approving. Headline: \"Mid-Michigan Matters: New nature-based school to open near St. Johns\" Address auto-matched from NCES (2023-24 PSS) \u2014 verify. Income = 2026 FFIEC est. MSA/MD MFI for nonmetro Michigan.",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "20980 Broemer Rd, Chassell, MI 49916",
-      "tract_mfi": "83600",
-      "data_year": "2026",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20261016014",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Four years in the making, Xavier-Ochsner medical school prepares to open",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Saints LSU Pelicans Tulane UNO High School",
+      "name": "New school from ILAC founder Dream English set to open",
       "link": "",
       "town": "",
-      "state": "LA",
-      "region": "West South Central",
+      "state": "",
+      "region": "",
       "type": "",
       "date_reported": "2026-10-14",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://www.nola.com/news/education/new-orleans-xavier-ochsner-medical-school-recruitment/article_1a85fcbd-f015-4a9b-b0ae-caebd5273cd7.html",
-      "notes": "From the NOLA.com sweep \u2014 verify the details before approving. Headline: \"Four years in the making, Xavier-Ochsner medical school prepares to open\"",
+      "source_links": "https://studytravel.network/magazine/news/0/32460",
+      "notes": "From the StudyTravel Network sweep \u2014 headline named no school; add the school name. Headline: \"New school from ILAC founder Dream English set to open\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -543,7 +466,7 @@
     }
   },
   {
-    "id": "sw20261016015",
+    "id": "sw20261019013",
     "kind": "opening",
     "needs_name": false,
     "headline": "NBA legends celebrate opening of Earl Monroe School's permanent campus in South Bronx",
@@ -576,133 +499,7 @@
     }
   },
   {
-    "id": "sw20261016016",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Open Call: International Competition for a New academic wing of 18. Comprehensive School \"William Gladstone\"",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "Comprehensive School",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-10-15",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.archdaily.com/1186884/open-call-international-competition-for-a-new-academic-wing-of-18-comprehensive-school-william-gladstone",
-      "notes": "From the ArchDaily sweep \u2014 verify the details before approving. Headline: \"Open Call: International Competition for a New academic wing of 18. Comprehensive School \"William Gladstone\"\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20261016017",
-    "kind": "opening",
-    "needs_name": true,
-    "headline": "New school from ILAC founder Dream English set to open",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "New school from ILAC founder Dream English set to open",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-10-14",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://studytravel.network/magazine/news/0/32460",
-      "notes": "From the StudyTravel Network sweep \u2014 headline named no school; add the school name. Headline: \"New school from ILAC founder Dream English set to open\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20261016018",
-    "kind": "opening",
-    "needs_name": false,
-    "headline": "Mullens school construction delay pushes new campus opening to November",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Middle School",
-      "link": "",
-      "town": "",
-      "state": "WY",
-      "region": "Mountain",
-      "type": "",
-      "date_reported": "2026-10-07",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.wvva.com/2026/10/07/mullens-school-construction-delay-pushes-new-campus-opening-november/",
-      "notes": "From the WVVA sweep \u2014 verify the details before approving. Headline: \"Mullens school construction delay pushes new campus opening to November\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20261016019",
-    "kind": "opening",
-    "needs_name": true,
-    "headline": "New \u20ac210.6m international school to open in 2031",
-    "auto": [
-      "name",
-      "date_reported",
-      "source_links"
-    ],
-    "data": {
-      "name": "New \u20ac210.6m international school to open in 2031",
-      "link": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-10-16",
-      "opening_date": "",
-      "exp_enrollment": "",
-      "source_links": "https://www.luxtimes.lu/yourluxembourg/educationandfamily/new-210.6-million-international-school-in-bad-mondorf-to-open-in-2031/163136633.html",
-      "notes": "From the Luxembourg Times sweep \u2014 headline named no school; add the school name. Headline: \"New \u20ac210.6m international school to open in 2031\"",
-      "tuition": "",
-      "tuition_notes": "",
-      "link_b": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": "",
-      "microschool": ""
-    }
-  },
-  {
-    "id": "sw20261016020",
+    "id": "sw20261019014",
     "kind": "opening",
     "needs_name": true,
     "headline": "Accademia Italiana to open new school in Rome",
@@ -718,7 +515,7 @@
       "state": "",
       "region": "",
       "type": "",
-      "date_reported": "2026-10-09",
+      "date_reported": "2026-10-08",
       "opening_date": "",
       "exp_enrollment": "",
       "source_links": "https://studytravel.network/magazine/news/0/32446",
@@ -733,7 +530,7 @@
     }
   },
   {
-    "id": "sw20261016021",
+    "id": "sw20261019015",
     "kind": "closure",
     "needs_name": false,
     "headline": "Salem-Keizer last closed schools over a decade ago. Here\u2019s what happened.",
@@ -780,7 +577,7 @@
     }
   },
   {
-    "id": "sw20261016022",
+    "id": "sw20261019016",
     "kind": "closure",
     "needs_name": false,
     "headline": "Here are all the Phoenix-area schools closed since 2024 or scheduled for closure",
@@ -829,7 +626,7 @@
     }
   },
   {
-    "id": "sw20261016023",
+    "id": "sw20261019017",
     "kind": "closure",
     "needs_name": false,
     "headline": "Resigned to school closures, Carl Cozier parents focus anger on new attendance boundaries",
@@ -876,7 +673,7 @@
     }
   },
   {
-    "id": "sw20261016024",
+    "id": "sw20261019018",
     "kind": "closure",
     "needs_name": false,
     "headline": "Tulsa school closures part of statewide picture of enrollment decline",
@@ -925,56 +722,7 @@
     }
   },
   {
-    "id": "sw20261016025",
-    "kind": "closure",
-    "needs_name": false,
-    "headline": "Tucson school closures: takeaways from this week\u2019s engagement meetings and what\u2019s ahead for TUSD",
-    "auto": [
-      "name",
-      "date_reported",
-      "link",
-      "enroll_source",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "Cholla High School",
-      "covid": "",
-      "merging": "",
-      "new_school": "",
-      "town": "",
-      "state": "AZ",
-      "region": "Mountain",
-      "type": "",
-      "date_reported": "2026-09-26",
-      "enrollment": "",
-      "enroll_source": "AZPM News",
-      "year_founded": "",
-      "notes": "From the AZPM News sweep \u2014 verify the details before approving. Headline: \"Tucson school closures: takeaways from this week\u2019s engagement meetings and what\u2019s ahead for TUSD\"",
-      "prefin": "",
-      "link": "https://news.azpm.org/p/azpmnews/2026/9/26/231354-tucson-school-closures-takeaways-from-this-weeks-engagement-meetings-and-whats-ahead-for-tusd",
-      "pct_finaid": "",
-      "link2": "",
-      "tuition": "",
-      "link3": "",
-      "pct_black": "",
-      "enr_black": "",
-      "pct_hispanic": "",
-      "enr_hispanic": "",
-      "pct_asian": "",
-      "enr_asian": "",
-      "pct_white": "",
-      "enr_white": "",
-      "pct_other": "",
-      "enr_other": "",
-      "link4": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": ""
-    }
-  },
-  {
-    "id": "sw20261016026",
+    "id": "sw20261019019",
     "kind": "closure",
     "needs_name": false,
     "headline": "Local opinion: TUSD School Closures: Independent Research Report",
@@ -1023,7 +771,7 @@
     }
   },
   {
-    "id": "sw20261016027",
+    "id": "sw20261019020",
     "kind": "closure",
     "needs_name": true,
     "headline": "After opposition campaign by parents, Olathe district to vote on closing 6 schools",
