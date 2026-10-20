@@ -1,6 +1,6 @@
 [
   {
-    "id": "sw20261019001",
+    "id": "sw20261020001",
     "kind": "closure",
     "needs_name": false,
     "headline": "Students, parents protest after Bronx Catholic girls school set to close",
@@ -54,57 +54,7 @@
     }
   },
   {
-    "id": "sw20261019002",
-    "kind": "closure",
-    "needs_name": false,
-    "headline": "Families rally to save Bronx catholic school from closing",
-    "auto": [
-      "name",
-      "date_reported",
-      "link",
-      "enroll_source",
-      "type",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "St. Raymond School",
-      "covid": "",
-      "merging": "",
-      "new_school": "",
-      "town": "",
-      "state": "NY",
-      "region": "Middle Atlantic",
-      "type": "Roman Catholic",
-      "date_reported": "2026-10-14",
-      "enrollment": "",
-      "enroll_source": "CBS News",
-      "year_founded": "",
-      "notes": "From the CBS News sweep \u2014 verify the details before approving. Headline: \"Families rally to save Bronx catholic school from closing\"",
-      "prefin": "",
-      "link": "https://www.cbsnews.com/newyork/video/families-rally-to-save-bronx-catholic-school-from-closing/",
-      "pct_finaid": "",
-      "link2": "",
-      "tuition": "",
-      "link3": "",
-      "pct_black": "",
-      "enr_black": "",
-      "pct_hispanic": "",
-      "enr_hispanic": "",
-      "pct_asian": "",
-      "enr_asian": "",
-      "pct_white": "",
-      "enr_white": "",
-      "pct_other": "",
-      "enr_other": "",
-      "link4": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": ""
-    }
-  },
-  {
-    "id": "sw20261019003",
+    "id": "sw20261020002",
     "kind": "closure",
     "needs_name": false,
     "headline": "Lawsuit over La Reina school closing can proceed",
@@ -157,7 +107,57 @@
     }
   },
   {
-    "id": "sw20261019004",
+    "id": "sw20261020003",
+    "kind": "closure",
+    "needs_name": false,
+    "headline": "Families rally to save Bronx catholic school from closing",
+    "auto": [
+      "name",
+      "date_reported",
+      "link",
+      "enroll_source",
+      "type",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "St. Raymond School",
+      "covid": "",
+      "merging": "",
+      "new_school": "",
+      "town": "",
+      "state": "NY",
+      "region": "Middle Atlantic",
+      "type": "Roman Catholic",
+      "date_reported": "2026-10-14",
+      "enrollment": "",
+      "enroll_source": "CBS News",
+      "year_founded": "",
+      "notes": "From the CBS News sweep \u2014 verify the details before approving. Headline: \"Families rally to save Bronx catholic school from closing\"",
+      "prefin": "",
+      "link": "https://www.cbsnews.com/newyork/video/families-rally-to-save-bronx-catholic-school-from-closing/",
+      "pct_finaid": "",
+      "link2": "",
+      "tuition": "",
+      "link3": "",
+      "pct_black": "",
+      "enr_black": "",
+      "pct_hispanic": "",
+      "enr_hispanic": "",
+      "pct_asian": "",
+      "enr_asian": "",
+      "pct_white": "",
+      "enr_white": "",
+      "pct_other": "",
+      "enr_other": "",
+      "link4": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": ""
+    }
+  },
+  {
+    "id": "sw20261020004",
     "kind": "closure",
     "needs_name": true,
     "headline": "\u2018GENERATION COVID\u2019 reveals impact of school closures as \u2018kids have not moved on\u2019",
@@ -165,9 +165,7 @@
       "name",
       "date_reported",
       "link",
-      "enroll_source",
-      "state",
-      "region"
+      "enroll_source"
     ],
     "data": {
       "name": "\u2018GENERATION COVID\u2019 reveals impact of school closures as \u2018kids have not moved on\u2019",
@@ -175,8 +173,8 @@
       "merging": "",
       "new_school": "",
       "town": "",
-      "state": "KS",
-      "region": "West North Central",
+      "state": "",
+      "region": "",
       "type": "",
       "date_reported": "2026-10-08",
       "enrollment": "",
@@ -206,7 +204,7 @@
     }
   },
   {
-    "id": "sw20261019005",
+    "id": "sw20261020005",
     "kind": "opening",
     "needs_name": false,
     "headline": "First Catholic high school opening in Bellingham next fall",
@@ -240,7 +238,7 @@
     }
   },
   {
-    "id": "sw20261019006",
+    "id": "sw20261020006",
     "kind": "opening",
     "needs_name": true,
     "headline": "Federal scholarship for private school and homeschooling opening to most kids in at least 30 states",
@@ -271,7 +269,7 @@
     }
   },
   {
-    "id": "sw20261019007",
+    "id": "sw20261020007",
     "kind": "opening",
     "needs_name": false,
     "headline": "So far, California hasn't joined new federal private school voucher program opening in 30 states",
@@ -304,7 +302,106 @@
     }
   },
   {
-    "id": "sw20261019008",
+    "id": "sw20261020008",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "McDuffie County schools to open new STEM center on Clarks Hill Lake",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "Hope Community Calendar Back To School",
+      "link": "",
+      "town": "",
+      "state": "GA",
+      "region": "South Atlantic",
+      "type": "",
+      "date_reported": "2026-10-20",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.wrdw.com/2026/10/20/mcduffie-county-schools-open-new-stem-center-clarks-hill-lake/",
+      "notes": "From the WRDW sweep \u2014 verify the details before approving. Headline: \"McDuffie County schools to open new STEM center on Clarks Hill Lake\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20261020009",
+    "kind": "opening",
+    "needs_name": true,
+    "headline": "Burlington to open new Porterville store, donate $5,000 to local school",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "Burlington to open new Porterville store, donate $5,000 to local school",
+      "link": "",
+      "town": "",
+      "state": "CA",
+      "region": "Pacific",
+      "type": "",
+      "date_reported": "2026-10-20",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://thebusinessjournal.com/burlington-porterville-grand-opening-oct-30/",
+      "notes": "From the The Business Journal sweep \u2014 headline named no school; add the school name. Headline: \"Burlington to open new Porterville store, donate $5,000 to local school\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20261020010",
+    "kind": "opening",
+    "needs_name": false,
+    "headline": "Three New Exhibitions Open Oct. 22 at WKCTC\u2019s Paducah School of Art and Design",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links",
+      "state",
+      "region"
+    ],
+    "data": {
+      "name": "WKCTC\u2019s Paducah School",
+      "link": "",
+      "town": "",
+      "state": "KY",
+      "region": "East South Central",
+      "type": "",
+      "date_reported": "2026-10-20",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://www.marshallcountydaily.com/2026/10/19/three-new-exhibitions-open-oct-22-at-wkctcs-paducah-school-of-art-and-design/",
+      "notes": "From the Marshall County Daily.com sweep \u2014 verify the details before approving. Headline: \"Three New Exhibitions Open Oct. 22 at WKCTC\u2019s Paducah School of Art and Design\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20261020011",
     "kind": "opening",
     "needs_name": true,
     "headline": "East Longmeadow celebrates opening of newly built high school",
@@ -335,7 +432,7 @@
     }
   },
   {
-    "id": "sw20261019009",
+    "id": "sw20261020012",
     "kind": "opening",
     "needs_name": false,
     "headline": "BYU\u2019s School of Medicine now has an opening date. Here\u2019s when students can apply.",
@@ -368,7 +465,7 @@
     }
   },
   {
-    "id": "sw20261019010",
+    "id": "sw20261020013",
     "kind": "opening",
     "needs_name": false,
     "headline": "NBA legends celebrate opening of new school campus in the Bronx",
@@ -401,7 +498,7 @@
     }
   },
   {
-    "id": "sw20261019011",
+    "id": "sw20261020014",
     "kind": "opening",
     "needs_name": false,
     "headline": "New college prep school for low-income families opening in 2027 in Charleston, SC",
@@ -435,27 +532,29 @@
     }
   },
   {
-    "id": "sw20261019012",
+    "id": "sw20261020015",
     "kind": "opening",
-    "needs_name": true,
-    "headline": "New school from ILAC founder Dream English set to open",
+    "needs_name": false,
+    "headline": "Northeast Vocational HS leaders give updates on new school opening, national programming bid",
     "auto": [
       "name",
       "date_reported",
-      "source_links"
+      "source_links",
+      "state",
+      "region"
     ],
     "data": {
-      "name": "New school from ILAC founder Dream English set to open",
+      "name": "Northeast Metropolitan Regional Vocational High School",
       "link": "",
       "town": "",
-      "state": "",
-      "region": "",
+      "state": "MA",
+      "region": "New England",
       "type": "",
-      "date_reported": "2026-10-14",
+      "date_reported": "2026-10-15",
       "opening_date": "",
       "exp_enrollment": "",
-      "source_links": "https://studytravel.network/magazine/news/0/32460",
-      "notes": "From the StudyTravel Network sweep \u2014 headline named no school; add the school name. Headline: \"New school from ILAC founder Dream English set to open\"",
+      "source_links": "https://advocatenews.net/malden/news/northeast-vocational-hs-leaders-give-updates-on-new-school-opening-national-programming-bid/",
+      "notes": "From the Advocate News Online sweep \u2014 verify the details before approving. Headline: \"Northeast Vocational HS leaders give updates on new school opening, national programming bid\"",
       "tuition": "",
       "tuition_notes": "",
       "link_b": "",
@@ -466,7 +565,7 @@
     }
   },
   {
-    "id": "sw20261019013",
+    "id": "sw20261020016",
     "kind": "opening",
     "needs_name": false,
     "headline": "NBA legends celebrate opening of Earl Monroe School's permanent campus in South Bronx",
@@ -499,7 +598,38 @@
     }
   },
   {
-    "id": "sw20261019014",
+    "id": "sw20261020017",
+    "kind": "opening",
+    "needs_name": true,
+    "headline": "New school from ILAC founder Dream English set to open",
+    "auto": [
+      "name",
+      "date_reported",
+      "source_links"
+    ],
+    "data": {
+      "name": "New school from ILAC founder Dream English set to open",
+      "link": "",
+      "town": "",
+      "state": "",
+      "region": "",
+      "type": "",
+      "date_reported": "2026-10-14",
+      "opening_date": "",
+      "exp_enrollment": "",
+      "source_links": "https://studytravel.network/magazine/news/0/32460",
+      "notes": "From the StudyTravel Network sweep \u2014 headline named no school; add the school name. Headline: \"New school from ILAC founder Dream English set to open\"",
+      "tuition": "",
+      "tuition_notes": "",
+      "link_b": "",
+      "full_address": "",
+      "tract_mfi": "",
+      "data_year": "",
+      "microschool": ""
+    }
+  },
+  {
+    "id": "sw20261020018",
     "kind": "opening",
     "needs_name": true,
     "headline": "Accademia Italiana to open new school in Rome",
@@ -530,7 +660,7 @@
     }
   },
   {
-    "id": "sw20261019015",
+    "id": "sw20261020019",
     "kind": "closure",
     "needs_name": false,
     "headline": "Salem-Keizer last closed schools over a decade ago. Here\u2019s what happened.",
@@ -577,7 +707,7 @@
     }
   },
   {
-    "id": "sw20261019016",
+    "id": "sw20261020020",
     "kind": "closure",
     "needs_name": false,
     "headline": "Here are all the Phoenix-area schools closed since 2024 or scheduled for closure",
@@ -626,57 +756,10 @@
     }
   },
   {
-    "id": "sw20261019017",
+    "id": "sw20261020021",
     "kind": "closure",
     "needs_name": false,
-    "headline": "Resigned to school closures, Carl Cozier parents focus anger on new attendance boundaries",
-    "auto": [
-      "name",
-      "date_reported",
-      "link",
-      "enroll_source"
-    ],
-    "data": {
-      "name": "Rec Coverage Prep",
-      "covid": "",
-      "merging": "",
-      "new_school": "",
-      "town": "",
-      "state": "",
-      "region": "",
-      "type": "",
-      "date_reported": "2026-10-12",
-      "enrollment": "",
-      "enroll_source": "Cascadia Daily News",
-      "year_founded": "",
-      "notes": "From the Cascadia Daily News sweep \u2014 verify the details before approving. Headline: \"Resigned to school closures, Carl Cozier parents focus anger on new attendance boundaries\"",
-      "prefin": "",
-      "link": "https://www.cascadiadaily.com/2026/oct/11/resigned-to-school-closures-carl-cozier-parents-focus-anger-on-new-attendance-boundaries/",
-      "pct_finaid": "",
-      "link2": "",
-      "tuition": "",
-      "link3": "",
-      "pct_black": "",
-      "enr_black": "",
-      "pct_hispanic": "",
-      "enr_hispanic": "",
-      "pct_asian": "",
-      "enr_asian": "",
-      "pct_white": "",
-      "enr_white": "",
-      "pct_other": "",
-      "enr_other": "",
-      "link4": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": ""
-    }
-  },
-  {
-    "id": "sw20261019018",
-    "kind": "closure",
-    "needs_name": false,
-    "headline": "Tulsa school closures part of statewide picture of enrollment decline",
+    "headline": "Arundel boatbuilding school confirms permanent closure, with property to be auctioned",
     "auto": [
       "name",
       "date_reported",
@@ -686,21 +769,21 @@
       "region"
     ],
     "data": {
-      "name": "Dove Science Academy",
+      "name": "Landing School",
       "covid": "",
       "merging": "",
       "new_school": "",
       "town": "",
-      "state": "OK",
-      "region": "West South Central",
+      "state": "ME",
+      "region": "New England",
       "type": "",
-      "date_reported": "2026-09-29",
+      "date_reported": "2026-10-19",
       "enrollment": "",
-      "enroll_source": "Oklahoma Voice",
+      "enroll_source": "The Portland Press Herald",
       "year_founded": "",
-      "notes": "From the Oklahoma Voice sweep \u2014 verify the details before approving. Headline: \"Tulsa school closures part of statewide picture of enrollment decline\"",
+      "notes": "From the The Portland Press Herald sweep \u2014 verify the details before approving. Headline: \"Arundel boatbuilding school confirms permanent closure, with property to be auctioned\"",
       "prefin": "",
-      "link": "https://oklahomavoice.com/2026/09/29/tulsa-school-closures-part-of-statewide-picture-of-enrollment-decline/",
+      "link": "https://www.pressherald.com/2026/10/19/arundel-boatbuilding-school-confirms-permanent-closure-with-property-to-be-auctioned/",
       "pct_finaid": "",
       "link2": "",
       "tuition": "",
@@ -722,56 +805,7 @@
     }
   },
   {
-    "id": "sw20261019019",
-    "kind": "closure",
-    "needs_name": false,
-    "headline": "Local opinion: TUSD School Closures: Independent Research Report",
-    "auto": [
-      "name",
-      "date_reported",
-      "link",
-      "enroll_source",
-      "state",
-      "region"
-    ],
-    "data": {
-      "name": "TUSD School",
-      "covid": "",
-      "merging": "",
-      "new_school": "",
-      "town": "",
-      "state": "AZ",
-      "region": "Mountain",
-      "type": "",
-      "date_reported": "2026-10-03",
-      "enrollment": "",
-      "enroll_source": "Arizona Daily Star",
-      "year_founded": "",
-      "notes": "From the Arizona Daily Star sweep \u2014 verify the details before approving. Headline: \"Local opinion: TUSD School Closures: Independent Research Report\"",
-      "prefin": "",
-      "link": "https://tucson.com/opinion/column/article_e53ac79b-ba83-4f4b-b2b1-b0856ed006ac.html",
-      "pct_finaid": "",
-      "link2": "",
-      "tuition": "",
-      "link3": "",
-      "pct_black": "",
-      "enr_black": "",
-      "pct_hispanic": "",
-      "enr_hispanic": "",
-      "pct_asian": "",
-      "enr_asian": "",
-      "pct_white": "",
-      "enr_white": "",
-      "pct_other": "",
-      "enr_other": "",
-      "link4": "",
-      "full_address": "",
-      "tract_mfi": "",
-      "data_year": ""
-    }
-  },
-  {
-    "id": "sw20261019020",
+    "id": "sw20261020022",
     "kind": "closure",
     "needs_name": true,
     "headline": "After opposition campaign by parents, Olathe district to vote on closing 6 schools",
